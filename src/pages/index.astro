@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import data from '../data/phase-data.json';
+const home = data.pages.find((p) => p.path === '/');
+const image = (name) => home.blocks.find((b) => b.type === 'image' && b.src.includes(name))?.src;
+const cards = [
+  { title: 'Limpiezas en redes de saneamiento', text: 'En Anulaciones Sépticas Mungia, pensamos que una correcta limpieza de la red es fundamental para prevenir los atascos.', src: image('Frame-237659'), path: '/servicios/limpiezas-en-redes-de-saneamientos/' },
+  { title: 'Mantenimiento de la red de saneamiento', text: 'Con programas de mantenimiento preventivo, adecuadamente definidos, evitaremos atascos, fugas, inundaciones y malos olores en las redes de saneamiento.', src: image('Frame-237658'), path: '/servicios/mantenimiento-de-la-red-de-saneamiento/' },
+  { title: 'Inspección de tuberías con cámara robotizada', text: 'Una cámara de inspección robotizada de circuito cerrado nos permite establecer el estado de la red.', src: image('Frame-237660'), path: '/servicios/inspeccion-de-tuberias-con-camara-robotizada/' },
+];
+const values = [
+  ['Calidad', 'Altos estándares de calidad en la prestación de servicios. Nuestro personal está capacitado y cualificado para llevar a cabo las mejores prácticas.', 'gota-agua'],
+  ['Inversión en tecnología y equipamiento', 'Equipos modernos, maquinaria de última generación, flota de camiones con adelantos técnicos e instalaciones propias.', 'icon.jpg'],
+  ['Atención personalizada', 'Ofrecemos asesoramiento personalizado y trabajos de máxima calidad.', 'icon-2'],
+  ['Seguridad y garantía', 'Establecemos garantías claras y compromisos sobre la calidad de tus servicios.', 'diploma'],
+  ['Sostenibilidad', 'Adoptamos medidas de tecnologías de bajo impacto mediambiental.', 'hojas'],
+  ['Ética y transparencia', 'Actuamos con integridad y transparencia en todo momento, cumpliendo estándares éticos desde el primer contacto.', 'diploma'],
+];
+const steps = [
+  ['Paso 1', 'Ponte en contacto con nosotros por mail o por teléfono. Te daremos asesoramiento sin compromiso.', 'icon.png'],
+  ['Paso 2', 'Te daremos una respuesta que se ajuste a tus necesidades, y solución a tus problemas.', 'lupa.png'],
+  ['Paso 3', 'Manos a la obra.', 'ajustes.png'],
+];
+const news = [
+  ['Cómo se depuran las aguas residuales', 'Puede ser que te hayas preguntado alguna vez qué procesos...', 'shutterstock_1802716426', '/blog/como-se-depuran-aguas-residuales/'],
+  ['Qué es un pozo ciego', 'En Anulaciones Sépticas Mungia y como empresa de desatascos en...', 'shutterstock_1302914215', '/blog/que-es-un-pozo-ciego/'],
+  ['Tecnología y Compromiso para una Infraestructura de Saneamiento Sostenible', 'La infraestructura de saneamiento y las redes de tuberías son...', 'saneamientos-mungia-marzo', '/blog/tecnologia-y-compromiso-para-una-infraestructura-de-saneamiento-sostenible/'],
+];
+---
+<Base title="Inicio - Saneamientos Mungia" path="/">
+  <div class="home-bg">
+    <section class="hero wrap">
+      <div class="hero-inner">
+        <p class="hero-kicker">Empresa de Saneamiento en Bizkaia</p>
+        <h1>Quítate el marrón con un trabajo de calidad</h1>
+        <p>La única empresa de saneamientos que atiende en el mismo día.</p>
+        <a class="pill pill-light" href="/contacto/">CONTACTA</a>
+      </div>
+    </section>
+    <section class="stats wrap" aria-label="Saneamientos Mungia en cifras">
+      <div><strong>10.000+</strong><span>Clientes satisfechos</span></div>
+      <div><strong>35</strong><span>Años de experiencia en el sector</span></div>
+      <div><img src="/assets/5bee3a2017d8faf3.png" alt="Valoración de Google" /><span>4,9 de valoración media</span></div>
+    </section>
+    <section class="section wrap">
+      <div class="section-heading"><h2>Nuestros servicios</h2><p>Ofrecemos un servicio integral para todo lo relacionado con la redes de saneamiento, tanto domésticas como municipales.</p></div>
+      <div class="card-grid">{cards.map((card) => <article class="service-card"><img src={card.src} alt="" loading="lazy" /><div><h3>{card.title}</h3><p>{card.text}</p><a href={card.path}>Saber más <span aria-hidden="true">→</span></a></div></article>)}</div>
+    </section>
+    <section class="urgent"><div class="wrap urgent-inner"><div><h2>Servicio de desatascos urgentes 24h</h2><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p></div><div class="urgent-phone"><a href="tel:+34944460209">94 446 02 09</a><span>o</span><a href="tel:+34601004005">601 004 005</a><small>Teléfono de urgencias</small></div></div></section>
+    <section class="section wrap experience"><div class="section-heading"><h2>Más de 30 años en el sector</h2><p>Gracias a la experiencia de más de tres décadas en la industria ofrecemos a nuestros clientes asesoramiento personalizado y unos trabajos de máxima calidad.</p></div><div class="feature"><img src={image('Diseno-sin-titulo-1020')} alt="Flota y equipo de Saneamientos Mungia" loading="lazy" /><div><h2>La seguridad y la garantia de un trabajo bien hecho, desde 1990</h2><p>Nos enorgullece ofrecer un trabajo bien hecho respaldado por décadas de experiencia. Comprometidos con la seguridad, cada proyecto es abordado con profesionalismo y excelencia.</p></div></div><div class="feature reverse"><img src={image('1ENERO-1020')} alt="Vehículo de saneamiento" loading="lazy" /><div><h2>La calidad y limpieza de nuestro servicio como prioridad</h2><p>Contamos con maquinaria propia de última generación, una moderna flota de camiones de limpieza que incorporan los últimos adelantos técnicos y los mejores accesorios.</p></div></div></section>
+    <section class="section values-section"><div class="wrap"><h2>Nuestros valores</h2><div class="values-grid">{values.map(([title,text,icon]) => <article><img src={image(icon)} alt="" loading="lazy" /><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+    <section class="section wrap"><div class="section-heading"><h2>¿Cómo trabajamos?</h2><p>Nuestro equipo de expertos te guiará desde el primer hasta el último paso.</p></div><div class="steps-grid">{steps.map(([title,text,icon]) => <article><img src={image(icon)} alt="" loading="lazy" /><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+    <section class="section wrap news-section"><h2>Sigue las últimas noticias</h2><div class="card-grid">{news.map(([title,excerpt,photo,path]) => <article class="news-card"><img src={image(photo)} alt="" loading="lazy" /><div><h3>{title}</h3><p>{excerpt}</p><a href={path}>Seguir leyendo →</a></div></article>)}</div><a class="pill pill-dark" href="/blog/">Ver blog</a></section>
+  </div>
+</Base>

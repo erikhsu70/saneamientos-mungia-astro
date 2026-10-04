@@ -1,0 +1,96 @@
+---
+import data from '../data/phase-data.json';
+import '../styles/site.css';
+const { title = 'Saneamientos Mungia', description = 'Empresa de saneamiento en Bizkaia con servicio de desatascos urgentes 24h.', path = '/' } = Astro.props;
+const mainNav = [
+  { label: 'Inicio', path: '/' },
+  { label: 'Servicios', path: '/servicios/' },
+  { label: 'Blog', path: '/blog/' },
+];
+const services = data.nav.filter((x) => x.path.startsWith('/servicios/') && x.path !== '/servicios/');
+const footerServices = data.footer.filter((x) => (x.path.startsWith('/servicios/') && x.path !== '/servicios/') || x.path === '/desatrancos/');
+const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.label));
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="canonical" href={`https://saneamientosmungia.com${path}`} />
+    <link rel="icon" href="/assets/70586f54ec1d88f7.jpg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner wrap">
+        <a class="brand" href="/" aria-label="Saneamientos Mungia, inicio">
+          <img class="brand-main" src="/assets/77f581a8a3068608.png" alt="Anulaciones Sépticas Mungia" />
+          <img class="brand-urgent" src="/assets/1ca2f5dd6ae11ad5.jpg" alt="Urgencias 24 horas · 944 460 209" />
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
+        <nav id="main-nav" class="main-nav" aria-label="Menú principal">
+          <a class={path === '/' ? 'active' : ''} href="/">Inicio</a>
+          <div class="nav-services">
+            <a class={path.startsWith('/servicios/') ? 'active' : ''} href="/servicios/">Servicios <span aria-hidden="true">⌄</span></a>
+            <div class="submenu">
+              {services.map((item) => <a href={item.path}>{item.label}</a>)}
+            </div>
+          </div>
+          <a class={path.startsWith('/blog/') ? 'active' : ''} href="/blog/">Blog</a>
+          <a class="nav-contact" href="/contacto/">CONTACTO</a>
+        </nav>
+      </div>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div class="footer-primary">
+          <a href="/">Inicio</a><a href="/servicios/">Servicios</a><a href="/blog/">Blog</a>
+        </div>
+        <div class="footer-links">
+          {footerServices.map((item) => <a href={item.path}>{item.label}</a>)}
+        </div>
+        <div class="footer-legal">{legal.map((item) => <a href={item.path}>{item.label}</a>)}</div>
+        <p class="footer-address">Saneamientos Mungia | Polígono Pinoa, 2-H, 48170 Zamudio, Vizcaya | <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a> | <a href="tel:+34944460209">944 46 02 09</a> |</p>
+      </div>
+    </footer>
+    <a class="whatsapp" href="https://wa.me/34601004005" aria-label="Contactar por WhatsApp">✆</a>
+    <div id="cookie-banner" class="cookie-banner" hidden>
+      <strong>Uso de Cookies</strong>
+      <span>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. <a href="/política-de-cookies/">Más información</a>.</span>
+      <button type="button" id="accept-cookies">Acepto</button>
+    </div>
+    <script>
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('#main-nav');
+      toggle?.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') !== 'true';
+        toggle.setAttribute('aria-expanded', String(open));
+        nav?.classList.toggle('open', open);
+      });
+      const banner = document.querySelector('#cookie-banner');
+      if (banner && !localStorage.getItem('sm-cookies')) banner.hidden = false;
+      document.querySelector('#accept-cookies')?.addEventListener('click', () => {
+        localStorage.setItem('sm-cookies', 'accepted');
+        if (banner) banner.hidden = true;
+      });
+    </script>
+    <script is:inline>
+      document.querySelector('#more-posts')?.addEventListener('click', (event) => {
+        const hidden = [...document.querySelectorAll('.blog-grid .news-card[hidden]')];
+        hidden.slice(0, 12).forEach((card) => card.removeAttribute('hidden'));
+        if (hidden.length <= 12) event.currentTarget.remove();
+      });
+      document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        if (!(form instanceof HTMLFormElement) || !form.reportValidity()) return;
+        const fields = new FormData(form);
+        const subject = encodeURIComponent(String(fields.get('asunto') || 'Consulta desde la web'));
+        const body = encodeURIComponent(`Nombre: ${fields.get('nombre')}\nCorreo: ${fields.get('correo')}\n\n${fields.get('mensaje')}`);
+        window.location.href = `mailto:mungia@saneamientosmungia.com?subject=${subject}&body=${body}`;
+      });
+    </script>
+  </body>
+</html>
