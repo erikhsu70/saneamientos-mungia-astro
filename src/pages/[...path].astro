@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
+import BlogListing from '../components/BlogListing.astro';
 
 export function getStaticPaths() {
   return fullData.pages.filter((page) => page.path !== '/').map((page) => ({
@@ -26,22 +27,10 @@ const serviceCards = navServices.map((item, i) => ({
   image: cleanBlocks.filter((b) => b.type === 'image')[i + 2]?.src,
   text: cleanBlocks.find((b, j) => b.type === 'p' && cleanBlocks[j - 1]?.text?.toLowerCase() === item.label.toLowerCase())?.text || '',
 }));
-const blogTitles = cleanBlocks.filter((b) => b.type === 'h2').slice(1, 7);
-const blogImages = cleanBlocks.filter((b) => b.type === 'image').slice(0, 6);
-const blogExcerpts = cleanBlocks.filter((b) => b.type === 'p').slice(0, 6);
-const blogPaths = [
-  '/blog/como-se-depuran-aguas-residuales/',
-  '/blog/que-es-un-pozo-ciego/',
-  '/blog/tecnologia-y-compromiso-para-una-infraestructura-de-saneamiento-sostenible/',
-  '/blog/tecnologia-de-vanguardia-para-un-mantenimiento-preciso/',
-  '/blog/revestimiento-sin-zanja-transformando-la-rehabilitacion-de-tuberias/',
-  '/blog/como-desatascar-tuberia-muy-obstruida/',
-];
 const firstHeading = cleanBlocks.find((b) => /^h[1-4]$/.test(b.type));
 const firstPara = cleanBlocks.find((b) => b.type === 'p');
 const heading = page.heading || firstHeading?.text || title.replace(' - Saneamientos Mungia', '');
 const isLegalUnavailable = page.status === 404;
-const allPosts = fullData.pages.filter((item) => item.kind === 'post').sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 ---
 <Base title={title} description={page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {page.path === '/servicios/' ? (
@@ -52,7 +41,7 @@ const allPosts = fullData.pages.filter((item) => item.kind === 'post').sort((a, 
       <section class="urgent"><div class="wrap urgent-inner"><div><h2>Servicio de desatascos urgentes 24h</h2><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p></div><div class="urgent-phone"><a href="tel:+34944460209">94 446 02 09</a><span>o</span><a href="tel:+34601004005">601 004 005</a><small>Teléfono de urgencias</small></div></div></section>
     </>
   ) : page.path === '/blog/' ? (
-    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>Blog</h1><p>Sigue las últimas noticias</p></div></section><section class="section wrap"><div class="card-grid blog-grid">{allPosts.map((post, i) => <article class="news-card" hidden={i >= 12}><img src={post.featuredImage || post.images?.[0] || blogImages[i % blogImages.length]?.src} alt="" loading="lazy" /><div><h2>{post.title}</h2><p>{post.description || post.intro}</p><a href={post.path}>Seguir leyendo →</a></div></article>)}</div>{allPosts.length > 12 && <button id="more-posts" type="button" class="pill pill-dark blog-more">Cargar más artículos</button>}</section></>
+    <BlogListing />
   ) : page.path === '/contacto' || page.path === '/contacto2/' ? (
     <><div class="contact-page"><section class="contact-top wrap"><h1>Contacta con nosotros</h1><p>A través de nuestro mail o rellenando nuestro formulario.</p></section><section class="wrap contact-intro"><div class="contact-info"><h2>mungia@saneamientosmungia.com</h2><p>Te responderemos lo más rápido posible y uno de nuestros expertos se pondrá en contacto contigo.</p><p>O si lo prefieres a través de nuestro teléfono <a href="tel:+34944460209">94 446 02 09</a>.</p></div><img src="/assets/source/7ac0440d1f-Frame-206.png" alt="Zonas de servicio en Bizkaia" /></section><section class="wrap contact-form-section"><form id="contact-form" class="contact-form"><h2>Presupuesto gratuito, sin compromiso</h2><label>Nombre (requerido)<input name="nombre" required /></label><label>Correo electrónico (requerido)<input name="correo" type="email" required /></label><label>Asunto<input name="asunto" /></label><label>Mensaje<textarea name="mensaje" rows="6" required></textarea></label><button type="submit" class="pill pill-light">Enviar</button><small>El envío abrirá tu aplicación de correo.</small></form></section><section class="wrap contact-urgent"><h3>Servicio urgente para desatascos 24 h</h3><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p><a href="tel:+34601004005">601 004 005</a></section></div></>
   ) : isLegalUnavailable ? (

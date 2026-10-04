@@ -1,0 +1,17 @@
+---
+import Base from '../../../layouts/Base.astro';
+import BlogListing from '../../../components/BlogListing.astro';
+import { blogPageCount, blogPageUrl } from '../../../lib/blog.js';
+
+export function getStaticPaths() {
+  return Array.from({ length: blogPageCount - 1 }, (_, i) => i + 2).map((number) => ({
+    params: { number: String(number) },
+    props: { number },
+  }));
+}
+
+const { number } = Astro.props;
+---
+<Base title={`Blog · Página ${number} - Saneamientos Mungia`} description={`Noticias de Saneamientos Mungia. Página ${number} de ${blogPageCount}.`} path={blogPageUrl(number)}>
+  <BlogListing currentPage={number} />
+</Base>

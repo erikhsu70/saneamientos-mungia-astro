@@ -77,11 +77,6 @@ const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.labe
       });
     </script>
     <script is:inline>
-      document.querySelector('#more-posts')?.addEventListener('click', (event) => {
-        const hidden = [...document.querySelectorAll('.blog-grid .news-card[hidden]')];
-        hidden.slice(0, 12).forEach((card) => card.removeAttribute('hidden'));
-        if (hidden.length <= 12) event.currentTarget.remove();
-      });
       document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
         event.preventDefault();
         const form = event.currentTarget;
