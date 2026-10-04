@@ -23,3 +23,6 @@
 .blog-pagination .pagination-ellipsis{border:0;min-width:24px;padding:0}
 .blog-pagination .pagination-step{padding:0 17px}
 @media(max-width:600px){.blog-pagination{gap:5px}.blog-pagination a,.blog-pagination .pagination-ellipsis{min-width:36px;height:38px;padding:0 8px}.blog-pagination .pagination-step{padding:0 10px}}
+.migrated-content nav{background:#f6f8f6;border-left:4px solid #285d40;border-radius:0 8px 8px 0;padding:20px 24px;margin:28px 0 36px;line-height:2}
+.migrated-content nav a{display:inline-block;margin-right:12px}
+.migrated-content iframe{display:block;max-width:100%;margin:30px 0;border:0}
