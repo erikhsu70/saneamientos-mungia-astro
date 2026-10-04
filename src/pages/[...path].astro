@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
 import BlogListing from '../components/BlogListing.astro';
+import LegalPage from '../components/LegalPage.astro';
+import { legalPages } from '../lib/legal.js';
 
 export function getStaticPaths() {
   return fullData.pages.filter((page) => page.path !== '/').map((page) => ({
@@ -13,7 +15,8 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const path = page.path.endsWith('/') ? page.path : `${page.path}/`;
-const title = page.title || 'Saneamientos Mungia';
+const legalPage = legalPages[page.path];
+const title = legalPage ? `${legalPage.title} - Saneamientos Mungia` : page.title || 'Saneamientos Mungia';
 const blocks = page.blocks || [];
 const cleanBlocks = blocks.filter((b, i) =>
   !(b.type === 'image' && i > 0 && blocks[i - 1]?.src === b.src) &&
@@ -32,7 +35,7 @@ const firstPara = cleanBlocks.find((b) => b.type === 'p');
 const heading = page.heading || firstHeading?.text || title.replace(' - Saneamientos Mungia', '');
 const isLegalUnavailable = page.status === 404;
 ---
-<Base title={title} description={page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
+<Base title={title} description={legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {page.path === '/servicios/' ? (
     <>
       <section class="services-top"><div class="wrap"><h1>Encuéntranos en todo Bizkaia</h1><p>Instalación, mantenimiento y rehabilitación de redes de saneamiento y tuberías en Bizkaia</p></div></section>
@@ -43,7 +46,9 @@ const isLegalUnavailable = page.status === 404;
   ) : page.path === '/blog/' ? (
     <BlogListing />
   ) : page.path === '/contacto' || page.path === '/contacto2/' ? (
-    <><div class="contact-page"><section class="contact-top wrap"><h1>Contacta con nosotros</h1><p>A través de nuestro mail o rellenando nuestro formulario.</p></section><section class="wrap contact-intro"><div class="contact-info"><h2>mungia@saneamientosmungia.com</h2><p>Te responderemos lo más rápido posible y uno de nuestros expertos se pondrá en contacto contigo.</p><p>O si lo prefieres a través de nuestro teléfono <a href="tel:+34944460209">94 446 02 09</a>.</p></div><img src="/assets/source/7ac0440d1f-Frame-206.png" alt="Zonas de servicio en Bizkaia" /></section><section class="wrap contact-form-section"><form id="contact-form" class="contact-form"><h2>Presupuesto gratuito, sin compromiso</h2><div class="contact-fields"><label>Nombre (requerido)<input name="nombre" autocomplete="name" required /></label><label>Correo electrónico (requerido)<input name="correo" type="email" autocomplete="email" required /></label><label class="contact-field-wide">Asunto<input name="asunto" /></label><label class="contact-field-wide">Mensaje<textarea name="mensaje" rows="6" required></textarea></label></div><button type="submit" class="pill pill-light">Enviar</button><small>El envío abrirá tu aplicación de correo.</small></form></section><section class="wrap contact-urgent"><h3>Servicio urgente para desatascos 24 h</h3><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p><a href="tel:+34601004005">601 004 005</a></section></div></>
+    <><div class="contact-page"><section class="contact-top wrap"><h1>Contacta con nosotros</h1><p>A través de nuestro mail o rellenando nuestro formulario.</p></section><section class="wrap contact-intro"><div class="contact-info"><h2>mungia@saneamientosmungia.com</h2><p>Te responderemos lo más rápido posible y uno de nuestros expertos se pondrá en contacto contigo.</p><p>O si lo prefieres a través de nuestro teléfono <a href="tel:+34944460209">94 446 02 09</a>.</p></div><img src="/assets/source/7ac0440d1f-Frame-206.png" alt="Zonas de servicio en Bizkaia" /></section><section class="wrap contact-form-section"><form id="contact-form" class="contact-form"><h2>Presupuesto gratuito, sin compromiso</h2><div class="contact-fields"><label>Nombre (requerido)<input name="nombre" autocomplete="name" required /></label><label>Correo electrónico (requerido)<input name="correo" type="email" autocomplete="email" required /></label><label class="contact-field-wide">Asunto<input name="asunto" /></label><label class="contact-field-wide">Mensaje<textarea name="mensaje" rows="6" required></textarea></label></div><button type="submit" class="pill pill-light">Enviar</button><small>Responsable: Anulaciones Sépticas Mungia, S.L. Usaremos los datos del correo para responder a tu consulta. Puedes ejercer tus derechos escribiendo a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a>. <a href="/política-de-privacidad/">Más información sobre privacidad</a>.</small><small>El envío abrirá tu aplicación de correo.</small></form></section><section class="wrap contact-urgent"><h3>Servicio urgente para desatascos 24 h</h3><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p><a href="tel:+34601004005">601 004 005</a></section></div></>
+  ) : legalPage ? (
+    <LegalPage page={legalPage} />
   ) : isLegalUnavailable ? (
     <section class="interior-hero"><div class="wrap"><h1>{heading}</h1><p>Este documento no está disponible en la web original. Su dirección se ha conservado para completar la migración cuando dispongamos del texto vigente.</p></div></section>
   ) : page.kind === 'post' ? (

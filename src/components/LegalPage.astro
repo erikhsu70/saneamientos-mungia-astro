@@ -1,0 +1,70 @@
+---
+const { page } = Astro.props;
+---
+<section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><p>{page.intro}</p></div></section>
+<div class="wrap legal-layout">
+  <article class="legal-content">
+    <p class="legal-updated">Última revisión: 4 de octubre de 2026</p>
+    {page.key === 'notice' && <>
+      <h2>Identificación del titular</h2>
+      <p>Este sitio web es gestionado por <strong>Anulaciones Sépticas Mungia, S.L.</strong>, que opera bajo la denominación comercial Saneamientos Mungia.</p>
+      <dl class="legal-details">
+        <div><dt>NIF</dt><dd>B95029781</dd></div>
+        <div><dt>Domicilio</dt><dd>Polígono Pinoa, parcela 2-H, 48170 Zamudio, Bizkaia, España</dd></div>
+        <div><dt>Correo electrónico</dt><dd><a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+34944460209">944 46 02 09</a></dd></div>
+        <div><dt>Registro Mercantil</dt><dd>Bizkaia, tomo 3777, folio 39, sección 8, hoja BI 24866, inscripción 5</dd></div>
+      </dl>
+      <h2>Finalidad de la web</h2>
+      <p>La web informa sobre servicios de saneamiento, mantenimiento, limpieza y rehabilitación de tuberías. Permite consultar contenidos y solicitar información o un presupuesto. La información publicada tiene carácter general y no constituye por sí sola una oferta contractual ni un diagnóstico técnico de una instalación concreta.</p>
+      <h2>Uso del sitio</h2>
+      <p>Al navegar por la web, el usuario se compromete a utilizarla de forma lícita y a no interferir con su funcionamiento ni con los derechos de terceros. Podemos actualizar los contenidos y corregir errores cuando sea necesario. Si detectas una información incorrecta o un problema de acceso, escríbenos a la dirección indicada arriba.</p>
+      <h2>Contenidos y enlaces</h2>
+      <p>Los textos, imágenes, logotipos y demás elementos de la web están protegidos por los derechos que correspondan a sus titulares. Su consulta personal no implica una cesión de derechos de explotación. Algunas páginas contienen enlaces a servicios externos; al visitarlos se aplicarán las condiciones y políticas de sus respectivos responsables.</p>
+      <h2>Responsabilidad y normativa aplicable</h2>
+      <p>Trabajamos para mantener la información y la disponibilidad de la web, aunque pueden producirse errores o interrupciones. Las condiciones de cada servicio se concretarán en el presupuesto o acuerdo correspondiente. Esta información se interpreta conforme a la legislación española, sin perjuicio de los derechos que correspondan a las personas consumidoras.</p>
+      <p>Consulta también nuestra <a href="/política-de-privacidad/">política de privacidad</a>, <a href="/política-de-cookies/">política de cookies</a> y <a href="/términos-y-condiciones/">condiciones de uso</a>.</p>
+    </>}
+    {page.key === 'privacy' && <>
+      <h2>Responsable del tratamiento</h2>
+      <p><strong>Anulaciones Sépticas Mungia, S.L.</strong> (NIF B95029781), Polígono Pinoa, parcela 2-H, 48170 Zamudio, Bizkaia. Puedes escribir a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a> o llamar al <a href="tel:+34944460209">944 46 02 09</a>.</p>
+      <h2>Datos que tratamos y para qué</h2>
+      <p>Cuando nos contactas, podemos recibir tu nombre, dirección de correo, teléfono y la información que incluyas en tu consulta. Los utilizamos para responder, preparar un presupuesto, gestionar una posible prestación del servicio y mantener las comunicaciones relacionadas. Si llegamos a contratar un servicio, también trataremos los datos necesarios para ejecutarlo, facturarlo y cumplir nuestras obligaciones legales.</p>
+      <p>El formulario de esta web <strong>abre tu aplicación de correo</strong>: no envía los datos directamente a un servidor de la web. Antes de enviar el mensaje puedes revisarlo y modificarlo en tu aplicación de correo. Si nos llamas o contactas mediante WhatsApp, utilizaremos los datos que facilites por esos canales para atenderte.</p>
+      <h2>Base jurídica</h2>
+      <p>Atendemos solicitudes de presupuesto y gestionamos servicios sobre la base de las medidas precontractuales solicitadas por ti o de la relación contractual, según corresponda. Las comunicaciones generales que no estén ligadas a un presupuesto se atienden sobre la base de nuestro interés legítimo en responderlas. Los tratamientos exigidos por normas fiscales, contables u otras obligaciones se basan en el cumplimiento de dichas obligaciones. No utilizamos los datos del formulario para enviar publicidad por el mero hecho de que nos escribas.</p>
+      <h2>Destinatarios y servicios externos</h2>
+      <p>El acceso a los datos se limita a quienes necesiten atender la consulta o prestar el servicio y a proveedores tecnológicos que actúen por nuestra cuenta, como los de correo y alojamiento. El enlace de WhatsApp y los vídeos externos, cuando decidas usarlos, te llevan a servicios gestionados por terceros con sus propias políticas. Las comunicaciones o proveedores pueden implicar tratamiento fuera del Espacio Económico Europeo; cuando sea aplicable, deberán utilizarse las garantías previstas por la normativa de protección de datos.</p>
+      <h2>Conservación</h2>
+      <p>Conservamos las consultas durante el tiempo necesario para responderlas y gestionar el seguimiento, y después durante los plazos exigidos por obligaciones legales o para atender posibles responsabilidades. Los datos de una relación contractual se conservan durante los plazos legales que le correspondan. No tomamos decisiones exclusivamente automatizadas sobre tus consultas.</p>
+      <h2>Tus derechos</h2>
+      <p>Puedes solicitar acceso, rectificación, supresión, oposición, limitación o portabilidad cuando proceda, escribiendo a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a> e indicando el derecho que deseas ejercer. Si consideras que el tratamiento no se ajusta a la normativa, puedes presentar una reclamación ante la <a href="https://www.aepd.es/">Agencia Española de Protección de Datos</a>. Para el almacenamiento de la web, consulta la <a href="/política-de-cookies/">política de cookies</a>.</p>
+    </>}
+    {page.key === 'cookies' && <>
+      <h2>Almacenamiento utilizado</h2>
+      <p>Esta versión de la web no incorpora herramientas propias de analítica ni de publicidad comportamental. Guarda en tu navegador una preferencia técnica para recordar durante seis meses si has aceptado o rechazado la carga de un vídeo externo. Esta preferencia se almacena mediante <em>localStorage</em>, una tecnología del navegador distinta de las cookies, pero incluida aquí para explicar con claridad su uso.</p>
+      <div class="legal-table-wrap"><table><thead><tr><th>Elemento</th><th>Responsable</th><th>Finalidad</th><th>Duración</th></tr></thead><tbody><tr><td>sm-cookie-choice-v2 (localStorage)</td><td>Saneamientos Mungia</td><td>Recordar tu elección sobre el vídeo externo</td><td>Hasta seis meses o hasta que lo borres</td></tr></tbody></table></div>
+      <h2>Vídeo externo</h2>
+      <p>Una página del blog incluye un vídeo de YouTube. No se carga hasta que aceptas el contenido externo o pulsas el botón para verlo. Una vez cargado, YouTube puede utilizar sus propias tecnologías de almacenamiento y tratar datos de navegación conforme a su <a href="https://policies.google.com/privacy?hl=es">política de privacidad</a>. Si rechazas, puedes seguir leyendo el artículo sin cargar el vídeo.</p>
+      <h2>Cookies técnicas del alojamiento</h2>
+      <p>El proveedor de alojamiento puede utilizar identificadores técnicos necesarios para entregar el sitio o protegerlo frente a usos abusivos. Su presencia puede variar según la configuración y las medidas de seguridad activadas. No usamos esos identificadores para elaborar perfiles comerciales.</p>
+      <h2>Cambiar tu elección</h2>
+      <p>Puedes volver a elegir en cualquier momento con este botón. También puedes borrar los datos del sitio desde la configuración de tu navegador. Si retiras la autorización para el vídeo mientras lo estás viendo, la página se recargará para dejar de mostrarlo.</p>
+      <button id="show-cookie-settings" class="pill pill-dark" type="button">Cambiar preferencias</button>
+      <p>Encontrarás información adicional sobre el tratamiento de datos en nuestra <a href="/política-de-privacidad/">política de privacidad</a>.</p>
+    </>}
+    {page.key === 'terms' && <>
+      <h2>Alcance</h2>
+      <p>Estas condiciones regulan la consulta de la web de Saneamientos Mungia y el envío de solicitudes de información o presupuesto. El titular es <strong>Anulaciones Sépticas Mungia, S.L.</strong>, cuyos datos figuran en el <a href="/aviso-legal/">aviso legal</a>.</p>
+      <h2>Información y presupuestos</h2>
+      <p>Las descripciones de servicios, contenidos del blog y referencias generales de esta web tienen finalidad informativa. Una solicitud de contacto no supone la contratación automática de un servicio. Antes de realizar un trabajo se concretarán, según el caso, el alcance, disponibilidad, precio, plazos y demás condiciones mediante presupuesto o acuerdo individual. No se efectúan pagos ni contrataciones directamente en esta web.</p>
+      <h2>Uso correcto de los canales de contacto</h2>
+      <p>Al enviarnos una consulta, procura que los datos de contacto y la descripción de la incidencia sean correctos. No incluyas información personal de otras personas salvo que estés autorizado para comunicarla. El formulario abre tu programa de correo, desde donde podrás revisar el mensaje antes de enviarlo. Para una urgencia, utiliza los teléfonos indicados en la web.</p>
+      <h2>Disponibilidad y enlaces</h2>
+      <p>Podemos actualizar la web y sus contenidos para reflejar cambios en los servicios. La disponibilidad efectiva y las condiciones de cada intervención se confirmarán al atender la solicitud. Los enlaces a sitios externos, incluido WhatsApp o un vídeo de YouTube, se rigen por las condiciones de sus respectivos prestadores.</p>
+      <h2>Derechos y resolución de incidencias</h2>
+      <p>Estas condiciones no limitan los derechos que la normativa reconoce a las personas consumidoras. Para cualquier incidencia relacionada con la web o con una consulta, escríbenos a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a>. La relación se rige por la legislación española, sin perjuicio de las reglas imperativas que sean aplicables a cada caso.</p>
+      <p>Consulta también el <a href="/aviso-legal/">aviso legal</a>, la <a href="/política-de-privacidad/">política de privacidad</a> y la <a href="/política-de-cookies/">política de cookies</a>.</p>
+    </>}
+  </article>
+</div>

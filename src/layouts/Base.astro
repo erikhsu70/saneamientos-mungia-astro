@@ -57,9 +57,9 @@ const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.labe
     </footer>
     <a class="whatsapp" href="https://wa.me/34601004005" aria-label="Contactar por WhatsApp">✆</a>
     <div id="cookie-banner" class="cookie-banner" hidden>
-      <strong>Uso de Cookies</strong>
-      <span>Utilizamos cookies propias y de terceros para mejorar nuestros servicios. <a href="/política-de-cookies/">Más información</a>.</span>
-      <button type="button" id="accept-cookies">Acepto</button>
+      <strong>Preferencias de privacidad</strong>
+      <span>Usamos almacenamiento técnico. El vídeo externo solo se carga si lo aceptas. <a href="/política-de-cookies/">Política de cookies</a>.</span>
+      <div class="cookie-actions"><button type="button" id="reject-cookies">Rechazar</button><button type="button" id="accept-cookies">Aceptar</button></div>
     </div>
     <script>
       const toggle = document.querySelector('.menu-toggle');
@@ -70,10 +70,52 @@ const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.labe
         nav?.classList.toggle('open', open);
       });
       const banner = document.querySelector('#cookie-banner');
-      if (banner && !localStorage.getItem('sm-cookies')) banner.hidden = false;
-      document.querySelector('#accept-cookies')?.addEventListener('click', () => {
-        localStorage.setItem('sm-cookies', 'accepted');
+      const choiceKey = 'sm-cookie-choice-v2';
+      const readChoice = () => {
+        try {
+          localStorage.removeItem('sm-cookies');
+          const saved = JSON.parse(localStorage.getItem(choiceKey) || 'null');
+          if (!saved || !['accepted', 'rejected'].includes(saved.value)) return null;
+          const expires = new Date(saved.ts);
+          expires.setMonth(expires.getMonth() + 6);
+          return Date.now() < expires.getTime() ? saved.value : null;
+        } catch { return null; }
+      };
+      const saveChoice = (value) => {
+        try { localStorage.setItem(choiceKey, JSON.stringify({ value, ts: Date.now() })); } catch {}
         if (banner) banner.hidden = true;
+      };
+      const loadVideos = () => {
+        document.querySelectorAll('.video-consent[data-video-src]').forEach((holder) => {
+          const src = holder.getAttribute('data-video-src') || '';
+          if (!src.startsWith('https://www.youtube-nocookie.com/embed/')) return;
+          const iframe = document.createElement('iframe');
+          iframe.src = src;
+          iframe.title = holder.getAttribute('data-video-title') || 'Vídeo externo';
+          iframe.loading = 'lazy';
+          iframe.allowFullscreen = true;
+          holder.replaceChildren(iframe);
+        });
+      };
+      const choice = readChoice();
+      if (banner && !choice) banner.hidden = false;
+      if (choice === 'accepted') loadVideos();
+      document.querySelector('#accept-cookies')?.addEventListener('click', () => {
+        saveChoice('accepted');
+        loadVideos();
+      });
+      document.querySelector('#reject-cookies')?.addEventListener('click', () => {
+        saveChoice('rejected');
+        if (document.querySelector('.video-consent iframe')) location.reload();
+      });
+      document.querySelector('#show-cookie-settings')?.addEventListener('click', () => {
+        if (banner) banner.hidden = false;
+      });
+      document.querySelectorAll('.video-consent button').forEach((button) => {
+        button.addEventListener('click', () => {
+          saveChoice('accepted');
+          loadVideos();
+        });
       });
     </script>
     <script is:inline>
