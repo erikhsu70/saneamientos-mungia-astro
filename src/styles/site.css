@@ -72,3 +72,53 @@
 
 /* Compact original service cards, with horizontal navigation. */
 .services-carousel{min-width:0;margin:44px 0}.services-carousel-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.article-content .services-carousel-heading h2{margin:0;font-size:clamp(26px,2.4vw,36px)}.services-carousel-controls{display:flex;gap:8px;flex-shrink:0}.services-carousel-controls button{width:38px;height:38px;border:1px solid #ced8d0;border-radius:50%;background:#fff;color:#285d40;font-size:22px;cursor:pointer}.services-carousel-controls button:disabled{opacity:.35;cursor:default}.services-carousel-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:#aab9ae #f2f5f2;padding-bottom:12px}.services-carousel-card{flex:0 0 calc((100% - 16px)/2);min-width:0;scroll-snap-align:start;border:1px solid #e1e7e2;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:#fff}.footer-source-content .services-carousel-card figure{margin:0}.footer-source-content .services-carousel-card figure img{display:block;width:100%;height:150px;max-height:150px;object-fit:cover;margin:0;border-radius:0}.article-content .services-carousel-card h3{font-size:20px;line-height:1.25;margin:18px 18px 10px}.article-content .services-carousel-card>p:not(.source-button){font-size:14px;line-height:1.65;margin:0 18px 18px}.footer-source-content .services-carousel-card p.source-button{display:block;margin:auto 18px 18px;font-size:14px}.services-carousel-track:focus-visible,.services-carousel-controls button:focus-visible{outline:2px solid #285d40;outline-offset:3px}@media(max-width:600px){.services-carousel-card{flex-basis:88%}.services-carousel-heading{gap:10px}.article-content .services-carousel-heading h2{font-size:27px}.services-carousel-card figure img{height:145px}.services-carousel{margin:32px 0}}
+
+/* Tighter section rhythm and touch-friendly mobile layouts. */
+.home-bg .stats{padding:64px 8% 28px}
+.home-bg .stats + .section{padding-top:32px}
+.services-top{min-height:0;padding:64px 0 34px}
+.services-top + .section{padding-top:32px}
+.menu-toggle{min-width:44px;min-height:44px;cursor:pointer}
+.services-carousel-controls button{width:44px;height:44px}
+.footer-address{overflow-wrap:anywhere}
+@media(max-width:900px){
+  .main-nav{max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain}
+  .main-nav>a,.nav-services>a,.submenu a{display:flex;align-items:center;min-height:44px}
+  .home-bg .stats{padding:44px 0 24px}
+  .home-bg .stats + .section{padding-top:28px}
+  .services-top{min-height:0;padding:48px 0 24px}
+}
+@media(max-width:600px){
+  .section{padding-block:44px}
+  .section-heading{margin-bottom:28px}
+  .home-bg .stats{padding:36px 0 18px;gap:22px}
+  .home-bg .stats + .section{padding-top:22px}
+  .hero{padding-top:20px}
+  .hero-inner{height:auto;min-height:460px;padding:36px 24px}
+  .hero h1{font-size:clamp(30px,8.5vw,36px)}
+  .hero .pill-light{margin-top:28px}
+  .interior-hero{padding:44px 0 38px}
+  .interior-hero h1{font-size:clamp(30px,8.5vw,40px);overflow-wrap:anywhere}
+  .interior-hero p{margin-bottom:0}
+  .article-content h2{margin-top:34px}
+  .article-content h3{margin-top:28px}
+  .article-content p,.migrated-content li{overflow-wrap:anywhere}
+  .service-card>div,.news-card>div{padding:24px}
+  .service-card p,.news-card p{min-height:0}
+  .service-card a,.news-card a{display:inline-flex;align-items:center;min-height:44px}
+  .experience .feature{margin-top:36px}
+  .values-section h2,.news-section>h2{margin-bottom:28px}
+  .values-grid article,.steps-grid article{padding:28px;min-height:0}
+  .urgent-inner{padding-block:40px}
+  .contact-top{padding:44px 0 28px}
+  .contact-intro{gap:24px;margin-bottom:32px}
+  .contact-info{padding:28px 24px}
+  .contact-intro>img{width:100%;height:190px}
+  .contact-page{padding-bottom:44px}
+  .contact-page .contact-urgent{margin-top:32px;padding:28px 24px}
+  .footer-links a,.footer-primary a,.footer-legal a{display:flex;align-items:center;min-height:44px}
+  .footer-links{row-gap:0}
+  .site-footer{padding-top:44px}
+  .services-carousel-track{scroll-padding-inline:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill{transition:none}}

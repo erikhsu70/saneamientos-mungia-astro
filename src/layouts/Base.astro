@@ -64,11 +64,25 @@ const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.labe
     <script>
       const toggle = document.querySelector('.menu-toggle');
       const nav = document.querySelector('#main-nav');
+      const setMenuOpen = (open) => {
+        toggle?.setAttribute('aria-expanded', String(open));
+        toggle?.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        nav?.classList.toggle('open', open);
+      };
       toggle?.addEventListener('click', () => {
         const open = toggle.getAttribute('aria-expanded') !== 'true';
-        toggle.setAttribute('aria-expanded', String(open));
-        nav?.classList.toggle('open', open);
+        setMenuOpen(open);
       });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') {
+          setMenuOpen(false);
+          if (toggle instanceof HTMLElement) toggle.focus();
+        }
+      });
+      document.addEventListener('click', (event) => {
+        if (event.target instanceof Node && !nav?.contains(event.target) && !toggle?.contains(event.target)) setMenuOpen(false);
+      });
+      nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenuOpen(false)));
       const banner = document.querySelector('#cookie-banner');
       const choiceKey = 'sm-cookie-choice-v2';
       const readChoice = () => {
