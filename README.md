@@ -36,3 +36,10 @@ Se requiere acceso autorizado a la cuenta de Cloudflare para ejecutar el desplie
 - Los cuatro enlaces legales del sitio original respondían 404 y no figuraban en la copia pública de WordPress. Las páginas actuales son textos nuevos, redactados para esta implementación; la empresa debe verificar sus datos y prácticas de tratamiento antes de conectar el dominio definitivo.
 - El formulario de contacto abre la aplicación de correo del visitante; requiere un sistema de envío antes de conectar el dominio definitivo.
 - El dominio original no se ha modificado. Revisar diseño y contenidos antes de cambiarlo.
+
+## SEO técnico
+
+- `src/pages/sitemap.xml.js` genera automáticamente las 1.740 URLs canónicas, incluidas páginas legales y paginación; `/contacto2/` conserva su ruta y declara `/contacto/` como canónica. `sitemap_index.xml` mantiene disponible la dirección del índice anterior.
+- `src/lib/seo.js` genera JSON-LD de Plumber, WebSite, WebPage, Service y BlogPosting con los datos existentes. No se añaden valoraciones, autores ni horarios sin verificar.
+- Todas las páginas incluyen título, descripción, canónica y etiquetas para compartir. Las rutas inexistentes reciben una página 404 y no se incluyen en el sitemap.
+- La cabecera `noindex` se limita a los dominios de revisión `pages.dev`. Al conectar el dominio definitivo, comprobar las respuestas HTTP y enviar el sitemap en Search Console. La validación local de JSON-LD no equivale a aprobación de resultados enriquecidos por Google.
