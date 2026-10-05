@@ -1,0 +1,51 @@
+---
+const { page } = Astro.props;
+const entries = [];
+const source = page.bodyHtml || '';
+const body = source.replace(/<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (heading, level, inner) => {
+  const label = inner.replace(/<[^>]*>/g, '').trim();
+  if (!label) return heading;
+  let id = `article-section-${entries.length + 1}`;
+  while (source.includes(`"${id}"`) || source.includes(`'${id}'`)) id += '-toc';
+  entries.push({ id, level: Number(level), label });
+  return `<span id="${id}" class="article-anchor" aria-hidden="true"></span>${heading}`;
+});
+const firstLevel = Math.min(...entries.map((entry) => entry.level));
+---
+<section class:list={['section wrap blog-article-layout', {'has-toc': entries.length > 0}]}>
+  {entries.length > 0 && <aside class="blog-toc">
+    <details open>
+      <summary>En este artículo <span aria-hidden="true">⌄</span></summary>
+      <nav aria-label="Tabla de contenidos">
+        <ol>{entries.map((entry) => <li class:list={{'toc-subsection': entry.level > firstLevel}}><a href={`#${entry.id}`} data-toc-target={entry.id} set:html={entry.label} /></li>)}</ol>
+      </nav>
+    </details>
+  </aside>}
+  <article class="article-content blog-article-content">
+    {page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.title} />}
+    <div class="migrated-content" set:html={body} />
+    <aside class="article-aside blog-article-help"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside>
+  </article>
+</section>
+<script>
+  const toc = document.querySelector<HTMLElement>('.blog-toc');
+  if (toc) {
+    const details = toc.querySelector('details')!;
+    const mobile = window.matchMedia('(max-width: 900px)');
+    const setLayout = () => { details.open = !mobile.matches; };
+    setLayout();
+    mobile.addEventListener('change', setLayout);
+    const links = [...toc.querySelectorAll<HTMLAnchorElement>('a[data-toc-target]')];
+    const targets = links.map((link) => document.getElementById(link.dataset.tocTarget!));
+    links.forEach((link) => link.addEventListener('click', () => { if (mobile.matches) details.open = false; }));
+    let queued = false;
+    const update = () => {
+      let active = 0;
+      targets.forEach((target, i) => { if (target && target.getBoundingClientRect().top <= 120) active = i; });
+      links.forEach((link, i) => { if (i === active) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); });
+      queued = false;
+    };
+    window.addEventListener('scroll', () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+    update();
+  }
+</script>
