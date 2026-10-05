@@ -6,23 +6,7 @@ const content = html.replace(/(<h2\b[^>]*>(?:(?!<\/h2>)[^])*?Nuestros Servicios(
   if (cards.length < 2) return section;
   const end = body.lastIndexOf(cards[cards.length - 1]) + cards[cards.length - 1].length;
   if (cards.join('').replace(/\s/g, '') !== body.slice(0, end).replace(/\s/g, '')) return section;
-  return `<section class="services-carousel" aria-label="Nuestros servicios"><div class="services-carousel-heading">${heading}<div class="services-carousel-controls"><button type="button" data-direction="-1" aria-label="Servicios anteriores">←</button><button type="button" data-direction="1" aria-label="Servicios siguientes">→</button></div></div><div class="services-carousel-track" tabindex="0" aria-label="Tarjetas de servicios">${cards.map((card) => `<article class="services-carousel-card">${card}</article>`).join('')}</div></section>${body.slice(end)}`;
+  return `<section class="services-section" aria-label="Nuestros servicios"><div class="services-grid-heading">${heading}</div><div class="services-grid">${cards.map((card) => `<article class="services-grid-card">${card}</article>`).join('')}</div></section>${body.slice(end)}`;
 });
 ---
 <div class="migrated-content footer-source-content" set:html={content} />
-<script>
-  document.querySelectorAll<HTMLElement>('.services-carousel').forEach((carousel) => {
-    const track = carousel.querySelector<HTMLElement>('.services-carousel-track')!;
-    const buttons = carousel.querySelectorAll<HTMLButtonElement>('button[data-direction]');
-    const update = () => buttons.forEach((button) => {
-      button.disabled = button.dataset.direction === '-1' ? track.scrollLeft < 2 : track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
-    });
-    buttons.forEach((button) => button.addEventListener('click', () => {
-      const card = track.querySelector<HTMLElement>('.services-carousel-card')!;
-      track.scrollBy({ left: Number(button.dataset.direction) * (card.offsetWidth + 16), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
-    }));
-    track.addEventListener('scroll', update, { passive: true });
-    new ResizeObserver(update).observe(track);
-    update();
-  });
-</script>
