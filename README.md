@@ -32,6 +32,7 @@ Se requiere acceso autorizado a la cuenta de Cloudflare para ejecutar el desplie
 
 - Hay 1.741 rutas generadas, incluidas 314 entradas del blog y 26 páginas adicionales de paginación.
 - Los 314 artículos del blog conservan el texto original completo. Una imagen del artículo sobre empresas de desatrancos urgentes no estaba disponible en la fuente.
+- Las 39 páginas de servicios enlazadas desde el footer incorporan ahora el contenido original con sus listas, enlaces e imágenes. La portada, el índice de servicios y el blog mantienen sus diseños propios; las tarjetas del índice de servicios usan sus descripciones originales completas.
 - Los cuatro enlaces legales del sitio original respondían 404 y no figuraban en la copia pública de WordPress. Las páginas actuales son textos nuevos, redactados para esta implementación; la empresa debe verificar sus datos y prácticas de tratamiento antes de conectar el dominio definitivo.
 - El formulario de contacto abre la aplicación de correo del visitante; requiere un sistema de envío antes de conectar el dominio definitivo.
 - El dominio original no se ha modificado. Revisar diseño y contenidos antes de cambiarlo.

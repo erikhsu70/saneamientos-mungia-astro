@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
+import footerContent from '../data/footer-content.json';
 import BlogListing from '../components/BlogListing.astro';
 import LegalPage from '../components/LegalPage.astro';
 import { legalPages } from '../lib/legal.js';
@@ -16,6 +17,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const path = page.path.endsWith('/') ? page.path : `${page.path}/`;
 const legalPage = legalPages[page.path];
+const footerCopy = footerContent[page.path];
 const title = legalPage ? `${legalPage.title} - Saneamientos Mungia` : page.title || 'Saneamientos Mungia';
 const blocks = page.blocks || [];
 const cleanBlocks = blocks.filter((b, i) =>
@@ -23,13 +25,23 @@ const cleanBlocks = blocks.filter((b, i) =>
   !(b.text?.startsWith('Saneamientos Mungia | Polígono Pinoa'))
 );
 const getImage = (part) => cleanBlocks.find((b) => b.type === 'image' && b.src.includes(part))?.src;
-const navServices = data.nav.filter((x) => x.path.startsWith('/servicios/') && x.path !== '/servicios/');
-const serviceCopy = cleanBlocks.filter((b) => b.type === 'h3');
-const serviceCards = navServices.map((item, i) => ({
-  ...item,
-  image: cleanBlocks.filter((b) => b.type === 'image')[i + 2]?.src,
-  text: cleanBlocks.find((b, j) => b.type === 'p' && cleanBlocks[j - 1]?.text?.toLowerCase() === item.label.toLowerCase())?.text || '',
-}));
+const servicePaths = [
+  '/servicios/limpiezas-en-redes-de-saneamientos/',
+  '/servicios/mantenimiento-de-la-red-de-saneamiento/',
+  '/servicios/inspeccion-de-tuberias-con-camara-robotizada/',
+  '/servicios/instalacion-y-vaciado-de-fosas-septicas/',
+  '/servicios/reparacion-de-tuberias-sin-zanja/',
+  '/servicios/pruebas-de-estanquedad/',
+  '/servicios/canalizacion-de-arquetas/',
+  '/servicios/reparacion-de-bajantes/',
+  '/servicios/robot-fresador/',
+];
+const serviceCards = cleanBlocks.flatMap((block, i) => block.type === 'h3' ? [{
+  label: block.text,
+  path: servicePaths[cleanBlocks.slice(0, i).filter((b) => b.type === 'h3').length],
+  image: cleanBlocks[i - 1]?.type === 'image' ? cleanBlocks[i - 1].src : '',
+  text: cleanBlocks[i + 1]?.type === 'p' ? cleanBlocks[i + 1].text : '',
+}] : []);
 const firstHeading = cleanBlocks.find((b) => /^h[1-4]$/.test(b.type));
 const firstPara = cleanBlocks.find((b) => b.type === 'p');
 const heading = page.heading || firstHeading?.text || title.replace(' - Saneamientos Mungia', '');
@@ -54,6 +66,6 @@ const isLegalUnavailable = page.status === 404;
   ) : page.kind === 'post' ? (
     <><section class="interior-hero blog-article-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1>{page.date && <time datetime={page.date}>{new Date(page.date).toLocaleDateString('es-ES', {day:'numeric',month:'long',year:'numeric'})}</time>}</div></section><section class="section wrap article-layout"><article class="article-content">{page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.title} />}{page.bodyHtml && <div class="migrated-content" set:html={page.bodyHtml} />}</article><aside class="article-aside"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside></section></>
   ) : (
-    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1>{page.intro && <p>{page.intro}</p>}{!page.intro && firstPara && <p>{firstPara.text}</p>}{!page.intro && !firstPara && page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout"><article class="article-content">{page.bodyHtml ? <div class="migrated-content" set:html={page.bodyHtml} /> : <>{page.extraText?.slice(firstPara ? 0 : 1).map((text) => <p>{text}</p>)}{cleanBlocks.filter((block) => block !== firstHeading && block !== firstPara && !(page.locations?.length && block.text === '¿Dónde estamos?')).map((block) => block.type === 'image' ? <img src={block.src} alt={block.alt || ''} loading="lazy" /> : block.type === 'h1' ? <h2>{block.text}</h2> : block.type === 'h2' ? <h2>{block.text}</h2> : block.type === 'h3' ? <h3>{block.text}</h3> : block.type === 'h4' ? <h4>{block.text}</h4> : <p>{block.text}</p>)}{page.locations?.length > 0 && <section class="locations"><h2>¿Dónde estamos?</h2><div class="locations-grid">{page.locations.map((location) => <a href={location.path}>{location.label}</a>)}</div></section>}</>}</article><aside class="article-aside"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside></section></>
+    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1>{footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout"><article class="article-content">{footerCopy ? <div class="migrated-content footer-source-content" set:html={footerCopy.bodyHtml} /> : page.bodyHtml ? <div class="migrated-content" set:html={page.bodyHtml} /> : <>{page.extraText?.slice(firstPara ? 0 : 1).map((text) => <p>{text}</p>)}{cleanBlocks.filter((block) => block !== firstHeading && block !== firstPara && !(page.locations?.length && block.text === '¿Dónde estamos?')).map((block) => block.type === 'image' ? <img src={block.src} alt={block.alt || ''} loading="lazy" /> : block.type === 'h1' ? <h2>{block.text}</h2> : block.type === 'h2' ? <h2>{block.text}</h2> : block.type === 'h3' ? <h3>{block.text}</h3> : block.type === 'h4' ? <h4>{block.text}</h4> : <p>{block.text}</p>)}{page.locations?.length > 0 && <section class="locations"><h2>¿Dónde estamos?</h2><div class="locations-grid">{page.locations.map((location) => <a href={location.path}>{location.label}</a>)}</div></section>}</>}</article><aside class="article-aside"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside></section></>
   )}
 </Base>
