@@ -140,3 +140,13 @@
 .blog-article-content .blog-article-help h2{margin-top:0}
 @media(max-width:1100px) and (min-width:901px){.blog-article-layout.has-toc{grid-template-columns:220px minmax(0,1fr);gap:28px}}
 @media(max-width:900px){.blog-article-layout.has-toc{grid-template-columns:minmax(0,1fr);gap:24px}.blog-toc{position:static}.blog-toc nav{max-height:50dvh}.blog-toc a{min-height:44px}.blog-toc summary{min-height:56px;padding:16px 20px}}
+
+.footer-social{grid-column:1/-1;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-social>span{font-size:15px;font-weight:600}
+.footer-social>div{display:flex;gap:10px;flex-wrap:wrap}
+.footer-social a{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:9px 14px;border:1px solid #505650;border-radius:8px;font-size:14px;color:#fff}
+.footer-social svg{flex-shrink:0}
+.footer-social a:hover{background:#244f39;border-color:#779280}
+.footer-social a:focus-visible{outline:2px solid #a8d4b7;outline-offset:3px}
+.footer-social + .footer-legal{margin-top:0}
+@media(max-width:600px){.footer-social{gap:12px}.footer-social>span{width:100%}.footer-social a{padding-inline:12px}}

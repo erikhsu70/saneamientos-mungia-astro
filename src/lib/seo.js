@@ -1,4 +1,5 @@
 import fullData from '../data/full-data.json';
+import socialLinks from '../data/social-links.json';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
 export const normalizePath = (path) => `${path.replace(/\/+$/, '')}/`;
@@ -20,6 +21,7 @@ export function pageSeo({ path, title, description }) {
       '@type': 'Plumber', '@id': businessId,
       name: 'Saneamientos Mungia', legalName: 'Anulaciones Sépticas Mungia, S.L.',
       url: `${SITE_URL}/`, telephone: '+34944460209', email: 'mungia@saneamientosmungia.com',
+      sameAs: socialLinks.map((social) => social.url),
       logo: `${SITE_URL}/assets/77f581a8a3068608.png`, image: `${SITE_URL}/assets/hero.jpg`,
       address: { '@type': 'PostalAddress', streetAddress: 'Polígono Pinoa, 2-H', addressLocality: 'Zamudio', addressRegion: 'Bizkaia', postalCode: '48170', addressCountry: 'ES' },
       contactPoint: { '@type': 'ContactPoint', telephone: '+34601004005', contactType: 'Urgencias de saneamiento', availableLanguage: 'es' },
