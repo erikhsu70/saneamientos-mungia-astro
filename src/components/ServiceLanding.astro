@@ -1,26 +1,47 @@
 ---
 import FooterContent from './FooterContent.astro';
-const { heading, intro, html } = Astro.props;
+import landings from '../data/service-landings.json';
+import data from '../data/phase-data.json';
+import socialLinks from '../data/social-links.json';
+const { heading, intro, html, landing } = Astro.props;
 const photo = html.match(/<figure>[^]*?<\/figure>/)?.[0] || '';
 const lead = html.match(/^<p class="source-lead">([^]*?)<\/p>/)?.[0] || '';
 const body = html.replace(photo, '').replace(lead, '');
 const sections = body.split(/(?=<h2\b)/).filter((part) => part.trim());
+const home = data.pages.find((page) => page.path === '/');
+const image = (part) => home.blocks.find((block) => block.type === 'image' && block.src.includes(part))?.src;
+const related = landing.related.map((slug) => {
+  const item = landings.find((entry) => entry.slug === slug);
+  const page = data.pages.find((entry) => entry.path === `/servicios/${slug}/`);
+  return { ...item, image: page?.blocks.find((block) => block.type === 'image')?.src || image('Diseno-sin-titulo') };
+});
+const steps = [
+  ['Cuéntanos qué necesitas', 'Indícanos el municipio, el tipo de instalación y el problema. Puedes llamarnos o solicitar presupuesto desde contacto.', 'icon.png'],
+  ['Valoramos la solución', 'Nuestro equipo te asesora y estudia la actuación que se ajusta a las características de tu instalación.', 'lupa.png'],
+  ['Organizamos los trabajos', 'Concretamos contigo la intervención y ponemos nuestros equipos a trabajar en la solución acordada.', 'ajustes.png'],
+];
 ---
-<div class="service-landing">
+<div class="service-landing home-bg">
   <section class="service-landing-hero">
     <div class="wrap service-landing-intro">
       <div>
-        <a class="eyebrow" href="/servicios/">Servicios de saneamiento en Bizkaia</a>
-        <h1>{heading}</h1>
-        {lead && <div class="service-landing-lead" set:html={lead} />}
-        {intro && <p>{intro}</p>}
+        <a class="eyebrow" href="/servicios/">Saneamientos Mungia · Desde 1990</a>
+        <h1>{landing.h1}</h1>
+        <p>{landing.summary}</p>
         <div class="service-landing-actions"><a class="pill pill-dark" href="/contacto/">Solicitar presupuesto</a><a class="service-landing-phone" href="tel:+34944460209">Llamar al 944 46 02 09</a></div>
+        <span class="landing-hero-note">Presupuesto sin compromiso · Bilbao y Bizkaia</span>
       </div>
       {photo && <div class="service-landing-photo" set:html={photo.replace('loading="lazy"', 'fetchpriority="high"')} />}
     </div>
   </section>
-  <div class="service-landing-sections">
-    {sections.map((section) => <section class="service-landing-section"><div class="wrap article-content"><FooterContent html={section} /></div></section>)}
-  </div>
-  <section class="service-landing-contact"><div class="wrap"><div><h2>¿Necesitas este servicio?</h2><p>Cuéntanos qué necesitas y solicita tu presupuesto sin compromiso.</p></div><div class="service-landing-actions"><a class="pill pill-light" href="/contacto/">Contactar</a><a href="tel:+34601004005">Urgencias 24 h · 601 004 005</a></div></div></section>
+  <div class="wrap landing-trust" aria-label="Nuestra experiencia"><div><strong>Desde 1990</strong><span>Experiencia en saneamiento</span></div><div><strong>Equipos propios</strong><span>Maquinaria y flota de trabajo</span></div><div><strong>Urgencias 24 h</strong><span>Servicio de desatascos</span></div></div>
+  <section class="landing-block wrap" aria-labelledby="service-benefits"><div class="section-heading"><span class="eyebrow">Una solución para tu instalación</span><h2 id="service-benefits">¿Qué te aporta este servicio?</h2></div><div class="values-grid">{landing.benefits.map(([title,text],i) => <article><img src={image(['gota-agua','icon.jpg','icon-2'][i])} alt="" loading="lazy" /><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+  <section class="landing-block landing-detail"><div class="wrap landing-detail-grid"><div><span class="eyebrow">{landing.name}</span><h2>{heading}</h2>{lead && <div class="landing-original-lead" set:html={lead} />}{intro && <p>{intro}</p>}</div><div class="landing-needs"><h3>¿En qué podemos ayudarte?</h3><ul>{landing.needs.map((need) => <li>{need}</li>)}</ul><a class="pill pill-dark" href="/contacto/">Consultar mi caso</a></div></div></section>
+  <section class="landing-block wrap"><div class="section-heading"><span class="eyebrow">Del primer contacto a la intervención</span><h2>¿Cómo trabajamos?</h2><p>Te acompañamos para encontrar una respuesta a las necesidades de tu instalación.</p></div><div class="steps-grid">{steps.map(([title,text,icon],i) => <article><img src={image(icon)} alt="" loading="lazy" /><span class="eyebrow">Paso {i+1}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
+  <section class="landing-block landing-company"><div class="wrap landing-detail-grid"><img class="landing-company-photo" src={image('Diseno-sin-titulo')} alt="Flota de Saneamientos Mungia" loading="lazy" /><div><span class="eyebrow">Quiénes somos</span><h2>Saneamientos Mungia: a tu lado desde 1990</h2><p>Somos Anulaciones Sépticas Mungia, una empresa de saneamiento con más de tres décadas de experiencia. Desde nuestras instalaciones en Zamudio prestamos servicios en Bizkaia.</p><p>Contamos con maquinaria propia y una flota de camiones de limpieza. Combinamos equipamiento y asesoramiento personalizado para atender las necesidades de cada instalación.</p><a class="pill pill-dark" href="/contacto/">Habla con nuestro equipo</a></div></div></section>
+  <section class="landing-block wrap landing-reputation"><div class="section-heading"><span class="eyebrow">Nuestra reputación</span><h2>La confianza se construye con trabajo</h2><p>Trayectoria, atención personalizada y transparencia: los valores que guían nuestro trabajo desde el primer contacto.</p></div><div class="card-grid"><article><h3>Más de tres décadas</h3><p>Una trayectoria en el sector del saneamiento que comienza en 1990.</p></article><article><h3>Atención cercana</h3><p>Asesoramiento para entender tu problema y valorar una respuesta adaptada.</p></article><article><h3>Conoce nuestra actividad</h3><p>Descubre más sobre la empresa y nuestro día a día en nuestros perfiles oficiales.</p><div class="landing-social-links">{socialLinks.map((social) => <a href={social.url} target="_blank" rel="noopener noreferrer" aria-label={`${social.name} (se abre en una pestaña nueva)`}>{social.name} ↗</a>)}</div></article></div></section>
+  <section class="landing-block wrap"><div class="section-heading"><span class="eyebrow">Una respuesta integral</span><h2>Servicios relacionados</h2><p>Otros servicios que podemos valorar junto con esta intervención, según el estado de tu instalación.</p></div><div class="card-grid">{related.map((item) => <article class="service-card"><img src={item.image} alt={item.name} loading="lazy" /><div><h3>{item.name}</h3><p>{item.summary}</p><a href={`/servicios/${item.slug}/`}>Ver servicio <span aria-hidden="true">→</span></a></div></article>)}</div></section>
+  <div class="service-landing-sections">{sections.map((section) => <section class="service-landing-section"><div class="wrap article-content"><FooterContent html={section} /></div></section>)}</div>
+  <section class="landing-block wrap landing-faq"><div class="section-heading"><h2>Antes de solicitar el servicio</h2></div><details><summary>¿Trabajáis en Bilbao y en el resto de Bizkaia?</summary><p>Prestamos servicios de saneamiento en Bizkaia. Indícanos tu municipio y la ubicación de la instalación para concretar la atención.</p></details><details><summary>¿Qué información necesitáis para preparar un presupuesto?</summary><p>Cuéntanos qué ocurre, dónde se encuentra la instalación y qué servicio necesitas. Nuestro equipo te indicará si hace falta más información o valorar la instalación antes de concretar el trabajo.</p></details><details><summary>¿A qué teléfono llamo si tengo un atasco urgente?</summary><p>Para desatascos urgentes contamos con atención 24 horas. Llámanos al <a href="tel:+34601004005">601 004 005</a> y explica tu situación.</p></details></section>
+  <section class="service-landing-contact"><div class="wrap"><div><span class="landing-contact-kicker">Bilbao y el resto de Bizkaia</span><h2>Hablemos de tu instalación</h2><p>Solicita información sobre {landing.name.toLowerCase()} y cuéntanos qué necesitas.</p></div><div class="service-landing-actions"><a class="pill pill-light" href="/contacto/">Pedir presupuesto sin compromiso</a><a href="tel:+34601004005">Desatascos urgentes 24 h · 601 004 005</a></div></div></section>
 </div>

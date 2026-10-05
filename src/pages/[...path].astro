@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import { serviceLandingContent } from '../lib/service-landing.js';
 import ServiceLanding from '../components/ServiceLanding.astro';
 import navContent from '../data/nav-content.json';
+import serviceLandings from '../data/service-landings.json';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
 import footerContent from '../data/footer-content.json';
@@ -23,7 +24,8 @@ const { page } = Astro.props;
 const path = page.path.endsWith('/') ? page.path : `${page.path}/`;
 const legalPage = legalPages[page.path];
 const footerCopy = footerContent[page.path];
-const title = legalPage ? `${legalPage.title} - Saneamientos Mungia` : page.title || 'Saneamientos Mungia';
+const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === path);
+const title = landing ? `${landing.h1} | Saneamientos Mungia` : legalPage ? `${legalPage.title} - Saneamientos Mungia` : page.title || 'Saneamientos Mungia';
 const blocks = page.blocks || [];
 const cleanBlocks = blocks.filter((b, i) =>
   !(b.type === 'image' && i > 0 && blocks[i - 1]?.src === b.src) &&
@@ -55,7 +57,7 @@ const landingCopy = footerCopy || navContent[page.path];
 const {landingIntro,landingHtml} = serviceLandingContent({landingCopy,page,firstPara,firstHeading,cleanBlocks});
 const isLegalUnavailable = page.status === 404;
 ---
-<Base title={title} description={legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
+<Base title={title} description={landing?.summary || legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {page.path === '/servicios/' ? (
     <>
       <section class="services-top"><div class="wrap"><h1>Encuéntranos en todo Bizkaia</h1><p>Instalación, mantenimiento y rehabilitación de redes de saneamiento y tuberías en Bizkaia</p></div></section>
@@ -72,7 +74,7 @@ const isLegalUnavailable = page.status === 404;
   ) : isLegalUnavailable ? (
     <section class="interior-hero"><div class="wrap"><h1>{heading}</h1><p>Este documento no está disponible en la web original. Su dirección se ha conservado para completar la migración cuando dispongamos del texto vigente.</p></div></section>
   ) : isNavService ? (
-    <ServiceLanding heading={heading} intro={landingIntro} html={landingHtml} />
+    <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} />
   ) : page.kind === 'post' ? (
     <><section class="interior-hero blog-article-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1>{page.date && <time datetime={page.date}>{new Date(page.date).toLocaleDateString('es-ES', {day:'numeric',month:'long',year:'numeric'})}</time>}</div></section><BlogArticle page={page} /></>
   ) : (

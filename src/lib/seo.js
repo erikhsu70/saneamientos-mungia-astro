@@ -1,5 +1,6 @@
 import fullData from '../data/full-data.json';
 import socialLinks from '../data/social-links.json';
+import serviceLandings from '../data/service-landings.json';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
 export const normalizePath = (path) => `${path.replace(/\/+$/, '')}/`;
@@ -9,6 +10,7 @@ const pages = new Map(fullData.pages.map((page) => [normalizePath(page.path), pa
 export function pageSeo({ path, title, description }) {
   const normalized = normalizePath(path);
   const page = pages.get(normalized);
+  const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === normalized);
   const url = canonicalUrl(path);
   const image = new URL(page?.featuredImage || page?.images?.[0] || page?.blocks?.find((block) => block.type === 'image')?.src || '/assets/hero.jpg', SITE_URL).href;
   const businessId = `${SITE_URL}/#business`;
@@ -41,7 +43,7 @@ export function pageSeo({ path, title, description }) {
   });
   if (isService) graph.push({
     '@type': 'Service', '@id': `${url}#service`, url,
-    name: page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
+    name: landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
     description, provider: { '@id': businessId }, mainEntityOfPage: { '@id': webpageId },
   });
   return { url, image, isPost, structuredData: { '@context': 'https://schema.org', '@graph': graph } };
