@@ -1,0 +1,26 @@
+---
+import FooterContent from './FooterContent.astro';
+const { heading, intro, html } = Astro.props;
+const photo = html.match(/<figure>[^]*?<\/figure>/)?.[0] || '';
+const lead = html.match(/^<p class="source-lead">([^]*?)<\/p>/)?.[0] || '';
+const body = html.replace(photo, '').replace(lead, '');
+const sections = body.split(/(?=<h2\b)/).filter((part) => part.trim());
+---
+<div class="service-landing">
+  <section class="service-landing-hero">
+    <div class="wrap service-landing-intro">
+      <div>
+        <a class="eyebrow" href="/servicios/">Servicios de saneamiento en Bizkaia</a>
+        <h1>{heading}</h1>
+        {lead && <div class="service-landing-lead" set:html={lead} />}
+        {intro && <p>{intro}</p>}
+        <div class="service-landing-actions"><a class="pill pill-dark" href="/contacto/">Solicitar presupuesto</a><a class="service-landing-phone" href="tel:+34944460209">Llamar al 944 46 02 09</a></div>
+      </div>
+      {photo && <div class="service-landing-photo" set:html={photo.replace('loading="lazy"', 'fetchpriority="high"')} />}
+    </div>
+  </section>
+  <div class="service-landing-sections">
+    {sections.map((section) => <section class="service-landing-section"><div class="wrap article-content"><FooterContent html={section} /></div></section>)}
+  </div>
+  <section class="service-landing-contact"><div class="wrap"><div><h2>¿Necesitas este servicio?</h2><p>Cuéntanos qué necesitas y solicita tu presupuesto sin compromiso.</p></div><div class="service-landing-actions"><a class="pill pill-light" href="/contacto/">Contactar</a><a href="tel:+34601004005">Urgencias 24 h · 601 004 005</a></div></div></section>
+</div>

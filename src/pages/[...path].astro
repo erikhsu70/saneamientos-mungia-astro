@@ -1,5 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
+import { serviceLandingContent } from '../lib/service-landing.js';
+import ServiceLanding from '../components/ServiceLanding.astro';
+import navContent from '../data/nav-content.json';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
 import footerContent from '../data/footer-content.json';
@@ -47,6 +50,9 @@ const serviceCards = cleanBlocks.flatMap((block, i) => block.type === 'h3' ? [{
 const firstHeading = cleanBlocks.find((b) => /^h[1-4]$/.test(b.type));
 const firstPara = cleanBlocks.find((b) => b.type === 'p');
 const heading = page.heading || firstHeading?.text || title.replace(' - Saneamientos Mungia', '');
+const isNavService = data.nav.some((item) => item.path === path && path.startsWith('/servicios/') && path !== '/servicios/');
+const landingCopy = footerCopy || navContent[page.path];
+const {landingIntro,landingHtml} = serviceLandingContent({landingCopy,page,firstPara,firstHeading,cleanBlocks});
 const isLegalUnavailable = page.status === 404;
 ---
 <Base title={title} description={legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
@@ -65,6 +71,8 @@ const isLegalUnavailable = page.status === 404;
     <LegalPage page={legalPage} />
   ) : isLegalUnavailable ? (
     <section class="interior-hero"><div class="wrap"><h1>{heading}</h1><p>Este documento no está disponible en la web original. Su dirección se ha conservado para completar la migración cuando dispongamos del texto vigente.</p></div></section>
+  ) : isNavService ? (
+    <ServiceLanding heading={heading} intro={landingIntro} html={landingHtml} />
   ) : page.kind === 'post' ? (
     <><section class="interior-hero blog-article-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1>{page.date && <time datetime={page.date}>{new Date(page.date).toLocaleDateString('es-ES', {day:'numeric',month:'long',year:'numeric'})}</time>}</div></section><BlogArticle page={page} /></>
   ) : (
