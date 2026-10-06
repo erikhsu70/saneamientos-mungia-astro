@@ -218,3 +218,5 @@
 @media(max-width:900px){.landing-detail-grid{grid-template-columns:minmax(0,1fr)}.landing-trust strong{font-size:21px}.landing-block{padding-block:36px}}
 @media(max-width:600px){.landing-block{padding-block:28px}.landing-trust{grid-template-columns:1fr;gap:18px;padding-block:24px}.landing-trust strong{font-size:23px}.landing-needs{padding:24px}.landing-block .section-heading{margin-bottom:24px}.landing-reputation .card-grid>article{padding:24px}.service-landing-contact .service-landing-actions a{font-size:14px;text-align:center}.landing-block .steps-grid article{padding:26px}.service-landing-intro h1{font-size:clamp(29px,8vw,42px)}}
 .landing-faq{max-width:1000px}.landing-faq details{background:white;border:1px solid #dce4de;border-radius:12px;margin-bottom:12px;padding:0 22px}.landing-faq summary{padding:20px 0;font-weight:600;cursor:pointer;min-height:44px}.landing-faq details p{padding-bottom:20px;margin-bottom:0}.landing-faq a{text-decoration:underline;color:var(--green)}
+
+.site-header{position:sticky;top:0;z-index:10;box-shadow:0 2px 10px #0000000a}
