@@ -8,7 +8,10 @@ const photo = html.match(/<figure>[^]*?<\/figure>/)?.[0] || '';
 const lead = html.match(/^<p class="source-lead">([^]*?)<\/p>/)?.[0] || '';
 const legacyUrgencyBlock = /<h2>Servicio de desatascos urgentes 24h<\/h2>\s*<p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica\.<\/p>(?:\s*<p class="source-button"><a href="\/contacto\/?">\s*Contactar\s*<\/a><\/p>)?/;
 const body = html.replace(photo, '').replace(lead, '').replace(legacyUrgencyBlock, '');
-const sections = body.split(/(?=<h2\b)/).filter((part) => part.trim());
+const correctedBody = landing.slug === 'instalacion-y-vaciado-de-fosas-septicas'
+  ? body.replace('/assets/source/bd7f288b95-Captura-de-pantalla-2025-01-28-a-las-13.48.44-632x215.png', '/assets/source/6be4891067-DONDE-TRABAJAMOS-1-scaled.jpg')
+  : body;
+const sections = correctedBody.split(/(?=<h2\b)/).filter((part) => part.trim());
 const home = data.pages.find((page) => page.path === '/');
 const image = (part) => home.blocks.find((block) => block.type === 'image' && block.src.includes(part))?.src;
 const related = landing.related.map((slug) => {
@@ -46,3 +49,4 @@ const steps = [
   <section class="landing-block wrap landing-faq"><div class="section-heading"><h2>Antes de solicitar el servicio</h2></div><details><summary>¿Trabajáis en Bilbao y en el resto de Bizkaia?</summary><p>Prestamos servicios de saneamiento en Bizkaia. Indícanos tu municipio y la ubicación de la instalación para concretar la atención.</p></details><details><summary>¿Qué información necesitáis para preparar un presupuesto?</summary><p>Cuéntanos qué ocurre, dónde se encuentra la instalación y qué servicio necesitas. Nuestro equipo te indicará si hace falta más información o valorar la instalación antes de concretar el trabajo.</p></details><details><summary>¿A qué teléfono llamo si tengo un atasco urgente?</summary><p>Para desatascos urgentes contamos con atención 24 horas. Llámanos al <a href="tel:+34601004005">601 004 005</a> y explica tu situación.</p></details></section>
   <section class="service-landing-contact"><div class="wrap"><div><span class="landing-contact-kicker">Bilbao y el resto de Bizkaia</span><h2>Hablemos de tu instalación</h2><p>Solicita información sobre {landing.name.toLowerCase()} y cuéntanos qué necesitas.</p></div><div class="service-landing-actions"><a class="pill pill-light" href="/contacto/">Pedir presupuesto sin compromiso</a><a href="tel:+34601004005">Desatascos urgentes 24 h · 601 004 005</a></div></div></section>
 </div>
+
