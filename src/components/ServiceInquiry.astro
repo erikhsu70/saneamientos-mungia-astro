@@ -1,0 +1,26 @@
+<aside class="service-inquiry" aria-labelledby="inquiry-title">
+  <span class="eyebrow">Estamos para ayudarte</span>
+  <h2 id="inquiry-title">¿Necesitas ayuda?</h2>
+  <p>Atendemos urgencias de saneamiento las 24 horas.</p>
+  <a class="inquiry-phone" href="tel:+34601004005">601 004 005</a>
+  <form class="service-inquiry-form">
+    <label>Nombre<input name="nombre" autocomplete="name" required /></label>
+    <label>Teléfono o correo electrónico<input name="contacto" autocomplete="off" required /></label>
+    <label>Localización<input name="localizacion" autocomplete="address-level2" placeholder="Municipio de la instalación" required /></label>
+    <button class="pill pill-dark" type="submit">Solicitar información</button>
+    <small>Se abrirá tu aplicación de correo con los datos de la consulta.</small>
+    <small>Usaremos tus datos para responderte. <a href="/política-de-privacidad/">Política de privacidad</a>.</small>
+  </form>
+</aside>
+<script>
+  document.querySelectorAll<HTMLFormElement>('.service-inquiry-form').forEach((form) => {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const fields = new FormData(form);
+      const subject = encodeURIComponent(`Consulta: ${document.querySelector('h1')?.textContent || 'Servicio de saneamiento'}`);
+      const body = encodeURIComponent(`Nombre: ${fields.get('nombre')}\nTeléfono o correo: ${fields.get('contacto')}\nLocalización: ${fields.get('localizacion')}\nPágina del servicio: ${window.location.href}`);
+      window.location.href = `mailto:mungia@saneamientosmungia.com?subject=${subject}&body=${body}`;
+    });
+  });
+</script>
