@@ -1,0 +1,42 @@
+DirectoryIndex index.html
+Options -Indexes
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^agua\-dura/?$ /blog/agua-dura/ [R=301,L,NE]
+RewriteRule ^anulacion\-de\-una\-fosa\-septica/?$ /blog/anulacion-de-una-fosa-septica/ [R=301,L,NE]
+RewriteRule ^como\-cuidar\-fosa\-septica/?$ /blog/como-cuidar-fosa-septica/ [R=301,L,NE]
+RewriteRule ^como\-localizar\-fosa\-septica\-oculta/?$ /blog/como-localizar-fosa-septica-oculta/ [R=301,L,NE]
+RewriteRule ^como\-podemos\-evitar\-atascos\-en\-las\-tuberias/?$ /blog/como-podemos-evitar-atascos-en-las-tuberias/ [R=301,L,NE]
+RewriteRule ^como\-se\-desarrolla\-el\-proceso\-de\-limpieza\-de\-una\-fosa\-septica/?$ /blog/como-se-desarrolla-el-proceso-de-limpieza-de-una-fosa-septica/ [R=301,L,NE]
+RewriteRule ^como\-se\-realiza\-una\-prueba\-de\-estanqueidad/?$ /blog/como-se-realiza-una-prueba-de-estanqueidad/ [R=301,L,NE]
+RewriteRule ^cuando\-se\-debe\-vaciar\-una\-fosa/?$ /blog/cuando-se-debe-vaciar-una-fosa/ [R=301,L,NE]
+RewriteRule ^desatascos\-24\-horas/?$ /blog/desatascos-24-horas/ [R=301,L,NE]
+RewriteRule ^desatascos\-tuberias/?$ /servicios/desatascos-24h-urgentes/ [R=301,L,NE]
+RewriteRule ^inspeccion\-de\-tuberias\-con\-camara/?$ /servicios/inspeccion-de-tuberias-con-camara-robotizada/ [R=301,L,NE]
+RewriteRule ^instalacion\-de\-saneamiento\-de\-un\-edificio/?$ /blog/instalacion-de-saneamiento-de-un-edificio/ [R=301,L,NE]
+RewriteRule ^instalacion\-de\-una\-fosa\-septica/?$ /blog/instalacion-de-una-fosa-septica/ [R=301,L,NE]
+RewriteRule ^la\-red\-de\-alcantarillado/?$ /blog/la-red-de-alcantarillado/ [R=301,L,NE]
+RewriteRule ^las\-diferentes\-clases\-de\-alcantarillado/?$ /blog/las-diferentes-clases-de-alcantarillado/ [R=301,L,NE]
+RewriteRule ^limpieza\-de\-alcantarillado\-y\-mantenimiento\-red\-de\-sanemiento/?$ /servicios/limpieza-alcantarillado-mantenimiento-red/ [R=301,L,NE]
+RewriteRule ^limpieza\-de\-alcantarillado/?$ /blog/limpieza-de-alcantarillado/ [R=301,L,NE]
+RewriteRule ^mantenimiento\-de\-una\-fosa\-septica/?$ /blog/mantenimiento-de-una-fosa-septica/ [R=301,L,NE]
+RewriteRule ^mantenimiento\-del\-alcantarillado/?$ /blog/mantenimiento-del-alcantarillado/ [R=301,L,NE]
+RewriteRule ^mi\-fosa\-septica\-esta\-atascada/?$ /blog/mi-fosa-septica-esta-atascada/ [R=301,L,NE]
+RewriteRule ^obras/?$ /servicios/ [R=301,L,NE]
+RewriteRule ^por\-que\-es\-importante\-realizar\-pruebas\-de\-estanqueidad/?$ /blog/por-que-es-importante-realizar-pruebas-de-estanqueidad/ [R=301,L,NE]
+RewriteRule ^productos\-limpieza\-no\-adecuados\-fosa\-septica/?$ /blog/productos-limpieza-no-adecuados-fosa-septica/ [R=301,L,NE]
+RewriteRule ^reparacion\-de\-tuberias\-sin\-zanja/?$ /servicios/reparacion-de-tuberias-sin-zanja/ [R=301,L,NE]
+RewriteRule ^robot\-fresador/?$ /servicios/robot-fresador/ [R=301,L,NE]
+RewriteRule ^sabes\-como\-funciona\-una\-planta\-de\-tratamiento\-de\-agua\-residual/?$ /blog/sabes-como-funciona-una-planta-de-tratamiento-de-agua-residual/ [R=301,L,NE]
+RewriteRule ^tipos\-de\-arquetas\-y\-su\-funcion/?$ /blog/tipos-de-arquetas-y-su-funcion/ [R=301,L,NE]
+RewriteRule ^tu\-fosa\-septica\-tiene\-el\-tanque\-lleno/?$ /blog/tu-fosa-septica-tiene-el-tanque-lleno/ [R=301,L,NE]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.saneamientosmungia\.com$ [NC]
+RewriteRule ^ https://saneamientosmungia.com%{REQUEST_URI} [R=301,L,NE]
+</IfModule>
+
+<FilesMatch "(?i)\.(zip|sql|gz|tgz|7z|bak|wpress)$">
+Require all denied
+</FilesMatch>
