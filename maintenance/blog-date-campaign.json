@@ -5,10 +5,10 @@
   "batches": [
     {
       "date": "2026-11-03",
-      "status": "validated_pending_deploy",
+      "status": "completed",
       "base_commit": "6e942aa0435655602ef074d99c3262d59b864b4e",
-      "commit": null,
-      "production_verified": false,
+      "commit": "705a8ff942801e000cbe9a66ad72455a85b15f03",
+      "production_verified": true,
       "posts": [
         {
           "path": "/blog/nuevo-metodo-hoverline/",
@@ -83,6 +83,13 @@
       ],
       "validation": {
         "build": true,
+        "schema_posts": 10,
+        "blog_listing": true
+      },
+      "backup": "work/blog-date-campaign-20261103/production-before.zip (local task workspace)",
+      "production_verification": {
+        "verified_at": "2026-11-03T10:36:18.253409+00:00",
+        "http_200_and_exact_file_matches": 37,
         "schema_posts": 10,
         "blog_listing": true
       }
