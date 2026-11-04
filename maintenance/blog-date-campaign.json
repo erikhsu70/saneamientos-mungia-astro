@@ -93,6 +93,90 @@
         "schema_posts": 10,
         "blog_listing": true
       }
+    },
+    {
+      "date": "2026-11-04",
+      "status": "validated_pending_deploy",
+      "base_commit": "c7102902cdcec0af44ac6ccc96398fc905b208e7",
+      "commit": null,
+      "production_verified": false,
+      "posts": [
+        {
+          "path": "/blog/ventajas-de-realizar-inspeccion-de-tuberias-con-camara-robotizada/",
+          "title": "Ventajas de realizar inspección de tuberías con cámara robotizada",
+          "original_date": "2019-07-03T13:15:40",
+          "original_modified": "2019-07-03T13:15:40",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/como-se-realiza-una-prueba-de-estanqueidad/",
+          "title": "¿Cómo se realiza una prueba de estanqueidad?",
+          "original_date": "2019-07-10T14:40:37",
+          "original_modified": "2019-07-10T14:41:35",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/tipos-de-arquetas-y-su-funcion/",
+          "title": "Tipos de arquetas y su función",
+          "original_date": "2019-07-26T07:24:40",
+          "original_modified": "2019-07-26T07:44:01",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/el-mal-olor-en-las-tuberias/",
+          "title": "El mal olor en las tuberías",
+          "original_date": "2019-08-02T09:19:43",
+          "original_modified": "2019-08-02T09:19:43",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/vaciado-de-fosas/",
+          "title": "Vaciado de fosas",
+          "original_date": "2019-08-14T10:07:03",
+          "original_modified": "2019-08-14T10:07:03",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/sosa-caustica-para-desatascar-tuberias-peligros-e-inconvenientes/",
+          "title": "Sosa caústica para desatascar tuberías: peligros e inconvenientes",
+          "original_date": "2019-08-22T11:52:51",
+          "original_modified": "2019-08-22T11:52:51",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/la-unidad-de-subsuelo/",
+          "title": "La Unidad de Subsuelo",
+          "original_date": "2019-08-28T11:12:08",
+          "original_modified": "2019-08-28T11:12:08",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/el-subsuelo-de-las-ciudades/",
+          "title": "El subsuelo de las ciudades",
+          "original_date": "2019-09-01T10:43:15",
+          "original_modified": "2019-09-11T10:44:00",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/aguas-residuales/",
+          "title": "Aguas residuales",
+          "original_date": "2019-09-11T11:20:37",
+          "original_modified": "2019-09-11T11:20:37",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/wc-atascado/",
+          "title": "¿WC atascado?",
+          "original_date": "2019-09-19T10:54:37",
+          "original_modified": "2019-09-19T10:54:37",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        }
+      ],
+      "validation": {
+        "build": true,
+        "schema_posts": 10,
+        "blog_listing": true
+      }
     }
   ]
 }
