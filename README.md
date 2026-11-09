@@ -2,6 +2,30 @@
 
 Sitio estático en Astro, HTML, CSS y JavaScript nativo. No usa React.
 
+## Web publicada en Hostinger
+
+Desde el 2 de noviembre de 2026, esta versión está publicada en
+[https://saneamientosmungia.com/](https://saneamientosmungia.com/).
+
+- La versión pública es estática y se genera con Astro. WordPress ya no sirve la web.
+- `public/.htaccess` configura HTTPS, dominio sin `www`, errores 404 y 28 redirecciones de enlaces antiguos.
+- `public/wp-content/uploads/` contiene seis archivos públicos antiguos todavía enlazados por los contenidos. No contiene WordPress ni sus credenciales.
+- Se conservó una copia privada del WordPress anterior y su base de datos en Hostinger.
+- No se modificaron los registros del correo de Microsoft 365.
+- El formulario abre la aplicación de correo del visitante; no hay envío directo desde el servidor.
+
+### Para Julia y siguientes ediciones
+
+1. Ejecutar `npm ci` y `npm run dev` para trabajar en local.
+2. Editar las páginas y componentes en `src/`; el contenido está en `src/data/`.
+3. Ejecutar `npm run build`. Se generan 1.741 páginas de contenido y una página 404.
+4. Para Hostinger, publicar **el contenido de `dist/`**, incluidos `.htaccess`, imágenes y mapas del sitio. Conservar primero una copia de la versión anterior fuera de `public_html`.
+5. Comprobar portada, servicios, artículos, contacto, sitemap, HTTPS y redirecciones después del cambio.
+
+El despliegue a Hostinger es manual. El flujo de GitHub Actions existente publica una vista de GitHub Pages; hacer push no actualiza Hostinger.
+La copia de revisión de Cloudflare Pages continúa en https://saneamientos-mungia.pages.dev/.
+No subir contraseñas, archivos `.env`, bases de datos ni copias privadas del alojamiento.
+
 ## Vista previa
 
 ```sh
@@ -35,7 +59,7 @@ Se requiere acceso autorizado a la cuenta de Cloudflare para ejecutar el desplie
 - Las 39 páginas de servicios enlazadas desde el footer incorporan ahora el contenido original con sus listas, enlaces e imágenes. La portada, el índice de servicios y el blog mantienen sus diseños propios; las tarjetas del índice de servicios usan sus descripciones originales completas.
 - Los cuatro enlaces legales del sitio original respondían 404 y no figuraban en la copia pública de WordPress. Las páginas actuales son textos nuevos, redactados para esta implementación; la empresa debe verificar sus datos y prácticas de tratamiento antes de conectar el dominio definitivo.
 - El formulario de contacto abre la aplicación de correo del visitante; requiere un sistema de envío antes de conectar el dominio definitivo.
-- El dominio original no se ha modificado. Revisar diseño y contenidos antes de cambiarlo.
+- El dominio original ya publica esta versión en Hostinger desde el 2 de noviembre de 2026.
 
 ## SEO técnico
 

@@ -1,7 +1,8 @@
 ---
+import { restoreLocationMap } from '../lib/location-map.js';
 const { html } = Astro.props;
 // Group only the original services block; keep every image, paragraph and link.
-const content = html.replace(/(<h2\b[^>]*>(?:(?!<\/h2>)[^])*?Nuestros Servicios(?:(?!<\/h2>)[^])*?<\/h2>)([^]*?)(?=<h2\b|$)/, (section, heading, body) => {
+const content = restoreLocationMap(html).replace(/(<h2\b[^>]*>(?:(?!<\/h2>)[^])*?Nuestros Servicios(?:(?!<\/h2>)[^])*?<\/h2>)([^]*?)(?=<h2\b|$)/, (section, heading, body) => {
   const cards = [...body.matchAll(/<figure>[^]*?<\/figure>\s*<h3\b[^>]*>[^]*?<\/h3>\s*<p>[^]*?<\/p>\s*<p class="source-button">[^]*?<\/p>/g)].map((match) => match[0]);
   if (cards.length < 2) return section;
   const end = body.lastIndexOf(cards[cards.length - 1]) + cards[cards.length - 1].length;

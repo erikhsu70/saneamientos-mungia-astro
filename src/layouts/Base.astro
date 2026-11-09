@@ -1,5 +1,6 @@
 ---
 import data from '../data/phase-data.json';
+import ServiceInquiry from '../components/ServiceInquiry.astro';
 import socialLinks from '../data/social-links.json';
 import '../styles/site.css';
 import { pageSeo } from '../lib/seo.js';
@@ -55,7 +56,7 @@ const legal = data.footer.filter((x) => /aviso|política|términos/i.test(x.labe
         </nav>
       </div>
     </header>
-    <main><slot /></main>
+    <main>{path.startsWith('/servicios') || path === '/desatrancos/' ? <div class="service-page-shell"><div class="service-page-main"><slot /></div><div class="service-inquiry-rail"><ServiceInquiry /></div></div> : <slot />}</main>
     <footer class="site-footer">
       <div class="wrap footer-grid">
         <div class="footer-primary">

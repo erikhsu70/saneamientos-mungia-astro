@@ -1,0 +1,189 @@
+{
+  "campaign": "2026-11-03_to_2026-12-02",
+  "timezone": "Europe/Madrid",
+  "max_posts": 300,
+  "batches": [
+    {
+      "date": "2026-11-03",
+      "status": "completed",
+      "base_commit": "6e942aa0435655602ef074d99c3262d59b864b4e",
+      "commit": "705a8ff942801e000cbe9a66ad72455a85b15f03",
+      "production_verified": true,
+      "posts": [
+        {
+          "path": "/blog/nuevo-metodo-hoverline/",
+          "title": "El nuevo método Hoverline",
+          "original_date": "2016-06-28T13:27:12",
+          "original_modified": "2017-06-01T07:46:17",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/sukalki-historia-sabor/",
+          "title": "Un sukalki con historia y sabor",
+          "original_date": "2016-07-15T11:57:51",
+          "original_modified": "2017-02-13T12:12:26",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/monstruo-las-toallitas/",
+          "title": "El monstruo de las toallitas",
+          "original_date": "2016-08-01T06:23:06",
+          "original_modified": "2017-02-13T12:12:26",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/356-2/",
+          "title": "Saneamientos Mungia memorial Txema y Javi",
+          "original_date": "2016-12-14T08:18:58",
+          "original_modified": "2017-02-15T08:28:00",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/smagua-2017-salon-internacional-del-agua-y-el-riego/",
+          "title": "SMAGUA 2017, salón internacional del agua y el riego",
+          "original_date": "2017-03-15T08:04:20",
+          "original_modified": "2017-03-15T08:05:48",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/ro-ka-tech-2017-feria-comercial-tuberias-desagues-servicios-industriales/",
+          "title": "RO-KA-TECH 2017, feria comercial de tuberías, desagües y servicios industriales",
+          "original_date": "2017-08-16T06:43:37",
+          "original_modified": "2017-08-21T07:01:40",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/saneamientos-mungia-patrocina-la-la-san-silvestre-bilbao-2017/",
+          "title": "Saneamientos Mungia patrocina la San Silvestre de Bilbao 2017",
+          "original_date": "2017-12-22T11:45:45",
+          "original_modified": "2017-12-22T11:49:38",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/que-es-una-fosa-septica-y-como-funciona/",
+          "title": "¿Que es una fosa séptica y cómo funciona?",
+          "original_date": "2019-06-12T14:30:36",
+          "original_modified": "2019-06-12T14:30:36",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/residuos-organicos-e-inorganicos-en-las-alcantarillas/",
+          "title": "Residuos orgánicos e inorgánicos en las alcantarillas",
+          "original_date": "2019-06-18T14:27:49",
+          "original_modified": "2019-06-18T14:27:49",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/bacterias-en-las-tuberias/",
+          "title": "Bacterias en las tuberías",
+          "original_date": "2019-06-26T14:37:57",
+          "original_modified": "2019-06-26T14:37:57",
+          "new_date": "2026-11-03T10:30:00+01:00"
+        }
+      ],
+      "validation": {
+        "build": true,
+        "schema_posts": 10,
+        "blog_listing": true
+      },
+      "backup": "work/blog-date-campaign-20261103/production-before.zip (local task workspace)",
+      "production_verification": {
+        "verified_at": "2026-11-03T10:36:18.253409+00:00",
+        "http_200_and_exact_file_matches": 37,
+        "schema_posts": 10,
+        "blog_listing": true
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "status": "completed",
+      "base_commit": "c7102902cdcec0af44ac6ccc96398fc905b208e7",
+      "commit": "95adb922ababa99661133adb3c652a99c5123f81",
+      "production_verified": true,
+      "posts": [
+        {
+          "path": "/blog/ventajas-de-realizar-inspeccion-de-tuberias-con-camara-robotizada/",
+          "title": "Ventajas de realizar inspección de tuberías con cámara robotizada",
+          "original_date": "2019-07-03T13:15:40",
+          "original_modified": "2019-07-03T13:15:40",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/como-se-realiza-una-prueba-de-estanqueidad/",
+          "title": "¿Cómo se realiza una prueba de estanqueidad?",
+          "original_date": "2019-07-10T14:40:37",
+          "original_modified": "2019-07-10T14:41:35",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/tipos-de-arquetas-y-su-funcion/",
+          "title": "Tipos de arquetas y su función",
+          "original_date": "2019-07-26T07:24:40",
+          "original_modified": "2019-07-26T07:44:01",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/el-mal-olor-en-las-tuberias/",
+          "title": "El mal olor en las tuberías",
+          "original_date": "2019-08-02T09:19:43",
+          "original_modified": "2019-08-02T09:19:43",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/vaciado-de-fosas/",
+          "title": "Vaciado de fosas",
+          "original_date": "2019-08-14T10:07:03",
+          "original_modified": "2019-08-14T10:07:03",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/sosa-caustica-para-desatascar-tuberias-peligros-e-inconvenientes/",
+          "title": "Sosa caústica para desatascar tuberías: peligros e inconvenientes",
+          "original_date": "2019-08-22T11:52:51",
+          "original_modified": "2019-08-22T11:52:51",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/la-unidad-de-subsuelo/",
+          "title": "La Unidad de Subsuelo",
+          "original_date": "2019-08-28T11:12:08",
+          "original_modified": "2019-08-28T11:12:08",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/el-subsuelo-de-las-ciudades/",
+          "title": "El subsuelo de las ciudades",
+          "original_date": "2019-09-01T10:43:15",
+          "original_modified": "2019-09-11T10:44:00",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/aguas-residuales/",
+          "title": "Aguas residuales",
+          "original_date": "2019-09-11T11:20:37",
+          "original_modified": "2019-09-11T11:20:37",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        },
+        {
+          "path": "/blog/wc-atascado/",
+          "title": "¿WC atascado?",
+          "original_date": "2019-09-19T10:54:37",
+          "original_modified": "2019-09-19T10:54:37",
+          "new_date": "2026-11-04T10:30:00+01:00"
+        }
+      ],
+      "validation": {
+        "build": true,
+        "schema_posts": 10,
+        "blog_listing": true
+      },
+      "backup": "work/blog-date-campaign-20261104/production-before.zip (local task workspace)",
+      "production_verification": {
+        "verified_at": "2026-11-04T10:36:14.152724+00:00",
+        "http_200_and_exact_file_matches": 37,
+        "schema_posts": 10,
+        "blog_listing": true
+      }
+    }
+  ]
+}
