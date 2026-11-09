@@ -7,6 +7,7 @@ import navContent from '../data/nav-content.json';
 import serviceLandings from '../data/service-landings.json';
 import data from '../data/phase-data.json';
 import fullData from '../data/full-data.json';
+import supplementalPages from '../data/supplemental-pages.json';
 import footerContent from '../data/footer-content.json';
 import BlogListing from '../components/BlogListing.astro';
 import LegalPage from '../components/LegalPage.astro';
@@ -15,7 +16,7 @@ import BlogArticle from '../components/BlogArticle.astro';
 import { legalPages } from '../lib/legal.js';
 
 export function getStaticPaths() {
-  return fullData.pages.filter((page) => page.path !== '/').map((page) => ({
+  return [...fullData.pages, ...supplementalPages].filter((page) => page.path !== '/').map((page) => ({
     params: { path: page.path.replace(/^\//, '').replace(/\/$/, '') },
     props: { page },
   }));
