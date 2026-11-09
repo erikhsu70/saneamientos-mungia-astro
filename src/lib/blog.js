@@ -1,7 +1,8 @@
 import fullData from '../data/full-data.json';
+import supplementalPages from '../data/supplemental-pages.json';
 
 export const POSTS_PER_PAGE = 12;
-export const blogPosts = fullData.pages
+export const blogPosts = [...fullData.pages, ...supplementalPages]
   .filter((page) => page.kind === 'post')
   .sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 export const blogPageCount = Math.ceil(blogPosts.length / POSTS_PER_PAGE);
