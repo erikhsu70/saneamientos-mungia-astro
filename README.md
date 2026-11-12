@@ -8,7 +8,7 @@ Desde el 2 de noviembre de 2026, esta versión está publicada en
 [https://saneamientosmungia.com/](https://saneamientosmungia.com/).
 
 - La versión pública es estática y se genera con Astro. WordPress ya no sirve la web.
-- `public/.htaccess` configura HTTPS, dominio sin `www`, errores 404 y 28 redirecciones de enlaces antiguos.
+- `public/.htaccess` configura HTTPS, dominio sin `www`, errores 404 y redirecciones de enlaces antiguos y páginas consolidadas.
 - `public/wp-content/uploads/` contiene seis archivos públicos antiguos todavía enlazados por los contenidos. No contiene WordPress ni sus credenciales.
 - Se conservó una copia privada del WordPress anterior y su base de datos en Hostinger.
 - No se modificaron los registros del correo de Microsoft 365.
@@ -20,7 +20,7 @@ Desde el 2 de noviembre de 2026, esta versión está publicada en
 2. Editar las páginas y componentes en `src/`; el contenido está en `src/data/`.
 3. Ejecutar `npm run build`. Se generan 1.741 páginas de contenido y una página 404.
 4. Para Hostinger, publicar **el contenido de `dist/`**, incluidos `.htaccess`, imágenes y mapas del sitio. Conservar primero una copia de la versión anterior fuera de `public_html`.
-5. Comprobar portada, servicios, artículos, contacto, sitemap, HTTPS y redirecciones después del cambio.
+5. Comprobar portada, servicios, artículos, contacto, sitemap y HTTPS. Ejecutar `scripts/verify-redirects.sh` para verificar las redirecciones añadidas en la auditoría de tráfico.
 
 El despliegue a Hostinger es manual. El flujo de GitHub Actions existente publica una vista de GitHub Pages; hacer push no actualiza Hostinger.
 La copia de revisión de Cloudflare Pages continúa en https://saneamientos-mungia.pages.dev/.
