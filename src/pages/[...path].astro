@@ -14,9 +14,11 @@ import LegalPage from '../components/LegalPage.astro';
 import FooterContent from '../components/FooterContent.astro';
 import BlogArticle from '../components/BlogArticle.astro';
 import { legalPages } from '../lib/legal.js';
+import { BILBAO_URGENT_PATH, BILBAO_URGENT_ALTERNATE } from '../lib/bilbao-urgent.js';
 
 export function getStaticPaths() {
-  return [...fullData.pages, ...supplementalPages].filter((page) => page.path !== '/').map((page) => ({
+  const excluded = new Set(['/', BILBAO_URGENT_PATH, BILBAO_URGENT_ALTERNATE]);
+  return [...fullData.pages, ...supplementalPages].filter((page) => !excluded.has(page.path)).map((page) => ({
     params: { path: page.path.replace(/^\//, '').replace(/\/$/, '') },
     props: { page },
   }));

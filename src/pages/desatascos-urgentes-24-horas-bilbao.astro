@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from '../lib/bilbao-urgent.js';
+
+const description = 'Desatascos urgentes 24 horas en Bilbao. Atendemos atascos en inodoros, tuberías, bajantes y arquetas. Llama al 601 004 005 y cuéntanos qué ocurre.';
+---
+<Base title={BILBAO_URGENT_TITLE} description={description} path={BILBAO_URGENT_PATH}>
+  <section class="interior-hero">
+    <div class="wrap">
+      <span class="eyebrow">Saneamientos Mungia</span>
+      <h1>{BILBAO_URGENT_TITLE}</h1>
+      <p>Atendemos atascos en tuberías, inodoros, bajantes y arquetas en Bilbao. Si el agua no desagua o está rebosando, llama al equipo de urgencias.</p>
+      <a class="pill pill-light" href="tel:+34601004005">Llamar a urgencias · 601 004 005</a>
+    </div>
+  </section>
+  <section class="section wrap article-layout service-body-layout">
+    <article class="article-content">
+      <h2>Qué desatascos urgentes atendemos en Bilbao</h2>
+      <p>Atendemos avisos de viviendas, comunidades de propietarios, comercios y locales de hostelería. Si el problema aparece en varios puntos a la vez, cuéntanoslo al llamar: ayuda a distinguir un atasco en un solo desagüe de una obstrucción en un tramo compartido.</p>
+      <ul>
+      <li><strong>Inodoros, fregaderos y duchas.</strong> Si solo falla un aparato, revisamos su desagüe y el tramo de tubería que lo conecta a la red.</li>
+      <li><strong>Bajantes y colectores comunitarios.</strong> Cuando el agua retrocede por varios desagües o afecta a más de una vivienda, localizamos el tramo común donde puede estar la obstrucción.</li>
+      <li><strong>Arquetas y desagües de patios o garajes.</strong> Revisamos por dónde deja de circular el agua y qué acceso permite retirar la obstrucción.</li>
+      <li><strong>Atascos en negocios.</strong> Atendemos problemas en baños, cocinas y otros desagües del local. Indícanos qué zonas están afectadas y cómo se accede a la instalación.</li>
+      </ul>
+      <figure><img src={BILBAO_URGENT_PHOTO} alt="Equipo de Saneamientos Mungia en un trabajo de saneamiento" loading="lazy" width="1020" height="679"></figure>
+      <h2>Qué hacer si el agua está rebosando</h2>
+      <p>Deja de usar los desagües afectados y evita volver a tirar de la cisterna o poner la lavadora. Si también les ocurre a otros vecinos, avisa al administrador o al responsable del edificio. Si la incidencia está en una <a href="/servicios/red-saneamiento-municipal/">red pública de saneamiento</a>, comunícala al organismo responsable de esa red.</p>
+      <h2>Cómo localizamos y resolvemos el atasco</h2>
+      <ol>
+      <li><strong>Recibimos el aviso.</strong> Dinos la dirección en Bilbao, qué desagües fallan, desde cuándo y si hay retorno de agua. Si ya has vertido algún producto, indícanos cuál.</li>
+      <li><strong>Revisamos el punto de acceso.</strong> Según la instalación, podemos acceder desde el aparato, un registro o una arqueta. La ubicación y el estado de la tubería determinan el método.</li>
+      <li><strong>Retiramos la obstrucción y comprobamos el desagüe.</strong> Usamos el equipo que corresponda, como agua a presión en redes que lo permiten. Si el atasco vuelve o sospechamos que hay una rotura, una <a href="/servicios/inspeccion-tuberias-camara-robotizada/bilbao/">inspección de tuberías con cámara en Bilbao</a> puede ayudar a encontrar la causa.</li>
+      </ol>
+      <h2>Preguntas sobre los desatascos 24 horas en Bilbao</h2>
+      <h3>¿Cuál es el teléfono de urgencias?</h3>
+      <p>El <a href="tel:+34601004005">601 004 005</a> atiende los avisos urgentes las 24 horas. Al llamar, te orientaremos según la incidencia y la disponibilidad del equipo.</p>
+      <h3>¿Cuánto cuesta un desatasco urgente?</h3>
+      <p>Depende del punto de acceso, del tramo afectado y del equipo necesario. Una obstrucción en un fregadero y un atasco en el colector de un edificio requieren actuaciones distintas. Describe el problema al llamar para que podamos valorar el trabajo.</p>
+      <h3>¿Qué pasa si el atasco vuelve después de limpiarlo?</h3>
+      <p>Puede haber residuos en un tramo más alejado o un problema en la tubería. Si la inspección confirma un daño, valoramos opciones como la <a href="/servicios/reparacion-tuberias-sin-zanja/bilbao/">reparación de tuberías sin zanja en Bilbao</a> según el estado y el acceso a la conducción.</p>
+      <p>Para limpiezas programadas y avisos en otros municipios, consulta nuestro <a href="/servicios/desatascos-24h-urgentes/">servicio de desatascos 24 horas en Bizkaia</a>.</p>
+    </article>
+  </section>
+</Base>
