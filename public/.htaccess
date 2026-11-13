@@ -4,6 +4,9 @@ ErrorDocument 404 /404.html
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteRule ^servicios/rehabilitacion-tuberias-manga/derio-2/?$ /servicios/rehabilitacion-tuberias-manga/derio/ [R=301,L,NE]
+RewriteRule ^servicios/reparar-bajante-pvc/balmaseda-2/?$ /servicios/reparar-bajante-pvc/balmaseda/ [R=301,L,NE]
+RewriteRule ^servicios/canalizacion-de-arquetas/bakio/?$ /servicios/canalizacion-arquetas/bakio/ [R=301,L,NE]
 # Rutas equivalentes de servicios y fichas locales con slug antiguo.
 RewriteRule ^servicios/reparacion-de-tuberias-sin-zanja/?$ /servicios/reparacion-tuberias-sin-zanja/ [R=301,L,NE]
 RewriteRule ^servicios/inspeccion-de-tuberias-con-camara-robotizada/?$ /servicios/inspeccion-tuberias-camara-robotizada/ [R=301,L,NE]

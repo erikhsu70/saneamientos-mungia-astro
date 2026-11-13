@@ -607,5 +607,21 @@
         ]
       }
     ]
+  },
+  "/servicios/reparacion-bajantes-sin-obra/muskiz/": {
+    "title": "Reparación de bajantes sin obra en Muskiz",
+    "sections": [
+      {
+        "heading": "Cómo preparar una reparación de bajantes sin obra en Muskiz",
+        "paragraphs": [
+          [
+            "Si la humedad aparece en el techo de un local al descargar desde los pisos superiores, anota qué aparato la reproduce y desde qué planta. Pide a la comunidad el acceso al pie de la bajante y, si existe, al registro del patinillo. Una mancha no basta para decidir si el daño está en la columna o en una derivación particular."
+          ],
+          [
+            "Si la cámara confirma una fisura pequeña y hay espacio para llegar al punto, se puede valorar una reparación interior. Si muestra una unión desplazada o falta de apoyo, pide que el presupuesto detalle el acceso puntual, la pieza a corregir y la reposición. Acuerda con la comunidad cuándo se interrumpirán las descargas y qué prueba se hará antes de cerrar."
+          ]
+        ]
+      }
+    ]
   }
 }

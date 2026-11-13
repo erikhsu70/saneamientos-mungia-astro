@@ -3,6 +3,7 @@ import socialLinks from '../data/social-links.json';
 import serviceLandings from '../data/service-landings.json';
 import reviewedServices from '../data/services-bilbao.json';
 import localGuides from '../data/service-local-content.json';
+import { cityService } from './city-services.js';
 import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from './bilbao-urgent.js';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
@@ -14,6 +15,7 @@ export function pageSeo({ path, title, description }) {
   const normalized = normalizePath(path);
   const page = pages.get(normalized);
   const reviewedService = reviewedServices[normalized];
+  const city = cityService(normalized);
   const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === normalized);
   const url = canonicalUrl(path);
   const isBilbaoUrgent = normalized === BILBAO_URGENT_PATH;
@@ -48,8 +50,9 @@ export function pageSeo({ path, title, description }) {
   });
   if (isService) graph.push({
     '@type': 'Service', '@id': `${url}#service`, url,
-    name: reviewedService?.heading || localGuides[normalized]?.title || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
+    name: reviewedService?.heading || localGuides[normalized]?.title || city?.title || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
     description, provider: { '@id': businessId }, mainEntityOfPage: { '@id': webpageId },
+    ...(city ? { areaServed: { '@type': city.area.type, name: city.area.name } } : {}),
   });
   return { url, image, isPost, structuredData: { '@context': 'https://schema.org', '@graph': graph } };
 }
