@@ -1,0 +1,42 @@
+{
+  "/servicios/arreglo-bajantes/santurtzi/": {
+    "date": "2026-11-13",
+    "visitTip": "Si la mancha aparece en el techo de una vivienda, anota la hora en que reaparece y qué aparatos se habían usado en el piso de arriba. Facilita al administrador los datos de los dos pisos para que pueda coordinar la revisión."
+  },
+  "/servicios/canalizacion-arquetas/bizkaia/": {
+    "date": "2026-11-13",
+    "visitTip": "Si vas a renovar el pavimento, marca en una foto el último punto donde se vio la tapa y señala desde dónde se puede acceder al ramal. Acuerda qué registros quedarán accesibles cuando termine la obra."
+  },
+  "/servicios/desatascos-urgentes/laredo/": {
+    "date": "2026-11-13",
+    "visitTip": "Si el problema aparece al abrir la vivienda tras varias semanas cerrada, indica si el primer síntoma fue olor, desagüe lento o retorno de agua. Cuenta si afecta a un único aparato o también a otros desagües del edificio."
+  },
+  "/servicios/fosas-septicas-limpieza/laredo/": {
+    "date": "2026-11-13",
+    "visitTip": "En una vivienda de uso estacional, indica cuándo volvió a ocuparse y en qué fecha se hizo el último vaciado. Una foto del acceso desde la calle, tomada con las tapas cerradas, ayuda a valorar la maniobra de la cuba."
+  },
+  "/servicios/instalacion-fosas-septicas/bizkaia/": {
+    "date": "2026-11-13",
+    "visitTip": "En una reforma, distingue cuántas personas usan hoy la vivienda y cuántas la ocuparán tras la obra. Si dispones del plano, señala dónde salen los desagües y por dónde podría acceder el equipo para el mantenimiento."
+  },
+  "/servicios/red-saneamiento-municipal/barakaldo/": {
+    "date": "2026-11-13",
+    "visitTip": "Si varios portales comparten salida, identifica cuáles tienen retorno y si el agua sube por los sótanos o por registros a pie de calle. Indica si empezó con lluvia o durante un día seco."
+  },
+  "/servicios/red-saneamiento-municipal/getxo/": {
+    "date": "2026-11-13",
+    "visitTip": "Si el agua sale por una tapa en la calle, indica el portal más próximo y si también rebosa la última arqueta de la finca. Si puedes documentarlo desde un lugar seguro, una foto de ambos puntos ayuda a orientar el aviso."
+  },
+  "/servicios/red-saneamiento-vivienda-familiar/bilbao/": {
+    "date": "2026-11-13",
+    "visitTip": "Si la reforma añade un baño en un semisótano, marca en el plano la altura de sus desagües y la de la arqueta de salida, si las conoces. Esas cotas ayudan a valorar cómo evacuar el agua y dónde dejar el acceso de mantenimiento."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/bilbao/": {
+    "date": "2026-11-13",
+    "visitTip": "En un garaje comunitario, señala qué plazas o carriles hay sobre el tramo dañado y dónde se encuentran los registros. Si el acceso se comparte con un local, indica los horarios en que se puede abrir cada zona."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/vitoria/": {
+    "date": "2026-11-13",
+    "visitTip": "Si ya tienes un vídeo de la tubería, envía el tramo completo con su contador de distancia y señala desde qué arqueta se grabó. Así se puede ubicar la avería respecto a la entrada de vehículos o al pavimento que interesa conservar."
+  }
+}

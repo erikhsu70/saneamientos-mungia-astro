@@ -7,7 +7,10 @@ const { service } = Astro.props;
   <p>{service.diagnosis}</p>
   <p>{service.decision}</p>
   <h3>Qué enviar para preparar la visita</h3>
-  <ul>{service.inputs.map((item) => <li>{item}</li>)}</ul>
+  <ul>
+    {service.inputs.map((item) => <li>{item}</li>)}
+    {service.review && <li>{service.review.visitTip}</li>}
+  </ul>
   <p>{service.area.access}</p>
   {service.publicResource && (
     <p>Si la incidencia afecta a la vía pública, consulta el <a href={service.publicResource[1]}>{service.publicResource[0]}</a>.</p>

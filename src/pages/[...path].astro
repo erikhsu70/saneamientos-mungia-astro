@@ -48,7 +48,7 @@ const city = cityService(path);
 const isContact = path === '/contacto/' || path === '/contacto2/';
 const publishedOn = latestContentDate(page.date);
 const updatedOn = city || reviewedService || localGuide || path === '/servicios/'
-  ? SERVICE_REVIEW_DATE
+  ? city?.review?.date || SERVICE_REVIEW_DATE
   : latestContentDate(page.date, page.modified);
 const parentPath = /^\/servicios\/[^/]+\/[^/]+\/$/.test(path) ? `/servicios/${path.split('/')[2]}/` : null;
 const generalServicePath = parentPath && (redirects[parentPath] || parentPath);
@@ -126,7 +126,7 @@ const isLegalUnavailable = page.status === 404;
   ) : page.kind === 'post' ? (
     <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1><PageDate date={updatedOn} label={updatedOn === publishedOn ? 'Publicado en' : undefined} /></div></section><BlogArticle page={page} /></>
   ) : (
-    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1><PageDate date={updatedOn} />{city ? <p>{city.summary}</p> : footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout service-body-layout"><article class="article-content">
+    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1><PageDate date={updatedOn} fullDate={Boolean(city?.review)} />{city ? <p>{city.summary}</p> : footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout service-body-layout"><article class="article-content">
       {parentPath && <p class="service-parent-links"><a href="/servicios/">Todos los servicios</a> <span aria-hidden="true">·</span> <a href={generalServicePath}>{generalServiceTitle}</a></p>}
       {localGuide && <ServiceLocalGuide sections={localGuide.sections} />}
       {city && <CityServiceGuide service={city} />}

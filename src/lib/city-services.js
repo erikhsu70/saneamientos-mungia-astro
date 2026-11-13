@@ -2,6 +2,7 @@ import fullData from '../data/full-data.json';
 import supplementalPages from '../data/supplemental-pages.json';
 import reviewedServices from '../data/services-bilbao.json';
 import editorial from '../data/city-service-editorial.json';
+import reviews from '../data/city-service-reviews.json';
 import areas from '../data/service-areas.json';
 import redirects from '../data/service-redirects.json';
 import { BILBAO_URGENT_ALTERNATE, BILBAO_URGENT_PATH } from './bilbao-urgent.js';
@@ -50,6 +51,7 @@ export function cityService(path) {
     description,
     area: { name, access, type },
     technicalSections,
+    review: reviews[path],
     related: content.related.map((service) => relatedService(service, area)),
     publicResource: family === 'red-saneamiento-municipal' ? publicResources[area] : undefined,
   };
