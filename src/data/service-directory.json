@@ -1,0 +1,64 @@
+{
+  "title": "Servicios de saneamiento en Bilbao y Bizkaia",
+  "description": "Encuentra el servicio de saneamiento que necesitas en Bilbao y Bizkaia: desatascos 24 h, limpieza de redes, inspección con cámara, reparaciones y fosas sépticas.",
+  "groups": [
+    {"name":"Desatascos y limpieza","id":"desatascos-limpieza","services":[
+      ["desatascos-24h-urgentes","Desatascos 24 horas","Si el agua rebosa, hay retorno en varios desagües o el atasco impide usar la instalación."],
+      ["limpiezas-en-redes-de-saneamientos","Limpieza de redes de saneamiento","Retirada de sedimentos, grasa y residuos en conducciones, arquetas y colectores."],
+      ["mantenimiento-de-la-red-de-saneamiento","Mantenimiento preventivo de redes","Plan de limpiezas y revisiones según el historial y los puntos críticos de la instalación."],
+      ["desatranco-tuberias","Desatranco de tuberías","Localización y retirada de obstrucciones en un ramal o un tramo común."],
+      ["limpieza-alcantarillado-mantenimiento-red","Limpieza y mantenimiento de alcantarillado","Limpieza planificada por tramos, con seguimiento de los depósitos que reaparecen."]
+    ]},
+    {"name":"Inspección y pruebas","id":"inspeccion-pruebas","services":[
+      ["inspeccion-tuberias","Inspección de tuberías","Localización del tramo afectado y elección del equipo según diámetro, registros y visibilidad."],
+      ["inspeccion-tuberias-camara-robotizada","Inspección con cámara robotizada","Grabación interior para localizar daños y relacionarlos con un registro y una distancia."],
+      ["prueba-estanqueidad-alcantarillado","Prueba de estanqueidad de alcantarillado","Comprobación de un tramo exterior delimitado y documentación del resultado."],
+      ["prueba-hermeticidad-drenaje-sanitario","Prueba de hermeticidad en drenaje sanitario","Comprobación de pérdidas en una conducción de evacuación del edificio."]
+    ]},
+    {"name":"Reparación y rehabilitación de tuberías","id":"reparacion-tuberias","services":[
+      ["reparacion-tuberias-sin-zanja","Reparación de tuberías sin zanja","Valora si el daño se puede resolver desde un registro existente o requiere un acceso puntual."],
+      ["rehabilitacion-tuberias-sin-zanja","Rehabilitación de tuberías sin zanja","Renovación de un tramo entre registros cuando hay daños repartidos en la conducción."],
+      ["reparacion-tuberias-manga","Reparación de tuberías con manga","Revestimiento interior con comprobación de la conducción y de las conexiones activas."],
+      ["rehabilitacion-tuberias-sin-obras","Rehabilitación de tuberías en edificios ocupados","Organización de accesos y cortes de uso para limitar las obras en viviendas y locales."],
+      ["rehabilitacion-tuberias","Rehabilitación de tuberías","Comparación de reparación localizada, revestimiento y sustitución según el defecto."],
+      ["rehabilitacion-tuberias-camara","Diagnóstico con cámara antes de rehabilitar","Cómo convertir la inspección y el informe en una propuesta de reparación."],
+      ["robot-fresador-tuberias","Robot fresador para tuberías","Retirada selectiva de obstáculos adheridos y preparación de la conducción."],
+      ["robot-fresador-tuberias-raices","Fresado de raíces en tuberías","Corte de raíces y revisión de la junta o fisura por la que entraron."]
+    ]},
+    {"name":"Bajantes y comunidades","id":"bajantes-comunidades","services":[
+      ["reparacion-bajantes","Reparación de bajantes","Localización de fugas y valoración de juntas, ramales y tramos verticales."],
+      ["reparacion-bajantes-comunidad","Reparación de bajantes en comunidades","Coordinación de accesos por planta, avisos a vecinos y pruebas de entrega."],
+      ["reparacion-bajantes-sin-obra","Reparación puntual de bajantes sin obra","Estudio de fisuras o uniones que pueden tratarse desde un acceso existente."],
+      ["rehabilitacion-bajantes-sin-obras","Rehabilitación interior de bajantes","Revestimiento de la vertical con comprobación de sus derivaciones."],
+      ["rehabilitacion-bajantes","Rehabilitación de bajantes","Valoración de la columna completa, sustitución por fases y tramos que se pueden conservar."],
+      ["reparar-bajante-pvc","Reparación de bajantes de PVC","Revisión de juntas, sujeciones y transiciones entre materiales."],
+      ["arreglo-bajantes","Diagnóstico de averías en bajantes","Qué señales ayudan a distinguir una fuga de una obstrucción antes de abrir."]
+    ]},
+    {"name":"Fosas sépticas","id":"fosas-septicas","services":[
+      ["fosas-septicas-limpieza","Limpieza y vaciado de fosas sépticas","Planificación de la visita, acceso de la cuba y revisión de los puntos visibles."],
+      ["instalacion-fosas-septicas","Instalación de fosas sépticas","Valoración de la conexión a red, la parcela, la carga y el destino del efluente."],
+      ["instalacion-y-vaciado-de-fosas-septicas","Instalación, vaciado o sustitución de una fosa","Qué encargo corresponde cuando hay un depósito antiguo o cambia el uso de la finca."]
+    ]},
+    {"name":"Arquetas y redes de evacuación","id":"arquetas-redes","services":[
+      ["canalizacion-arquetas","Canalización de arquetas","Localización de registros, revisión de cotas y conexión de ramales."],
+      ["red-evacuacion-aguas-pluviales","Evacuación de aguas pluviales","Revisión del recorrido desde cubiertas, patios o rampas hasta la salida."],
+      ["red-evacuacion-aguas-residuales-pluviales","Evacuación de aguas residuales y pluviales","Identificación de recorridos y conexiones cruzadas antes de reformar."],
+      ["red-saneamiento-edificio","Red de saneamiento de edificios","Diagnóstico de recorridos comunes, colectores, bajantes y sótanos."],
+      ["red-saneamiento-vivienda-familiar","Red de saneamiento de viviendas unifamiliares","Revisión de la salida de parcela, registros y acometida."],
+      ["red-saneamiento-municipal","Red de saneamiento municipal","Delimitación de tramos y accesos en actuaciones coordinadas con el gestor."],
+      ["red-saneamiento-separativa","Red de saneamiento separativa","Comprobación de que las aguas usadas y de lluvia siguen su recorrido previsto."],
+      ["redes-locales-abastecimiento-saneamiento","Redes locales de abastecimiento y saneamiento","Planificación de conducciones, cruces y pruebas cuando se interviene en ambas redes."],
+      ["saneamiento-alcantarillado","Saneamiento de alcantarillado","Diagnóstico de incidencias entre pozos y decisión entre limpieza, inspección y reparación."],
+      ["rehabilitacion-redes-saneamiento","Rehabilitación de redes de saneamiento","Inventario de defectos y orden de obra en instalaciones con varios tramos."],
+      ["tipos-redes-saneamiento","Tipos de redes de saneamiento","Guía para distinguir una red unitaria, separativa o un sistema autónomo."]
+    ]}
+  ],
+  "areas": [
+    ["/desatascos-urgentes-24-horas-bilbao/","Desatascos urgentes en Bilbao"],
+    ["/servicios/desatascos-urgentes/getxo/","Desatascos urgentes en Getxo"],
+    ["/servicios/desatascos-urgentes/gernika-lumo/","Desatascos urgentes en Gernika-Lumo"],
+    ["/servicios/red-saneamiento-municipal/barakaldo/","Saneamiento municipal en Barakaldo"],
+    ["/servicios/fosas-septicas-limpieza/bizkaia/","Vaciado de fosas en Bizkaia"],
+    ["/servicios/reparacion-tuberias-sin-zanja/vitoria/","Reparación sin zanja en Vitoria-Gasteiz"]
+  ]
+}

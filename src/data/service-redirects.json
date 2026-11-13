@@ -1,0 +1,15 @@
+{
+  "/servicios/reparacion-de-tuberias-sin-zanja/": "/servicios/reparacion-tuberias-sin-zanja/",
+  "/servicios/inspeccion-de-tuberias-con-camara-robotizada/": "/servicios/inspeccion-tuberias-camara-robotizada/",
+  "/servicios/reparacion-de-bajantes/": "/servicios/reparacion-bajantes/",
+  "/servicios/canalizacion-de-arquetas/": "/servicios/canalizacion-arquetas/",
+  "/servicios/robot-fresador/": "/servicios/robot-fresador-tuberias/",
+  "/servicios/desatascos-urgentes/": "/servicios/desatascos-24h-urgentes/",
+  "/servicios/desatrancos/": "/desatrancos/",
+  "/servicios/rehabilitacion-tuberias-manga/": "/servicios/reparacion-tuberias-manga/",
+  "/servicios/rehabilitacion-redes-saneamiento-42-43-44-45-46-47-48-49-50-51-52-53-54-55-56-57-58-59-60/": "/servicios/rehabilitacion-redes-saneamiento/berango/",
+  "/servicios/tipos-redes-saneamiento-4-5-6-7-8-9-10-11-12-13-14-15-16-17-18/": "/servicios/tipos-redes-saneamiento/derio/",
+  "/servicios/red-saneamiento-separativa-4-5-6-7-8-9-10-11-12/": "/servicios/red-saneamiento-separativa/lezama/",
+  "/servicios/rehabilitacion-tuberias-manga-68-69-70-71-72/": "/servicios/rehabilitacion-tuberias-manga/sopela/",
+  "/servicios/rehabilitacion-tuberias-manga-68-69-70-71-72-73-74-75-76-77-78-79-80-81-82-83/": "/servicios/rehabilitacion-tuberias-manga/ortuella/"
+}

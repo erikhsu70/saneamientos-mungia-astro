@@ -2,6 +2,7 @@ import fullData from '../data/full-data.json';
 import socialLinks from '../data/social-links.json';
 import serviceLandings from '../data/service-landings.json';
 import reviewedServices from '../data/services-bilbao.json';
+import localGuides from '../data/service-local-content.json';
 import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from './bilbao-urgent.js';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
@@ -47,7 +48,7 @@ export function pageSeo({ path, title, description }) {
   });
   if (isService) graph.push({
     '@type': 'Service', '@id': `${url}#service`, url,
-    name: reviewedService?.heading || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
+    name: reviewedService?.heading || localGuides[normalized]?.title || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
     description, provider: { '@id': businessId }, mainEntityOfPage: { '@id': webpageId },
   });
   return { url, image, isPost, structuredData: { '@context': 'https://schema.org', '@graph': graph } };
