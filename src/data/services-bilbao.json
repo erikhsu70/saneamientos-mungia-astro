@@ -46,6 +46,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Inventario para el plan de mantenimiento",
+      "Registro de entrada y salida de cada tramo",
+      "Última limpieza y fechas de retornos o reboses",
+      "Horarios de acceso y responsable de las llaves"
+    ],
     "question": "¿Hay que limpiar todos los tramos en cada visita?",
     "answer": "Depende de su uso y del historial. Se puede revisar una parte de la red y actuar sobre los puntos críticos con más frecuencia, siempre que el alcance indique qué tramos quedan cubiertos.",
     "locations": []
@@ -91,6 +97,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Datos para elegir el equipo de limpieza",
+      "Altura del acceso y distancia hasta el registro",
+      "Material visible, como arena, grasa o lodos",
+      "Punto por el que puede retirarse el residuo"
     ],
     "question": "¿Puede entrar la cuba en cualquier garaje?",
     "answer": "La altura, el espacio de maniobra y la distancia al registro condicionan el equipo. Si el vehículo debe quedar fuera, interesa conocer el recorrido que tendría la manguera.",
@@ -142,6 +154,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Datos para comunicar la urgencia",
+      "Dirección, planta y forma de entrar al inmueble",
+      "Si el agua rebosa, ha dejado de bajar o afecta a vecinos",
+      "Producto que ya se haya vertido, si lo hubo"
     ],
     "question": "¿Un desatasco de noche cuesta lo mismo que uno programado?",
     "answer": "Pregunta por las condiciones de la salida al dar el aviso. La franja horaria, el acceso y el equipo necesario pueden cambiar el importe.",
@@ -320,6 +338,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Información para preparar el vaciado",
+      "Capacidad aproximada del depósito y fecha del último vaciado",
+      "Tapa localizada, punto de estacionamiento y distancia de manguera",
+      "Alcance de limpieza, transporte y documentación de residuos"
     ],
     "question": "¿Cada cuánto se vacía una fosa séptica?",
     "answer": "Depende de su capacidad, ocupación y uso. El historial de vaciados y una valoración profesional del nivel de lodos ayudan a ajustar la frecuencia.",
@@ -508,6 +532,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Cómo describir el atasco",
+      "Primer aparato que dejó de evacuar",
+      "Otros puntos donde se oye ruido o vuelve el agua",
+      "Si el síntoma empezó de golpe o ya había ocurrido"
+    ],
     "question": "¿Por qué gorgotea el inodoro si el tapón parece estar en la ducha?",
     "answer": "Los aparatos pueden compartir un ramal. Indica cuál se usa primero y por cuál vuelve el agua para orientar la revisión.",
     "locations": [
@@ -690,6 +720,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué conviene coordinar durante la urgencia",
+      "Aviso a vecinos o usuarios del tramo compartido",
+      "Persona que abre el portal, garaje o registro",
+      "Corte temporal del uso de los aparatos afectados"
     ],
     "question": "¿Qué hago si la arqueta que rebosa está en la calle?",
     "answer": "Mantente alejado del rebose y comunica la ubicación al operador de la red o al servicio municipal. Si el rebose está en una instalación privada, llama con los datos de acceso.",
@@ -883,6 +919,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Información para encontrar el ramal",
+      "Desagües que funcionan y los que se quedan retenidos",
+      "Si el agua vuelve al usar otro aparato",
+      "Acceso a sifón, registro o arqueta y trabajos previos"
+    ],
     "question": "¿Conviene echar un desatascador antes de la visita?",
     "answer": "Evita añadir productos. Si ya se ha usado uno, comunica el nombre del producto y cuándo se aplicó antes de que el equipo abra o limpie el tramo.",
     "locations": [
@@ -1069,6 +1111,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué comparar en el presupuesto",
+      "Longitud y material del tramo que se va a tratar",
+      "Acceso desde registro, patinillo o vivienda",
+      "Prueba final y reposición de acabados, si corresponde"
     ],
     "question": "¿Hay que cambiar toda la bajante por una fuga?",
     "answer": "Se decide cuando se localiza el defecto. Si solo falla una junta y el resto de la vertical está en buen estado, puede bastar una intervención localizada.",
@@ -1257,6 +1305,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Puntos que deciden si se evita abrir",
+      "Sección libre en el tramo donde está la avería",
+      "Posición del defecto respecto a codos y derivaciones",
+      "Registro desde el que entra y sale el equipo"
+    ],
     "question": "¿Se puede trabajar sin entrar en todas las viviendas?",
     "answer": "Depende de dónde estén los registros y de qué ramales descarguen en el tramo. La visita permite identificar los accesos y los avisos necesarios.",
     "locations": [
@@ -1438,6 +1492,12 @@
           " para ver cómo se plantea la intervención una vez confirmado el defecto."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué anotar antes de pedir un arreglo",
+      "Cuándo apareció la primera mancha y cómo ha cambiado",
+      "Si coincide con ducha, cisterna, lavadora o lluvia",
+      "Reparaciones anteriores y resultado que tuvieron"
     ],
     "question": "¿Sirve una foto de la mancha para saber de dónde viene la fuga?",
     "answer": "Ayuda a localizar dónde se manifiesta, pero el agua puede desplazarse. Anota también cuándo aparece y qué aparatos estaban en uso.",
@@ -1626,6 +1686,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué comprobar antes de revestir una bajante",
+      "Ubicación de empalmes y ramales por planta",
+      "Estado interior tras la limpieza y paso disponible",
+      "Ventana de trabajo y prueba al reabrir los ramales"
+    ],
     "question": "¿Se puede usar el baño durante el revestimiento?",
     "answer": "La descarga desde los ramales incluidos puede interferir en el trabajo. Se acuerda una franja de restricción y se comunica cuándo se pueden volver a usar.",
     "locations": [
@@ -1812,6 +1878,12 @@
           " para comparar rehabilitación y sustitución."
         ]
       ]
+    ],
+    "checklist": [
+      "Datos para coordinar una reparación comunitaria",
+      "Contacto del administrador y persona que da acceso",
+      "Plantas afectadas y aparatos que comparten la bajante",
+      "Aviso de uso restringido y documentación para el expediente"
     ],
     "question": "¿Qué documentación puede ayudar si hay parte al seguro?",
     "answer": "Conserva fotos, el historial del aviso y un informe que identifique el tramo revisado. La cobertura concreta depende de la póliza y la valoración de la aseguradora.",
@@ -2000,6 +2072,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Cómo comparar dos propuestas de rehabilitación",
+      "Metros de vertical y conexiones incluidos",
+      "Tramos que se revestirían y tramos que se sustituirían",
+      "Comprobaciones de servicio y de acceso futuro"
+    ],
     "question": "¿Qué ocurre si algunas conexiones están deterioradas?",
     "answer": "Cada conexión necesita una revisión propia. La propuesta debe indicar cuáles se conservan, cuáles se tratan y cómo se comprueba que vuelven a evacuar.",
     "locations": [
@@ -2186,6 +2264,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué revisar cuando hay pavimento que conservar",
+      "Superficie que conviene preservar y restricciones de paso",
+      "Estado de la conducción entre los registros disponibles",
+      "Si se necesita una apertura puntual para recuperar acceso"
     ],
     "question": "¿Se puede conservar un patio pavimentado?",
     "answer": "Si hay registros desde los que acceder al defecto y la tubería conserva paso, puede evitarse abrir gran parte del pavimento. La inspección confirma si hace falta una apertura puntual.",
@@ -2374,6 +2458,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué pedir antes de renovar entre registros",
+      "Inicio y final del tramo que se pretende rehabilitar",
+      "Preparación de obstáculos y recuperación de conexiones",
+      "Comprobación posterior y condiciones de puesta en servicio"
+    ],
     "question": "¿Se puede rehabilitar un colector si no aparecen los planos?",
     "answer": "Primero hay que localizar los registros y seguir el trazado accesible. Con esa información se acota el tramo y se decide si es necesario localizar otros puntos.",
     "locations": [
@@ -2555,6 +2645,12 @@
           " para organizar el acceso."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué observar en una bajante de PVC",
+      "Si la fuga aparece en un enchufe, codo o derivación",
+      "Si hay desplazamiento visible o una sujeción floja",
+      "Si el problema coincide con una descarga o con lluvia"
     ],
     "question": "¿Qué pasa si la fuga de PVC solo aparece al llover?",
     "answer": "Puede estar en una bajante pluvial o en otra parte de la evacuación de cubierta. Indica si coinciden reboses en canalones, patios o sumideros.",
@@ -2743,6 +2839,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué conviene conservar de la inspección inicial",
+      "Registro de entrada y sentido de avance de la cámara",
+      "Metros, defectos visibles y parte que no pudo inspeccionarse",
+      "Imágenes del entorno del defecto y de sus conexiones"
+    ],
     "question": "¿Un vídeo permite dar presupuesto sin visita?",
     "answer": "Un vídeo con distancias, conexiones y punto de acceso ayuda a valorar el alcance. Puede hacer falta comprobar medidas o condiciones del inmueble antes de cerrar el presupuesto.",
     "locations": [
@@ -2922,6 +3024,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué concretar para mantener el inmueble operativo",
+      "Accesos necesarios y qué zonas se deben proteger",
+      "Horarios de intervención y duración estimada del corte",
+      "Condiciones para reanudar el uso del tramo"
+    ],
     "question": "¿Se puede mantener el local abierto durante los trabajos?",
     "answer": "Depende de dónde estén los accesos y del corte de uso necesario. Se puede valorar una intervención por fases si la red y el horario lo permiten.",
     "locations": [
@@ -2972,6 +3080,12 @@
           " permite planificar el conjunto."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué condiciona la elección del método",
+      "Continuidad y forma del conducto existente",
+      "Longitud dañada y cercanía a otros defectos",
+      "Estado de la pendiente, los accesos y las derivaciones"
     ],
     "question": "¿Una tubería antigua siempre necesita sustituirse?",
     "answer": "La edad ayuda a interpretar el historial. La decisión depende del estado real, la continuidad, la pendiente y los accesos de la conducción.",
@@ -3154,6 +3268,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué debe figurar en una propuesta con manga",
+      "Longitud y diámetro de la conducción y sistema previsto",
+      "Preparación del interior y tratamiento de las derivaciones",
+      "Comprobación del paso y vídeo del tramo revestido"
     ],
     "question": "¿La manga corrige una tubería hundida?",
     "answer": "El revestimiento sigue la forma del tubo que lo recibe. Si el hundimiento impide el paso o altera la pendiente, hay que estudiar una solución para ese defecto.",
@@ -3342,6 +3462,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Datos para definir la prueba exterior",
+      "Plano o croquis del tramo entre pozos y sus derivaciones",
+      "Criterio de aceptación indicado por el titular o proyecto",
+      "Procedimiento para apartar el tramo del servicio durante la prueba"
+    ],
     "question": "¿Una inspección con cámara sustituye la prueba de estanquedad?",
     "answer": "El vídeo muestra defectos visibles. La prueba comprueba el comportamiento del tramo bajo las condiciones acordadas. Pueden pedirse ambas en una recepción.",
     "locations": [
@@ -3524,6 +3650,12 @@
           " y facilita los requisitos de la obra."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué pedir al recibir el resultado",
+      "Identificación de los ramales que quedaron aislados",
+      "Condiciones, duración y método de la prueba",
+      "Incidencias observadas y alcance de cualquier repetición"
     ],
     "question": "¿Hace falta dejar de usar los aparatos conectados?",
     "answer": "Puede ser necesario durante la prueba. Antes se identifica qué aparatos descargan en el tramo y se acuerda la interrupción para evitar alterar el resultado.",
@@ -3711,6 +3843,12 @@
           " para revisar conexiones y evitar cruces entre ellas."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué anotar durante el próximo episodio de lluvia",
+      "Puntos donde empieza a acumularse el agua",
+      "Si el rebose coincide con el funcionamiento de una bomba",
+      "Tiempo que tarda en bajar el nivel cuando deja de llover"
     ],
     "question": "¿Por qué rebosa una rampa de garaje en lluvias intensas?",
     "answer": "El problema puede estar en la captación, la capacidad del tramo, el bombeo o un retorno. Indica si rebosa en un único punto y dónde llega el agua después.",
@@ -3904,6 +4042,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué marcar en el plano de evacuación",
+      "Cubiertas, patios, baños y cocinas que aportan agua",
+      "Registro por el que se puede seguir cada conducción",
+      "Punto de salida y red receptora de cada circuito"
+    ],
     "question": "¿Se pueden unir aguas residuales y pluviales en cualquier registro?",
     "answer": "El trazado debe responder a la configuración del inmueble y a las condiciones del punto de conexión. Revisa el recorrido y consulta los requisitos del titular antes de unir ramales.",
     "locations": [
@@ -4090,6 +4234,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué revisar con el administrador",
+      "Plantas afectadas y recorrido aproximado de la vertical",
+      "Registros en garaje, patio y salida del inmueble",
+      "Si hay instalaciones bajo rasante que dependen de una bomba"
     ],
     "question": "¿Qué aporta un plano si hay humedad en varias plantas?",
     "answer": "Permite asociar síntomas con bajantes y colectores compartidos. Si hubo reformas, conviene contrastarlo con los registros actuales y las plantas afectadas.",
@@ -4282,6 +4432,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Datos para revisar la evacuación de una casa",
+      "Plano de la parcela y de las reformas que añadieron desagües",
+      "Registros conocidos y diferencia de cota con el punto de salida",
+      "Si existe conexión disponible o ya hay tratamiento en la finca"
     ],
     "question": "¿Qué pasa si el patio y la vivienda usan la misma salida?",
     "answer": "Conviene comprobar el trazado y el punto de descarga. Si la incidencia aparece con lluvia, esos datos ayudan a revisar si hay una conexión incorrecta o capacidad insuficiente.",
@@ -4480,6 +4636,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué indicar en un encargo sobre red pública",
+      "Tramo, pozos y planos del ámbito de actuación",
+      "Requisitos del titular sobre accesos, servicio y entrega",
+      "Condiciones de ocupación de la vía y coordinación con otras contratas"
+    ],
     "question": "¿Un plano municipal identifica el límite exacto de mi acometida?",
     "answer": "Orienta sobre la infraestructura pública. Para conocer el límite concreto, revisa la documentación de la finca y confirma el punto con el titular u operador.",
     "locations": [
@@ -4667,6 +4829,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué dejar identificado al separar los circuitos",
+      "Puntos de captación que pertenecen a cada red",
+      "Registros que permiten verificar el trazado y limpiar",
+      "Conexiones que se corrigieron y destino final de cada salida"
+    ],
     "question": "¿Cómo sé si mi nave tiene dos circuitos separados?",
     "answer": "Identifica los puntos de recogida, sigue los ramales y verifica las salidas. Ver dos tuberías en un registro no aclara por sí solo su destino.",
     "locations": [
@@ -4849,6 +5017,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Información para definir el límite de la obra",
+      "Punto de conexión y entidad responsable de cada red",
+      "Conducciones que cruzan la zona y accesos que se conservan",
+      "Pruebas y planos de entrega para cada circuito"
     ],
     "question": "¿Se pueden comprobar ambas redes con una sola prueba?",
     "answer": "Abastecimiento y evacuación tienen funciones distintas. La propuesta debe distinguir qué circuito se prueba, con qué condiciones y qué resultado se entrega.",
@@ -5036,6 +5210,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Información para localizar un problema en alcantarillado",
+      "Primer pozo que se carga y otros registros afectados",
+      "Relación entre el nivel y la lluvia o las horas de mayor uso",
+      "Parte de la red que se limpió o reparó con anterioridad"
     ],
     "question": "¿Qué significa que varios pozos estén en carga?",
     "answer": "Indica que el nivel es alto en más de un punto. Comparar el orden de los pozos afectados ayuda a localizar la zona que se debe revisar.",
@@ -5229,6 +5409,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Pistas para identificar qué red tienes",
+      "Si la lluvia y el agua usada tienen salidas diferenciadas",
+      "Si existe plano de acometida y registro de salida",
+      "Si la parcela depende de un equipo de tratamiento propio"
+    ],
     "question": "¿Qué diferencia hay entre red separativa y saneamiento autónomo?",
     "answer": "La primera organiza por separado la lluvia y las aguas usadas. El segundo trata las aguas residuales de un inmueble que no dispone de conexión adecuada a la red pública.",
     "locations": [
@@ -5416,6 +5602,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué información hace reutilizable el vídeo",
+      "Registro de entrada, sentido de avance y metraje visible",
+      "Localización aproximada del defecto respecto al acceso",
+      "Condiciones que limitaron la inspección o impidieron continuar"
+    ],
     "question": "¿La cámara localiza cualquier fuga?",
     "answer": "Solo muestra lo que puede verse desde el interior y hasta donde llega el equipo. Si se necesita comprobar si un tramo pierde, puede hacer falta una prueba específica.",
     "locations": [
@@ -5602,6 +5794,12 @@
           " para preparar los datos de encargo."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué debe recoger un plan por tramos",
+      "Defectos y usuarios afectados en cada zona",
+      "Intervención prevista y dependencias entre trabajos",
+      "Comprobación de cada tramo antes de pasar al siguiente"
     ],
     "question": "¿Hay que intervenir a la vez en toda la red?",
     "answer": "Se puede plantear por tramos si el diagnóstico y el servicio lo permiten. El plan debe identificar qué zonas quedan operativas y qué accesos se necesitan.",
@@ -5795,6 +5993,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué revisar al dejar una arqueta accesible",
+      "Trazado y altura de los ramales de entrada y salida",
+      "Ubicación de la tapa respecto a pavimento y zonas de paso",
+      "Espacio disponible para inspeccionar y limpiar en el futuro"
+    ],
     "question": "¿Se puede cambiar la tapa sin sustituir la arqueta?",
     "answer": "Si el registro, el marco y el apoyo están en buen estado, puede valorarse una intervención limitada. Si hay filtraciones o defectos en las conexiones, hay que revisar el conjunto.",
     "locations": [
@@ -5845,6 +6049,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Datos para preparar una inspección robotizada",
+      "Diámetro aproximado y distancia entre registros",
+      "Presencia de agua, cambios de dirección y obstáculos",
+      "Qué decisión debe poder tomarse después de revisar el vídeo"
     ],
     "question": "¿Se puede inspeccionar un conducto parcialmente inundado?",
     "answer": "El agua puede limitar lo visible y el avance. Indica si el nivel es habitual o puntual para valorar limpieza, acceso alternativo o una nueva visita.",
@@ -6038,6 +6248,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Qué conviene registrar tras limpiar un colector",
+      "Registros desde los que se trabajó y longitud atendida",
+      "Tipo de sedimento retirado y puntos donde se acumula",
+      "Tramos que requieren cámara o una visita más próxima"
+    ],
     "question": "¿El mantenimiento evita cualquier inundación?",
     "answer": "Ayuda a conservar el paso y retirar obstrucciones. Si el caudal supera la capacidad de la instalación, también hay que revisar el diseño y las condiciones de descarga.",
     "locations": [
@@ -6224,6 +6440,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué comprobar después del corte de raíces",
+      "Paso que ha recuperado la conducción",
+      "Posición de la junta o fisura por la que entraron",
+      "Si el tramo permite reparación interior o necesita otro acceso"
     ],
     "question": "¿Quitar las raíces resuelve el problema definitivamente?",
     "answer": "El corte recupera sección. Si queda abierta la vía por la que entraron, pueden volver. El vídeo posterior permite valorar qué reparación conviene.",
@@ -6412,6 +6634,12 @@
         ]
       ]
     ],
+    "checklist": [
+      "Datos para valorar el fresado",
+      "Tipo de material que sobresale o bloquea la conducción",
+      "Espacio disponible para el cabezal y estado del tubo",
+      "Cómo retirar el material suelto y comprobar el resultado"
+    ],
     "question": "¿Se utiliza el mismo cabezal para raíces y mortero?",
     "answer": "La elección depende del obstáculo y de la tubería. Identificar ambos antes de fresar ayuda a limitar el riesgo de dañar el conducto.",
     "locations": [
@@ -6598,6 +6826,12 @@
           "."
         ]
       ]
+    ],
+    "checklist": [
+      "Qué debe quedar previsto para el mantenimiento",
+      "Acceso a tapas y recorrido de la manguera desde el camión",
+      "Ventilación y salida del efluente acordes con la instalación",
+      "Plano o croquis de los elementos enterrados al terminar"
     ],
     "question": "¿Se puede aprovechar una fosa antigua al reformar la vivienda?",
     "answer": "Antes de decidir, conviene comprobar estado, capacidad, accesibilidad y destino del efluente. El uso previsto y las condiciones de la parcela pueden cambiar con la reforma.",

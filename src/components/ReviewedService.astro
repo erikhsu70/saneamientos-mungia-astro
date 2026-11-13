@@ -1,5 +1,6 @@
 ---
 const { service } = Astro.props;
+const [checklistHeading, ...checklistItems] = service.checklist;
 const phone = service.urgent ? '+34601004005' : '+34944460209';
 const phoneLabel = service.urgent ? 'Urgencias · 601 004 005' : 'Llamar al 944 46 02 09';
 ---
@@ -35,6 +36,10 @@ const phoneLabel = service.urgent ? 'Urgencias · 601 004 005' : 'Llamar al 944 
         <p>{parts.map((part) => typeof part === 'string' ? part : <a href={part.href}>{part.label}</a>)}</p>
       </section>
     ))}
+    <section>
+      <h2>{checklistHeading}</h2>
+      <ul>{checklistItems.map((item) => <li>{item}</li>)}</ul>
+    </section>
     <section>
       <h2>{service.question}</h2>
       <p>{service.answer}</p>
