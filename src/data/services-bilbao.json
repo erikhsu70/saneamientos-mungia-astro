@@ -54,6 +54,37 @@
     ],
     "question": "¿Hay que limpiar todos los tramos en cada visita?",
     "answer": "Depende de su uso y del historial. Se puede revisar una parte de la red y actuar sobre los puntos críticos con más frecuencia, siempre que el alcance indique qué tramos quedan cubiertos.",
+    "details": [
+      {
+        "heading": "Cómo convertir los avisos en un plan de mantenimiento",
+        "paragraphs": [
+          [
+            "En una comunidad con tres arquetas y un único colector de salida, un rebose repetido en el mismo registro merece más atención que una limpieza indiscriminada de toda la finca. Se puede empezar comparando qué registros se cargan, cuándo ocurre y qué material se retiró la última vez. Si el tramo vuelve a llenarse pronto pese a estar limpio, conviene buscar una causa estructural antes de programar más visitas."
+          ],
+          [
+            "El plan puede indicar qué puntos se revisan en cada ronda, qué incidencias requieren una visita adicional y cómo se comunica un defecto al administrador. Por ejemplo, se puede seguir un colector que recibe los desagües de un local con cocina y controlar por separado un sumidero de garaje que solo se carga con lluvia. El registro sirve para justificar cambios de frecuencia y para que la comunidad sepa qué partes de la red siguen pendientes."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué incluye un presupuesto de mantenimiento",
+        "paragraphs": [
+          [
+            "Compara ofertas que cubran los mismos tramos y tareas. Una visita de revisión, una limpieza con retirada de residuos y una inspección con cámara tienen alcances distintos. Indica si el acceso a los registros depende del conserje, si el equipo puede estacionar junto a la finca y quién decide qué hacer al detectar un defecto. Si hay trabajos fuera del plan, pide que se describan antes de autorizarlos."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Cómo sé si el mantenimiento está funcionando?",
+        "Compara los avisos por tramo y por fecha. Si disminuyen los retornos y el material que se retira entre visitas, hay una base para mantener o ajustar el plan. Si las incidencias siguen concentradas en el mismo punto, conviene investigar el defecto."
+      ],
+      [
+        "¿El plan incluye una avería imprevista?",
+        "Depende del alcance acordado. Distingue las tareas programadas del protocolo para avisos urgentes y deja claro qué teléfono debe usar la comunidad cuando hay un retorno activo."
+      ]
+    ],
     "locations": []
   },
   "/servicios/limpiezas-en-redes-de-saneamientos/": {
@@ -106,6 +137,37 @@
     ],
     "question": "¿Puede entrar la cuba en cualquier garaje?",
     "answer": "La altura, el espacio de maniobra y la distancia al registro condicionan el equipo. Si el vehículo debe quedar fuera, interesa conocer el recorrido que tendría la manguera.",
+    "details": [
+      {
+        "heading": "Qué cambia según el tipo de instalación",
+        "paragraphs": [
+          [
+            "En un garaje pueden predominar arena y sedimentos arrastrados por vehículos o por lluvia. En un colector que recibe varias cocinas, la grasa puede acumularse en cambios de dirección o en tramos de poca pendiente. Conviene identificar qué aporta cada ramal antes de elegir cómo limpiar y dónde recoger lo que se desprenda."
+          ],
+          [
+            "Un ejemplo es un sumidero de rampa que drena bien cuando apenas llueve y rebosa cuando llega más agua. Si el sumidero está libre, revisar el registro de salida permite comprobar si hay lodos acumulados aguas abajo. Si al limpiar no se recupera capacidad, el problema puede estar en la evacuación o en la descarga. Esa diferencia ayuda a decidir si conviene inspeccionar la conducción."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué debe quedar claro al finalizar",
+        "paragraphs": [
+          [
+            "Indica desde qué registros se trabajó y hasta dónde llegó el equipo. Si hay un tramo que no se pudo limpiar por un acceso bloqueado o un tubo deformado, debe quedar identificado para evitar que se dé por atendido. Antes de presupuestar, confirma si se necesita retirar residuos, proteger zonas de paso o coordinar un horario para que los aparatos conectados no descarguen durante el trabajo."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede limpiar con el edificio en uso?",
+        "A veces es posible por tramos. Antes se acuerda qué desagües se podrán seguir usando y qué registros deben quedar libres. La duración de cualquier restricción depende del trabajo y de cómo esté conectada la red."
+      ],
+      [
+        "¿Basta con limpiar si aparece agua turbia en otro registro?",
+        "La aparición de agua turbia puede indicar que se movilizó material, pero no demuestra que todo el tramo quede despejado. Conviene verificar el paso y la retirada de sedimentos en los puntos accesibles."
+      ]
+    ],
     "locations": []
   },
   "/servicios/desatascos-24h-urgentes/": {
@@ -163,6 +225,37 @@
     ],
     "question": "¿Un desatasco de noche cuesta lo mismo que uno programado?",
     "answer": "Pregunta por las condiciones de la salida al dar el aviso. La franja horaria, el acceso y el equipo necesario pueden cambiar el importe.",
+    "details": [
+      {
+        "heading": "Cómo valorar la urgencia según lo que ves",
+        "paragraphs": [
+          [
+            "Si un solo fregadero tarda en vaciar y el resto de aparatos funciona, el tapón puede estar cerca de ese desagüe. Si al tirar de la cisterna sube agua por la ducha, la obstrucción puede quedar después de la unión de ambos ramales. Cuando aparece agua residual en una planta baja y también tienen problemas otros vecinos, avisa a la administración para limitar el uso de la bajante o del colector afectados."
+          ],
+          [
+            "En un portal con retorno activo, aporta la dirección y explica si el agua sale por un aparato, un sumidero o un registro. Mantén a las personas alejadas de la zona afectada y evita manipular registros con agua residual. Si el rebose está en la calle, comunica la ubicación al operador de la red o al servicio municipal correspondiente."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué revisar con el equipo después de un desatasco urgente",
+        "paragraphs": [
+          [
+            "El objetivo inicial es que la red vuelva a evacuar. Si se recupera el paso, pregunta qué tramo se pudo tratar y qué signos quedaron pendientes de revisar. Anotar si se retiró grasa, un objeto o raíces ayuda si el aviso se repite. Cuando la causa sigue sin aclararse, puede convenir programar una inspección en condiciones que permitan ver el interior."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Qué influye en el precio de la intervención?",
+        "La franja horaria, el acceso al tramo, el equipo necesario y la retirada de residuos pueden cambiar el alcance. Explica si hay un garaje con altura limitada o una arqueta alejada de la calle al solicitar la salida."
+      ],
+      [
+        "¿Por qué piden saber qué otros desagües fallan?",
+        "La relación entre los aparatos ayuda a distinguir un ramal de una conducción común. Indicar qué aparato se usó y dónde volvió el agua puede ahorrar intentos en accesos que no llevan al atasco."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -306,7 +399,7 @@
     "heading": "Limpieza y vaciado de fosas sépticas en Bilbao y Bizkaia",
     "description": "Vaciamos y limpiamos fosas sépticas en viviendas, comunidades y negocios. Para preparar la visita nos interesa el acceso a la tapa, la distancia desde el.",
     "intro": "Vaciamos y limpiamos fosas sépticas en viviendas, comunidades y negocios. Para preparar la visita nos interesa el acceso a la tapa, la distancia desde el camión y si hay retorno o desbordamiento.",
-    "image": "/assets/source/4059b288ad-14.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -347,6 +440,37 @@
     ],
     "question": "¿Cada cuánto se vacía una fosa séptica?",
     "answer": "Depende de su capacidad, ocupación y uso. El historial de vaciados y una valoración profesional del nivel de lodos ayudan a ajustar la frecuencia.",
+    "details": [
+      {
+        "heading": "Cómo distinguir una fosa que pide vaciado de un atasco",
+        "paragraphs": [
+          [
+            "Que el inodoro evacúe despacio no basta para concluir que el depósito esté lleno. Si varios aparatos fallan a la vez y hubo un vaciado reciente, conviene revisar la entrada, la salida y los registros accesibles. Si el problema aparece después de lluvias intensas, informa de si se encharca el terreno o entra agua de un patio. Esos datos ayudan a distinguir un exceso de lodos de otra incidencia en el sistema."
+          ],
+          [
+            "Para un vaciado programado, busca la fecha del último servicio y el volumen aproximado del depósito. En una finca con acceso estrecho, describe dónde puede quedar la cuba y por dónde pasaría la manguera. No destapes la fosa ni te asomes para medir el nivel. El equipo puede valorar los accesos y las condiciones de seguridad al llegar."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué confirmar sobre la limpieza y los residuos",
+        "paragraphs": [
+          [
+            "Pregunta si el encargo cubre solo el vaciado, si incluye retirar depósitos adheridos y si se va a revisar la entrada o la salida desde un acceso seguro. Confirma qué gestión de residuos se incluye y qué justificante se puede facilitar cuando se necesite. Una vez terminada la visita, guarda la fecha y cualquier observación que ayude a fijar el próximo mantenimiento."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede hacer el vaciado si la tapa está enterrada?",
+        "Primero hay que localizar el acceso y comprobar cómo se puede abrir de forma segura. Planos, fotos anteriores o la posición de los registros cercanos pueden orientar la visita. Indica si ya hubo una búsqueda o si se construyó encima."
+      ],
+      [
+        "¿El vaciado arregla una salida obstruida?",
+        "El vaciado reduce el contenido del depósito. Si la avería está en la salida o en el terreno receptor, puede hacer falta una revisión aparte. Explica si el retorno aparece solo con lluvia o se repite poco después del mantenimiento."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -494,7 +618,7 @@
     "heading": "Servicio de desatrancos en Bilbao y Bizkaia",
     "description": "Desatrancamos redes de viviendas, comunidades y locales. La primera decisión es localizar si el tapón está en un aparato, en un ramal o en una conducción compartida.",
     "intro": "Desatrancamos redes de viviendas, comunidades y locales. La primera decisión es localizar si el tapón está en un aparato, en un ramal o en una conducción compartida.",
-    "image": "/assets/source/40c04c3708-9-1020x679.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -540,6 +664,37 @@
     ],
     "question": "¿Por qué gorgotea el inodoro si el tapón parece estar en la ducha?",
     "answer": "Los aparatos pueden compartir un ramal. Indica cuál se usa primero y por cuál vuelve el agua para orientar la revisión.",
+    "details": [
+      {
+        "heading": "Qué intervención corresponde a cada tipo de tapón",
+        "paragraphs": [
+          [
+            "En una vivienda, un atasco que se limita al fregadero puede estar en su propio desagüe. En una comunidad, un retorno por el plato de ducha de la planta baja cuando descargan pisos superiores apunta a revisar un tramo común. En un negocio con cocina, interesa comprobar si hay grasa acumulada más allá del registro interior, especialmente si el problema vuelve poco después de una limpieza."
+          ],
+          [
+            "El acceso cambia el trabajo. Desde un registro de la red se puede llegar a un punto que quedaría fuera de alcance trabajando desde el aparato. En un colector con lodos, también hay que prever dónde se retiran los residuos. La decisión depende del trazado, del material y de si se puede dejar de usar la conducción durante la intervención."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo distinguir un desatranco puntual de un problema recurrente",
+        "paragraphs": [
+          [
+            "Anota la fecha y el lugar de cada atasco. Si sucede siempre en el mismo ramal, o si vuelve al descargar varios aparatos a la vez, el historial ayuda a valorar una cámara. Ver la conducción después de retirar el tapón permite localizar una junta abierta, una raíz o una deformación que explique por qué se vuelve a acumular material."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Conviene llamar aunque el agua termine bajando?",
+        "Si el síntoma se repite o afecta a varios aparatos, la red puede seguir parcialmente obstruida. Describe cuánto tarda en bajar el agua y en qué condiciones aparece el problema para valorar una visita."
+      ],
+      [
+        "¿Qué pasa si el atasco está fuera de mi vivienda?",
+        "Si hay indicios de un tramo compartido, informa al responsable de la finca y facilita el acceso a los registros comunes. El diagnóstico ayuda a identificar el tramo. La documentación del inmueble permite aclarar quién debe coordinar el trabajo."
+      ]
+    ],
     "locations": [
       [
         "Balmaseda",
@@ -683,7 +838,7 @@
     "heading": "Desatrancos urgentes en Bilbao y Bizkaia",
     "description": "Llama a urgencias si el agua está rebosando o si varios desagües han dejado de funcionar de golpe.",
     "intro": "Llama a urgencias si el agua está rebosando o si varios desagües han dejado de funcionar de golpe. El aviso debe permitir localizar la instalación y preparar el acceso.",
-    "image": "/assets/source/40c04c3708-9-1020x679.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": true,
     "sections": [
       [
@@ -729,6 +884,37 @@
     ],
     "question": "¿Qué hago si la arqueta que rebosa está en la calle?",
     "answer": "Mantente alejado del rebose y comunica la ubicación al operador de la red o al servicio municipal. Si el rebose está en una instalación privada, llama con los datos de acceso.",
+    "details": [
+      {
+        "heading": "Qué hacer ante un retorno antes de que llegue el equipo",
+        "paragraphs": [
+          [
+            "Si el agua residual sale por el desagüe, deja de usar los aparatos de la zona y pide a los vecinos o usuarios del tramo común que hagan lo mismo cuando sea posible. Evita pisar el agua, abrir una arqueta en carga o añadir productos a un desagüe que no evacúa. Si ya se aplicó algún producto, indica qué era y a qué hora se vertió."
+          ],
+          [
+            "En una comunidad, un aviso útil sería «el agua sale por el sumidero del garaje cuando descargan los baños y el registro se abre desde el portal». En un comercio, explica si la incidencia ha dejado sin uso baños o cocina, y si hay otro acceso por la parte trasera. Esa información permite identificar con más rapidez qué zona revisar y quién debe abrirla."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué puede requerir una segunda actuación",
+        "paragraphs": [
+          [
+            "Una vez recuperado el paso, interesa saber si la obstrucción era de uso habitual o si hay señales de rotura, raíces o pérdida de sección. Si el equipo consigue abrir el conducto pero el agua sigue retenida o vuelve a subir, puede ser necesario acotar el tramo antes de repararlo. Guarda la descripción de la primera actuación para que la siguiente visita parta de lo observado."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede avisar si hay retorno en dos viviendas y no sé de dónde viene?",
+        "Sí. Indica las plantas afectadas y qué aparatos rebosan. Si hay administrador o conserje, facilita su contacto para acceder a la red común y avisar a los ocupantes."
+      ],
+      [
+        "¿Qué dato ayuda si la arqueta queda dentro de un garaje?",
+        "Comunica la altura de la entrada, dónde puede detenerse un vehículo y si hay un camino libre hasta el registro. La distancia y los obstáculos pueden cambiar el equipo necesario."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -876,7 +1062,7 @@
     "heading": "Desatranco de tuberías en Bilbao y Bizkaia",
     "description": "Localizamos el tramo que no evacúa y elegimos la herramienta según el tipo de tubería. Este servicio cubre obstrucciones de desagües, ramales y colectores.",
     "intro": "Localizamos el tramo que no evacúa y elegimos la herramienta según el tipo de tubería. Este servicio cubre obstrucciones de desagües, ramales y colectores.",
-    "image": "/assets/source/40c04c3708-9-1020x679.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -927,6 +1113,37 @@
     ],
     "question": "¿Conviene echar un desatascador antes de la visita?",
     "answer": "Evita añadir productos. Si ya se ha usado uno, comunica el nombre del producto y cuándo se aplicó antes de que el equipo abra o limpie el tramo.",
+    "details": [
+      {
+        "heading": "Cómo se sigue el recorrido del agua hasta el atasco",
+        "paragraphs": [
+          [
+            "Al comprobar un desagüe se tiene en cuenta qué aparatos se unen antes de llegar al colector. Si al usar la lavadora sale agua por un fregadero cercano, interesa buscar un punto compartido aguas abajo. Si un único lavabo queda retenido y el resto funciona, el primer tramo a revisar puede ser su sifón o ramal. Estas observaciones orientan la intervención, aunque el estado real se confirma en el acceso."
+          ],
+          [
+            "En tuberías estrechas y accesibles se puede valorar una herramienta mecánica. En tramos con grasa o sedimentos, el agua a presión puede ayudar si el estado de la conducción lo permite y existe una salida adecuada. Cuando se sospecha que un objeto o una raíz obstruye el paso, importa distinguir si conviene retirarlo antes de aplicar otra técnica."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué revisar antes de cerrar el registro",
+        "paragraphs": [
+          [
+            "Tras intervenir, se puede comprobar que evacúan tanto el aparato afectado como los que comparten el ramal. Si el paso mejora pero sigue siendo irregular, anota dónde queda el agua y si vuelve después de varias descargas. Si hay que inspeccionar con cámara, facilitar el registro desde el que se trabajó evita repetir parte del diagnóstico."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede desatrancar sin desmontar el aparato?",
+        "Depende de los accesos. Un registro en el ramal puede evitar desmontar un sanitario. Si no hay acceso útil desde fuera, el técnico debe valorar qué pieza conviene retirar para llegar al punto de obstrucción."
+      ],
+      [
+        "¿Qué hacer si varios desagües fallan después de una reforma?",
+        "Indica qué aparatos se movieron y cómo se conectaron. Una obstrucción puede coincidir con un cambio de trazado, pendiente o unión. Un croquis y las fotos de obra, si existen, ayudan a contrastar esas posibilidades."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -1074,7 +1291,7 @@
     "heading": "Reparación de bajantes en Bilbao y Bizkaia",
     "description": "Localizamos el origen de fugas y filtraciones en bajantes. Según el estado de la conducción, valoramos una reparación localizada, rehabilitación interior o.",
     "intro": "Localizamos el origen de fugas y filtraciones en bajantes. Según el estado de la conducción, valoramos una reparación localizada, rehabilitación interior o sustitución del tramo.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -1120,6 +1337,37 @@
     ],
     "question": "¿Hay que cambiar toda la bajante por una fuga?",
     "answer": "Se decide cuando se localiza el defecto. Si solo falla una junta y el resto de la vertical está en buen estado, puede bastar una intervención localizada.",
+    "details": [
+      {
+        "heading": "Cómo cambia la reparación según dónde aparezca la fuga",
+        "paragraphs": [
+          [
+            "Una junta visible en un cuarto de instalaciones puede permitir comprobar directamente cuándo pierde. Si la mancha aparece en un techo o en el interior de un tabique, interesa observar si coincide con descargas de una planta concreta o con la lluvia. Antes de abrir acabados, se pueden revisar los accesos y, cuando sean compatibles, usar una cámara para acotar el tramo."
+          ],
+          [
+            "Un ejemplo es una comunidad con humedad en el techo del primer piso y sin fuga visible arriba. La inspección puede distinguir una derivación de esa planta de la bajante que recoge otras viviendas. La decisión cambia si la unión es accesible desde un registro, si el tubo se ha desplazado o si el daño se extiende más allá del punto donde sale la humedad."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué preguntar para comparar reparación y sustitución",
+        "paragraphs": [
+          [
+            "Pide que se indique el tramo y los ramales incluidos. Comprueba si la intervención requiere abrir un patinillo, sustituir un tramo o tratarlo desde dentro, y qué pruebas se harán antes de cerrar. La reposición de acabados, los accesos por plantas y la necesidad de limitar temporalmente el uso pueden cambiar tanto el presupuesto como la organización del edificio."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿La humedad indica exactamente dónde pierde la bajante?",
+        "El agua puede seguir el tubo, el forjado o un tabique antes de hacerse visible. Anota cuándo aparece y desde qué aparatos se estaba descargando para orientar la revisión."
+      ],
+      [
+        "¿Qué ocurre si la bajante es de material antiguo desconocido?",
+        "Comunica la antigüedad aproximada y cualquier documento o foto disponible. Evita cortar o perforar el material. La identificación condiciona cómo se puede intervenir y qué profesionales deben participar."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -1267,7 +1515,7 @@
     "heading": "Reparación de bajantes sin obra en Bilbao y Bizkaia",
     "description": "Valoramos cómo reparar una avería localizada desde registros existentes. La viabilidad depende del acceso, el diámetro, el estado del tubo y la posición de los.",
     "intro": "Valoramos cómo reparar una avería localizada desde registros existentes. La viabilidad depende del acceso, el diámetro, el estado del tubo y la posición de los ramales.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -1313,6 +1561,37 @@
     ],
     "question": "¿Se puede trabajar sin entrar en todas las viviendas?",
     "answer": "Depende de dónde estén los registros y de qué ramales descarguen en el tramo. La visita permite identificar los accesos y los avisos necesarios.",
+    "details": [
+      {
+        "heading": "Qué se comprueba para reparar desde un registro",
+        "paragraphs": [
+          [
+            "Antes de proponer una reparación interior se confirma que el equipo puede llegar al defecto y trabajar sin dañar las derivaciones. El diámetro por sí solo dice poco si el tubo tiene un codo cerca, un empalme estrecho o una unión desplazada. Una cámara puede mostrar la distancia entre el registro y la avería, así como la parte del conducto que no se ha podido ver."
+          ],
+          [
+            "Por ejemplo, una fisura entre dos conexiones puede permitir estudiar una actuación corta. Si el defecto queda justo en la unión de un ramal, conviene verificar cómo se mantendrá abierta esa salida y si se puede comprobar después. Si no hay registro accesible, una pequeña apertura puede ser necesaria aunque se evite desmontar toda la vertical."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo debe quedar definido el alcance",
+        "paragraphs": [
+          [
+            "El presupuesto debe identificar el tramo y qué accesos se van a usar. Pide que se indiquen los cortes temporales, las plantas que pueden necesitar acceso y cómo se comprobará el resultado. Si se detectan daños en varios niveles, comparar una reparación de punto con una rehabilitación más amplia permite decidir con el mismo diagnóstico."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Una reparación interior elimina toda apertura?",
+        "Puede reducirla cuando existen registros bien situados. La obra necesaria depende de si se puede acceder, preparar el punto y comprobar las derivaciones desde esos registros."
+      ],
+      [
+        "¿Se puede reparar una unión que se ha desplazado?",
+        "Depende de cuánto se haya movido, de la sección que queda y de la estabilidad del tramo. Una junta abierta y un tramo fuera de alineación plantean problemas distintos. La inspección permite valorar si hace falta sustituir."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -1460,7 +1739,7 @@
     "heading": "Arreglo de bajantes en Bilbao y Bizkaia",
     "description": "Si ves una mancha, una fuga o un retorno y aún no sabes de dónde viene, empezamos por distinguir si falla un aparato, una unión o un tramo de bajante.",
     "intro": "Si ves una mancha, una fuga o un retorno y aún no sabes de dónde viene, empezamos por distinguir si falla un aparato, una unión o un tramo de bajante.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -1501,6 +1780,37 @@
     ],
     "question": "¿Sirve una foto de la mancha para saber de dónde viene la fuga?",
     "answer": "Ayuda a localizar dónde se manifiesta, pero el agua puede desplazarse. Anota también cuándo aparece y qué aparatos estaban en uso.",
+    "details": [
+      {
+        "heading": "Qué señales ayudan a separar un atasco de una fuga",
+        "paragraphs": [
+          [
+            "Si la humedad aparece sin gorgoteo ni retorno, interesa ver cuándo coincide con el uso del aparato o con la lluvia. Si el agua sube por un sumidero y a la vez aparece humedad, puede haber un tramo compartido que se llena por una obstrucción. En ambos casos, identificar los registros y cuándo se produce el aviso ayuda a decidir si primero hay que limpiar o comprobar una unión."
+          ],
+          [
+            "En una vivienda con una mancha intermitente, puede ser útil anotar si aparece tras ducharse en un piso concreto y si se seca cuando ese baño no se usa. En una zona común, interesa saber qué viviendas descargan en la vertical. Las fotos pueden documentar el avance de la mancha y el vídeo, si procede, ayuda a situar un defecto dentro de la tubería."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué hacer con una reparación que ha vuelto a fallar",
+        "paragraphs": [
+          [
+            "Aporta qué pieza se cambió, si se aplicó un sellado o si se limpió la red. Si la intervención anterior solo trató el punto visible, puede hacer falta revisar el tramo siguiente, sus uniones y la forma en que está sujeto. Una propuesta útil explica qué señal apoya el nuevo diagnóstico y cómo se comprobará que el problema se ha resuelto."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿La pintura levantada siempre viene de una bajante?",
+        "La señal también puede tener otros orígenes. Su relación con lluvias, descargas o uso continuado ayuda a orientar la visita, pero la causa debe comprobarse antes de abrir o reparar."
+      ],
+      [
+        "¿Por qué conviene saber si hay un registro cerca?",
+        "Un registro puede permitir seguir la vertical o una derivación sin abrir todo el acabado. Saber dónde queda y si alguien puede dar acceso ayuda a preparar la visita."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -1648,7 +1958,7 @@
     "heading": "Rehabilitación de bajantes sin obra en Bilbao y Bizkaia",
     "description": "Estudiamos si la bajante puede renovarse por dentro para intervenir sobre varios defectos sin sustituir toda la conducción.",
     "intro": "Estudiamos si la bajante puede renovarse por dentro para intervenir sobre varios defectos sin sustituir toda la conducción. El diagnóstico previo permite decidir si el acceso y el estado del tubo lo admiten.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -1694,6 +2004,37 @@
     ],
     "question": "¿Se puede usar el baño durante el revestimiento?",
     "answer": "La descarga desde los ramales incluidos puede interferir en el trabajo. Se acuerda una franja de restricción y se comunica cuándo se pueden volver a usar.",
+    "details": [
+      {
+        "heading": "Qué se hace con los ramales durante una rehabilitación",
+        "paragraphs": [
+          [
+            "Antes de revestir una bajante hay que ubicar las entradas de cada planta y comprobar el diámetro y los cambios de dirección. Una vez preparada la conducción, se decide qué longitud se trata y cómo se reabren las conexiones que queden cubiertas por el revestimiento. Esas tareas deben estar previstas desde el inicio para que los aparatos vuelvan a descargar por su recorrido."
+          ],
+          [
+            "En una vertical con varias derivaciones, dos tramos de la misma longitud pueden exigir trabajos distintos. Si un codo dificulta el paso o un ramal está deteriorado, puede hacer falta un acceso adicional o una actuación por separado. Si la cámara muestra una deformación que impide trabajar, la renovación interior quizá no sea la opción adecuada para esa parte."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué se comprueba antes de devolver el servicio",
+        "paragraphs": [
+          [
+            "La propuesta debe indicar cuándo se pueden volver a usar los desagües, qué partes se verán con cámara y cómo se comprueba cada derivación intervenida. Para comparar presupuestos, pide que se distinga entre limpieza preparatoria, revestimiento, reapertura de ramales y trabajos de acceso. Si se descubre un tramo que no se puede tratar como estaba previsto, conviene definir cómo se decidirá la alternativa."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Hay que acceder a todas las plantas?",
+        "No siempre se necesitan los mismos accesos. Depende de dónde estén los registros, de qué ramales se cubran y de si se pueden comprobar desde un punto común. El diagnóstico permite concretarlo."
+      ],
+      [
+        "¿Cómo se sabe qué tramo se ha revestido?",
+        "Pide que quede identificado entre dos referencias reconocibles, como plantas o registros. Las imágenes previas y posteriores ayudan a entender dónde empieza y termina la actuación y qué derivaciones se comprobaron."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -1841,7 +2182,7 @@
     "heading": "Reparación de bajantes en comunidades de Bilbao y Bizkaia",
     "description": "Ayudamos al administrador y a los vecinos a identificar el tramo afectado, organizar el acceso por plantas y planificar la reparación de la bajante.",
     "intro": "Ayudamos al administrador y a los vecinos a identificar el tramo afectado, organizar el acceso por plantas y planificar la reparación de la bajante.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -1887,6 +2228,37 @@
     ],
     "question": "¿Qué documentación puede ayudar si hay parte al seguro?",
     "answer": "Conserva fotos, el historial del aviso y un informe que identifique el tramo revisado. La cobertura concreta depende de la póliza y la valoración de la aseguradora.",
+    "details": [
+      {
+        "heading": "Cómo organizar el trabajo antes de avisar a los vecinos",
+        "paragraphs": [
+          [
+            "El administrador puede recoger los avisos por planta y preparar un croquis con registros y viviendas afectadas. Si el problema es una fuga que solo aparece al usar determinados aparatos, esa relación ayuda a acotar qué derivaciones comparten el tramo. Antes de confirmar la visita, conviene que haya una persona de contacto para abrir cuartos comunes y localizar a quien deba dar acceso a su vivienda."
+          ],
+          [
+            "En una comunidad con un local en planta baja y varias viviendas encima, un corte de uso afecta a personas con horarios distintos. El aviso debe indicar qué aparatos o plantas están incluidos, desde cuándo se limita el uso y quién confirmará su reapertura. Si el trabajo se puede organizar por tramos, conviene explicar qué partes siguen operativas."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué documentación conviene pedir y conservar",
+        "paragraphs": [
+          [
+            "Solicita la identificación del tramo afectado, el método propuesto y el alcance de la comprobación final. Para una obra que obliga a abrir acabados, aclara si están incluidas la protección, la apertura y la reposición. Si hay un parte al seguro, guarda fotos, observaciones de la visita y comunicaciones con la administración. La decisión sobre cobertura corresponde a la póliza y a la aseguradora."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Puede haber una fuga en una vivienda y estar el defecto en otra planta?",
+        "Sí, el agua puede desplazarse a través de la bajante o de los acabados. Ayuda aportar la planta donde aparece, cuándo se manifiesta y qué descargas parecen coincidir con ella."
+      ],
+      [
+        "¿Quién debe avisar a los ocupantes?",
+        "Conviene asignar esa responsabilidad al preparar el trabajo. La administración o el responsable que designe la finca puede coordinar acceso, cortes y confirmación de que la red vuelve a estar disponible."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -2034,7 +2406,7 @@
     "heading": "Rehabilitación de bajantes en Bilbao y Bizkaia",
     "description": "Si una bajante acumula fugas o averías en varios puntos, estudiamos cuánto tramo necesita renovarse y si conviene revestirlo por dentro, sustituir una parte o renovar la vertical.",
     "intro": "Si una bajante acumula fugas o averías en varios puntos, estudiamos cuánto tramo necesita renovarse y si conviene revestirlo por dentro, sustituir una parte o renovar la vertical.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -2080,6 +2452,34 @@
     ],
     "question": "¿Qué ocurre si algunas conexiones están deterioradas?",
     "answer": "Cada conexión necesita una revisión propia. La propuesta debe indicar cuáles se conservan, cuáles se tratan y cómo se comprueba que vuelven a evacuar.",
+    "details": [
+      {
+        "heading": "Cómo decidir si se rehabilita toda la vertical o solo una parte",
+        "paragraphs": [
+          [
+            "Una comunidad puede tener una unión que pierde en una planta y varias juntas envejecidas en el resto de la bajante. Antes de ampliar la obra conviene identificar qué defectos están activos, qué tramos mantienen su forma y qué conexiones comparten. La inspección puede mostrar un tramo apto para revestir y otro en el que la deformación aconseje sustituir. Separarlos permite comparar propuestas con un alcance comparable."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo preparar una intervención por fases",
+        "paragraphs": [
+          [
+            "Cuando el acceso depende de varios vecinos, ayuda dibujar la vertical e identificar por qué planta se puede entrar en cada tramo. Aclara qué se hará primero, cuáles son los cortes de uso y cómo se comprobarán los ramales antes de pasar a la fase siguiente. Al revisar el presupuesto, comprueba si incluye actuaciones en el paso por forjados, protección de espacios comunes y reposición de lo que sea necesario abrir."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Hay que decidir todos los tramos en la primera visita?",
+        "Puede hacer falta limpiar o inspeccionar parte de la vertical antes de cerrar el alcance. Si quedan puntos sin evaluar, pide que se indiquen y que se distinga entre el trabajo previsto y las opciones pendientes de confirmación."
+      ],
+      [
+        "¿Qué documento ayuda a futuras reparaciones?",
+        "Un esquema de los tramos intervenidos con sus plantas, accesos y conexiones. Adjunta las comprobaciones disponibles para que el siguiente aviso se pueda relacionar con lo que ya se reparó."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -2273,6 +2673,34 @@
     ],
     "question": "¿Se puede conservar un patio pavimentado?",
     "answer": "Si hay registros desde los que acceder al defecto y la tubería conserva paso, puede evitarse abrir gran parte del pavimento. La inspección confirma si hace falta una apertura puntual.",
+    "details": [
+      {
+        "heading": "Cómo se decide entre trabajar desde las arquetas y abrir un acceso",
+        "paragraphs": [
+          [
+            "En un patio pavimentado, lo primero es saber si hay un registro útil a cada lado del defecto. Si la cámara llega a una junta abierta y conserva espacio para pasar, se puede estudiar una reparación interior localizada. Si el registro no permite entrar al equipo o el tubo está hundido, una apertura puntual puede ser necesaria para acceder o sustituir la parte afectada. Revisar estos límites evita prometer que todo el pavimento se podrá conservar."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo acotar la obra bajo un patio o un vial",
+        "paragraphs": [
+          [
+            "Indica qué superficie debe mantenerse operativa y qué paso necesitan residentes o vehículos. Un plano puede señalar otros servicios que cruzan el recorrido, pero conviene contrastarlo con los registros visibles y el trazado real. La propuesta debe especificar qué parte se trata, por dónde se accede y cómo se comprobará la evacuación antes de devolver la zona al uso habitual."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Qué ocurre si la cámara no llega al defecto?",
+        "Se puede intentar inspeccionar desde el otro extremo si existe un registro útil. Si el paso está bloqueado, se valora si conviene limpiar primero o habilitar un acceso. La parte no visible debe quedar identificada."
+      ],
+      [
+        "¿Puede repararse un tramo bajo una entrada de vehículos?",
+        "La técnica depende de su estado y de los registros. Indica cuándo se puede limitar el paso y si hay espacio para trabajar fuera de la zona de circulación."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -2466,6 +2894,34 @@
     ],
     "question": "¿Se puede rehabilitar un colector si no aparecen los planos?",
     "answer": "Primero hay que localizar los registros y seguir el trazado accesible. Con esa información se acota el tramo y se decide si es necesario localizar otros puntos.",
+    "details": [
+      {
+        "heading": "Qué aporta comparar el vídeo de entrada y el de salida",
+        "paragraphs": [
+          [
+            "En un colector con varias juntas abiertas, anotar la distancia desde el registro permite distinguir los defectos y definir dónde empieza y termina el tratamiento. Si se inspecciona desde ambos extremos, conviene mantener referencias claras para situar lo que se ve. El vídeo inicial debe indicar qué parte queda sin revisar por agua, suciedad o pérdida de sección. Una nueva inspección después de preparar el tubo puede cambiar la decisión."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo comparar dos propuestas de renovación interior",
+        "paragraphs": [
+          [
+            "Confirma que ambas incluyen el mismo tramo, el mismo número de derivaciones y el mismo alcance de preparación. Una oferta puede cubrir el revestimiento y otra incluir también retirada de obstáculos, reapertura de conexiones y verificación final. Si no se conoce bien una parte del recorrido, acuerda cómo se documentará lo que se encuentre y quién decidirá qué hacer si la técnica prevista deja de encajar."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Cuándo conviene rehabilitar entre dos registros?",
+        "Cuando hay daños repartidos y el conducto conserva acceso, sección y una geometría compatible con el método. La revisión también debe comprobar el estado de las conexiones intermedias."
+      ],
+      [
+        "¿Se puede dejar parte del tramo pendiente?",
+        "Sí, si queda delimitado en el alcance. Conviene que la documentación indique qué parte se trató, cuál se mantiene en observación y qué síntomas justificarían otra intervención."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -2613,7 +3069,7 @@
     "heading": "Reparación de bajantes de PVC en Bilbao y Bizkaia",
     "description": "Buscamos la causa de una fuga en una bajante de PVC y revisamos uniones, sujeciones y tramos deformados antes de decidir cómo repararla.",
     "intro": "Buscamos la causa de una fuga en una bajante de PVC y revisamos uniones, sujeciones y tramos deformados antes de decidir cómo repararla.",
-    "image": "/assets/source/866c5afebf-9SEPTIEMBRE-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -2654,6 +3110,34 @@
     ],
     "question": "¿Qué pasa si la fuga de PVC solo aparece al llover?",
     "answer": "Puede estar en una bajante pluvial o en otra parte de la evacuación de cubierta. Indica si coinciden reboses en canalones, patios o sumideros.",
+    "details": [
+      {
+        "heading": "Qué diferencia una junta que pierde de un tramo de PVC deformado",
+        "paragraphs": [
+          [
+            "En una unión accesible puede comprobarse si el agua sale al descargar el ramal conectado y si la pieza está desalineada. Si el tramo se ha combado, se mueve al descargar o hay una fisura alrededor de una derivación, merece la pena revisar cómo está sujeto y qué cargas recibe. La reparación debe atender a la causa, porque sustituir solo el sellado puede dejar la unión sometida al mismo movimiento."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo organizar una reparación con acceso limitado",
+        "paragraphs": [
+          [
+            "Una unión que queda dentro de un patinillo puede necesitar una apertura localizada. Para valorar el trabajo, interesa saber qué registro queda cerca, dónde aparecen las humedades y si la vertical continúa hacia otras plantas. Antes de cerrar el acceso se puede comprobar la zona con descargas controladas de los aparatos afectados y revisar si quedan señales de pérdida en las uniones próximas."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Es suficiente un sellador en la parte visible de la unión?",
+        "Puede ocultar la salida de agua sin corregir un desplazamiento o una sujeción deficiente. El arreglo se decide después de revisar la unión, el apoyo del tubo y el estado del tramo adyacente."
+      ],
+      [
+        "¿Qué hago si veo PVC en un tramo y otro material más arriba?",
+        "Indica dónde cambia el material y aporta fotos de las partes visibles. El empalme entre materiales puede requerir una revisión específica. Evita desmontar o cortar un tramo si no se ha identificado."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -2801,7 +3285,7 @@
     "heading": "Rehabilitación de tuberías con diagnóstico por cámara en Bilbao",
     "description": "Usamos la inspección como punto de partida para decidir cómo rehabilitar la tubería. El vídeo permite situar daños y conexiones antes de elegir una intervención.",
     "intro": "Usamos la inspección como punto de partida para decidir cómo rehabilitar la tubería. El vídeo permite situar daños y conexiones antes de elegir una intervención.",
-    "image": "/assets/source/792b575091-ZAZ_3353-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -2847,6 +3331,34 @@
     ],
     "question": "¿Un vídeo permite dar presupuesto sin visita?",
     "answer": "Un vídeo con distancias, conexiones y punto de acceso ayuda a valorar el alcance. Puede hacer falta comprobar medidas o condiciones del inmueble antes de cerrar el presupuesto.",
+    "details": [
+      {
+        "heading": "Cómo convertir las imágenes de cámara en una decisión de obra",
+        "paragraphs": [
+          [
+            "Un vídeo puede mostrar varias marcas en la pared sin aclarar cuál explica la avería. Para que oriente una reparación, hay que relacionar cada hallazgo con el registro de acceso, su distancia y las conexiones cercanas. Si la imagen pierde visibilidad en una zona con agua, esa parte no se puede dar por revisada. Puede convenir repetir la inspección después de limpiar o mirar desde otro registro."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué comprobar si ya se ha hecho una reparación",
+        "paragraphs": [
+          [
+            "Repite el recorrido con referencias comparables cuando el acceso lo permita. Además del aspecto del tramo tratado, conviene verificar que las derivaciones que entraban en él siguen abiertas. Una inspección posterior puede documentar esas condiciones visibles, pero los requisitos de recepción pueden pedir también una prueba de estanqueidad. Aclara antes del presupuesto qué evidencias necesita el administrador, la dirección de obra o la entidad que recibirá el trabajo."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Sirve el vídeo de un atasco anterior?",
+        "Sí, si se identifica el tramo y la fecha. El estado puede haber cambiado, por lo que conviene indicar qué reparaciones o limpiezas hubo después de grabarlo."
+      ],
+      [
+        "¿Cómo se interpreta una zona que queda fuera de cámara?",
+        "Debe anotarse como no inspeccionada, con la razón y el último punto visible. Esa información permite decidir si hace falta otro acceso antes de elegir el método."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3032,6 +3544,34 @@
     ],
     "question": "¿Se puede mantener el local abierto durante los trabajos?",
     "answer": "Depende de dónde estén los accesos y del corte de uso necesario. Se puede valorar una intervención por fases si la red y el horario lo permiten.",
+    "details": [
+      {
+        "heading": "Cómo reducir la afección a un local o a una vivienda",
+        "paragraphs": [
+          [
+            "Una reparación desde un registro puede evitar levantar un pasillo completo, aunque es posible que haya que abrir cerca de una derivación o desmontar una pieza para acceder. Si el edificio sigue en uso, interesa conocer dónde se puede colocar el equipo, por dónde entrarán los operarios y si existe otro recorrido para clientes o vecinos. Estos datos permiten acotar el efecto real de la obra."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué acordar para poder volver a usar los desagües",
+        "paragraphs": [
+          [
+            "Cada propuesta debe concretar qué aparatos se dejan fuera de servicio, durante qué parte del trabajo y quién comunicará su reapertura. Para un local que necesita mantener actividad, se puede valorar actuar por tramos si el trazado lo permite. Si parte del conducto no admite una solución interior, aclara qué apertura haría falta y qué elementos se repondrían después."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede trabajar desde un registro de otra vivienda?",
+        "Depende del trazado, de qué ramales descargan en el tramo y de quién autorice el acceso. Conviene identificar el punto y coordinarlo antes de fijar la fecha."
+      ],
+      [
+        "¿El método interior elimina el corte de uso?",
+        "La intervención puede necesitar que no se descargue agua durante la preparación y el tratamiento. La duración y las zonas afectadas se concretan para cada instalación."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3089,6 +3629,34 @@
     ],
     "question": "¿Una tubería antigua siempre necesita sustituirse?",
     "answer": "La edad ayuda a interpretar el historial. La decisión depende del estado real, la continuidad, la pendiente y los accesos de la conducción.",
+    "details": [
+      {
+        "heading": "Cómo decidir qué método encaja con el estado del tubo",
+        "paragraphs": [
+          [
+            "Una obstrucción puntual puede resolverse limpiando. Si la inspección posterior muestra una fisura que vuelve a captar residuos, conviene valorar una reparación en ese punto. Cuando aparecen defectos repartidos, un revestimiento puede tener sentido si la tubería conserva forma y sección. Si una contrapendiente deja agua retenida o el conducto se ha hundido, tratar la pared interior por sí solo no corrige la geometría."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué preguntar si hay varias opciones",
+        "paragraphs": [
+          [
+            "Pide que se identifique el defecto que motiva cada opción y cómo se comprobaría el resultado. Una solución que conserva pavimento puede requerir más preparación del conducto, mientras que sustituir un tramo puede necesitar gestionar el acceso y la reposición. Compara las propuestas según el mismo recorrido, número de conexiones, restricciones de uso y alcance de las comprobaciones al terminar."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Cómo sé si basta con limpiar?",
+        "Si se recupera la evacuación y no se observan daños en el tramo visible, se puede valorar su seguimiento. Si el mismo aviso vuelve, interesa comprobar qué hay debajo de los depósitos antes de repetir el tratamiento."
+      ],
+      [
+        "¿Qué datos ayudan si ya hubo una intervención?",
+        "Comparte el tramo tratado, el método, la fecha y cómo cambió el síntoma. Los vídeos o fotografías previas permiten comprobar si la nueva avería coincide con el punto anterior."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3277,6 +3845,34 @@
     ],
     "question": "¿La manga corrige una tubería hundida?",
     "answer": "El revestimiento sigue la forma del tubo que lo recibe. Si el hundimiento impide el paso o altera la pendiente, hay que estudiar una solución para ese defecto.",
+    "details": [
+      {
+        "heading": "Cómo se instala y se verifica la manga",
+        "paragraphs": [
+          [
+            "Se inspecciona el tramo para conocer la longitud, los cambios de diámetro y las derivaciones. Después de limpiar y retirar obstáculos compatibles con la intervención, se coloca el revestimiento y se aplica el sistema de curado previsto. Si alguna conexión queda cubierta, el alcance debe indicar cómo se recupera su paso. La comprobación posterior puede incluir vídeo de la superficie y de los puntos donde vuelven a entrar los ramales."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué hace variar el alcance entre dos tramos del mismo tamaño",
+        "paragraphs": [
+          [
+            "Un colector recto con acceso desde dos registros puede ser más fácil de preparar que otro con codos y entradas intermedias. También importa si hay depósitos duros, agua que impide ver o daños en el tubo anfitrión. Pide que el presupuesto detalle la preparación, las conexiones que se reabrirán y qué limitaciones impedirían colocar la manga como se planteó."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿La manga es adecuada para una avería muy corta?",
+        "A veces conviene estudiar una reparación localizada si el resto de la tubería está en buen estado. La elección depende de cómo sea el defecto y de cuánto tramo se pueda comprobar antes de trabajar."
+      ],
+      [
+        "¿Qué se debe revisar antes de volver a descargar agua?",
+        "Confirma que la intervención ha terminado y que las derivaciones incluidas están operativas. El momento de reapertura depende del sistema aplicado y de las comprobaciones previstas."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3470,6 +4066,34 @@
     ],
     "question": "¿Una inspección con cámara sustituye la prueba de estanquedad?",
     "answer": "El vídeo muestra defectos visibles. La prueba comprueba el comportamiento del tramo bajo las condiciones acordadas. Pueden pedirse ambas en una recepción.",
+    "details": [
+      {
+        "heading": "Qué preparar para una prueba de recepción",
+        "paragraphs": [
+          [
+            "El tramo debe poder identificarse entre registros y aislarse de las derivaciones que podrían alterar la lectura. Aporta el plano y el requisito de la entidad que recibirá la obra, para acordar qué tramo, método y criterio se aplican. Una prueba en una conducción nueva y otra en un colector existente pueden requerir condiciones de acceso y coordinación diferentes. Si el servicio no se puede detener, esa restricción debe contemplarse al planificar."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo interpretar una pérdida durante el ensayo",
+        "paragraphs": [
+          [
+            "Una caída respecto al criterio acordado indica que la prueba no ha dado el resultado previsto, pero por sí sola no ubica el punto de fuga. Conviene revisar cómo se aisló el tramo y qué conexiones quedaron dentro, y valorar una inspección para situar el defecto. Si se hace una reparación y se repite la prueba, el informe debe permitir distinguir el primer resultado del posterior y qué parte se ensayó en cada caso."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede usar el mismo criterio en cualquier colector?",
+        "El requisito depende del proyecto, la conducción y la entidad que recibe la actuación. Facilita esas condiciones antes de fijar el método o interpretar un resultado."
+      ],
+      [
+        "¿Cómo se documenta un tramo que no se pudo probar?",
+        "Identifica sus límites, la causa y qué parte sí se ensayó. Si la prueba queda pendiente por acceso o por continuidad de servicio, conviene acordar las condiciones para completarla."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3659,6 +4283,34 @@
     ],
     "question": "¿Hace falta dejar de usar los aparatos conectados?",
     "answer": "Puede ser necesario durante la prueba. Antes se identifica qué aparatos descargan en el tramo y se acuerda la interrupción para evitar alterar el resultado.",
+    "details": [
+      {
+        "heading": "Cómo se acota la fuga dentro del edificio",
+        "paragraphs": [
+          [
+            "Si aparece humedad después de descargar un baño, delimita qué aparatos y qué ramales podrían compartir el recorrido. Una prueba puede cubrir un tramo horizontal, una derivación o parte de una bajante según los accesos y el propósito. Coordinar a los usuarios evita que una descarga durante la prueba cambie las condiciones y dificulte interpretar el resultado. Si hay otros circuitos próximos, explica cuándo aparece el síntoma para revisar primero el más probable."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué diferencia hay entre probar la evacuación y comprobar la hermeticidad",
+        "paragraphs": [
+          [
+            "Comprobar que el agua baja desde un aparato ayuda a evaluar el funcionamiento, pero no garantiza que todas las uniones del tramo sean estancas. Para la hermeticidad se define un tramo y se aplica el procedimiento previsto. Si el resultado indica una pérdida, se puede plantear una revisión adicional para localizarla. Guarda una copia con las conexiones incluidas y con cualquier condición que haya limitado el ensayo."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Cuándo conviene probar antes de cerrar los acabados?",
+        "Cuando el tramo todavía queda accesible y hay una comprobación prevista tras la obra. Acuerda el momento con la dirección o responsable para poder actuar si se detecta una pérdida."
+      ],
+      [
+        "¿La prueba puede aislar una sola derivación?",
+        "Depende de dónde estén las uniones y registros. Si la derivación no se puede separar del resto, el informe debe identificar qué circuito quedó realmente incluido."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -3852,6 +4504,34 @@
     ],
     "question": "¿Por qué rebosa una rampa de garaje en lluvias intensas?",
     "answer": "El problema puede estar en la captación, la capacidad del tramo, el bombeo o un retorno. Indica si rebosa en un único punto y dónde llega el agua después.",
+    "details": [
+      {
+        "heading": "Cómo localizar por dónde pierde capacidad la evacuación",
+        "paragraphs": [
+          [
+            "Empieza por el punto donde se acumula el agua y sigue su recorrido hasta el siguiente registro. Si en una rampa se forma un charco mientras el registro aguas abajo permanece bajo, interesa revisar la conexión entre ambos. Si también se cargan otros puntos, el problema puede venir de un colector compartido, una bomba o de las condiciones de descarga. El momento en que ocurre el rebose ayuda a acotar la causa."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué revisar antes de cambiar sumideros o tuberías",
+        "paragraphs": [
+          [
+            "Aumentar el tamaño de una rejilla puede mejorar la entrada, pero no resuelve un tramo aguas abajo que no tiene paso suficiente. Antes de elegir una obra conviene comprobar qué superficies aportan lluvia, las cotas y el destino de la red. En una reforma, documentar el recorrido permite identificar dónde será posible limpiar después y qué otros ramales podrían verse afectados."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Qué datos ayudan después de una tormenta?",
+        "Anota qué punto rebosó primero, si la bomba estaba en marcha y cuánto tardó el agua en bajar. Una foto desde un lugar seguro puede mostrar la extensión del charco o qué entrada recibe el agua."
+      ],
+      [
+        "¿Los planos municipales identifican la salida de mi patio?",
+        "Muestran el contexto de la red, pero la conexión de un inmueble debe confirmarse con su documentación y, cuando proceda, con la entidad que gestiona la red."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -4050,6 +4730,34 @@
     ],
     "question": "¿Se pueden unir aguas residuales y pluviales en cualquier registro?",
     "answer": "El trazado debe responder a la configuración del inmueble y a las condiciones del punto de conexión. Revisa el recorrido y consulta los requisitos del titular antes de unir ramales.",
+    "details": [
+      {
+        "heading": "Cómo seguir las dos corrientes antes de una reforma",
+        "paragraphs": [
+          [
+            "En un mismo edificio pueden existir bajantes de cubierta, ramales de cocina y un patio que se conectó en una reforma posterior. Empieza por identificar qué puntos aportan lluvia y qué aparatos evacúan agua usada. Sigue cada recorrido hasta el último registro accesible y anota los cruces de trazado. Ver dos tubos en un patio no basta para saber dónde termina cada uno."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué hacer cuando el plano y la instalación no coinciden",
+        "paragraphs": [
+          [
+            "Los planos pueden mostrar cómo se proyectó la red y no reflejar una modificación posterior. Contrasta las salidas con los registros y confirma qué red recibe cada conducción antes de mover una conexión. Si la obra incorpora un baño o modifica una cubierta, aprovecha para documentar el trazado y dejar accesos para revisión. Conservar un croquis de lo ejecutado facilita comprobar un futuro retorno o una humedad."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Los olores en un sumidero de patio demuestran una conexión cruzada?",
+        "No por sí solos. También puede haber un cierre hidráulico deficiente u otra causa. El diagnóstico debe seguir el recorrido del ramal y comprobar dónde descarga."
+      ],
+      [
+        "¿Qué pasa si las dos redes se unen fuera de la finca?",
+        "Hay que identificar el punto de unión y confirmar las condiciones con quien gestiona la red receptora. En el edificio conviene documentar por separado los tramos que tienen funciones distintas."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -4243,6 +4951,34 @@
     ],
     "question": "¿Qué aporta un plano si hay humedad en varias plantas?",
     "answer": "Permite asociar síntomas con bajantes y colectores compartidos. Si hubo reformas, conviene contrastarlo con los registros actuales y las plantas afectadas.",
+    "details": [
+      {
+        "heading": "Cómo acotar un problema que afecta a varias plantas",
+        "paragraphs": [
+          [
+            "En un edificio con viviendas sobre un garaje, una bajante puede recoger varios pisos antes de unirse al colector horizontal. Si la planta baja tiene retorno mientras las superiores evacúan, conviene revisar dónde se unen sus recorridos. Si además hay un sumidero bajo rasante, comprueba si depende de bombeo y si el aviso coincide con lluvia. Saber en qué orden aparecen los síntomas ayuda a decidir por qué registro empezar."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué dejar documentado para el siguiente aviso",
+        "paragraphs": [
+          [
+            "Dibuja las bajantes conocidas, los registros comunes, el colector de salida y los aparatos que requieren bombeo. Identifica dónde no se pudo confirmar el recorrido. Si se limpia o repara un tramo, indica desde qué acceso se intervino y qué conexiones se comprobaron. Esa información permite al administrador coordinar futuras visitas aunque cambien los vecinos o el personal que da acceso."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Conviene revisar la red entera si falla un solo baño?",
+        "Depende de los síntomas. Empieza por conocer qué otros aparatos funcionan y si hay avisos en plantas distintas. Eso orienta si la revisión debe centrarse en el ramal o en un tramo común."
+      ],
+      [
+        "¿Qué cambia en un garaje bajo la calle?",
+        "La cota de salida y el sistema de bombeo, si lo hay, pueden condicionar el diagnóstico. Indica si el retorno ocurre con lluvia, al usar ciertos aparatos o después de una parada de la bomba."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -4441,6 +5177,34 @@
     ],
     "question": "¿Qué pasa si el patio y la vivienda usan la misma salida?",
     "answer": "Conviene comprobar el trazado y el punto de descarga. Si la incidencia aparece con lluvia, esos datos ayudan a revisar si hay una conexión incorrecta o capacidad insuficiente.",
+    "details": [
+      {
+        "heading": "Qué decidir antes de reformar la evacuación de la casa",
+        "paragraphs": [
+          [
+            "Si se añade un baño en una zona más baja que la salida de la parcela, hay que comprobar cómo evacuará y si requiere bombeo. Si se pavimenta un patio, revisa por dónde se recogerá la lluvia y qué registros deben seguir accesibles. Una visita previa a la obra permite reconocer el trazado conocido y decidir qué información falta antes de tapar conducciones."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo comprobar si la red existente sirve para el nuevo uso",
+        "paragraphs": [
+          [
+            "Relaciona los cambios de ocupación o de aparatos con la capacidad, las cotas y el estado de las conducciones. Un caserío con sistema autónomo y una vivienda conectada a un colector público tienen puntos de salida y necesidades de mantenimiento distintos. Documenta qué red recibe cada ramal, qué elementos se conservan y cómo se va a acceder para limpiar o inspeccionar más adelante."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Qué hago si no hay planos de la red de la parcela?",
+        "Se pueden reunir croquis de reformas y localizar los registros accesibles. Indica qué zonas se han pavimentado y dónde se producen los síntomas. La inspección puede ayudar a completar parte del recorrido."
+      ],
+      [
+        "¿Hay que comprobar la red antes de comprar o reformar?",
+        "Si hay antecedentes de atascos o dudas sobre la conexión, conocer el trazado y el punto de salida puede aclarar qué obras o revisiones serán necesarias. Conviene distinguir lo que se ha observado de lo que queda por confirmar."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -4644,6 +5408,34 @@
     ],
     "question": "¿Un plano municipal identifica el límite exacto de mi acometida?",
     "answer": "Orienta sobre la infraestructura pública. Para conocer el límite concreto, revisa la documentación de la finca y confirma el punto con el titular u operador.",
+    "details": [
+      {
+        "heading": "Cómo separar el alcance de la obra de un aviso ciudadano",
+        "paragraphs": [
+          [
+            "Una arqueta que rebosa en la calle y un colector privado que devuelve agua hacia un edificio pueden parecer el mismo problema desde la superficie. El primer paso es identificar si el punto afectado forma parte de una red pública o de la instalación de la finca. Si se trata de un aviso en vía pública, describe el lugar y cuándo ocurre al operador. Si existe un encargo sobre la red, facilita los pozos y límites del tramo y quién autoriza la actuación."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué debe quedar definido antes de intervenir en una red en servicio",
+        "paragraphs": [
+          [
+            "Conviene identificar qué aportes llegan al tramo, cuándo se puede acceder y cómo se mantiene la evacuación mientras se trabaja. Una limpieza programada y la reparación de una junta requieren decisiones diferentes sobre accesos, restricciones y comprobaciones. Si intervienen distintas contratas, acuerda quién entrega los planos y cómo se comunican incidencias fuera del alcance previsto. La entrega debe distinguir lo que se pudo verificar de lo que sigue pendiente."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede contratar una actuación en cualquier pozo de calle?",
+        "El alcance y el acceso los debe validar el responsable de la red. Si la consulta es de una comunidad, comprueba si afecta a su acometida o a un punto público antes de pedir presupuesto."
+      ],
+      [
+        "¿Por qué conviene dar la referencia de dos pozos?",
+        "Delimitar el tramo entre referencias reconocibles ayuda a identificar qué se puede inspeccionar y qué aportes entran. También permite comparar el alcance con el proyecto y la documentación de entrega."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -4837,6 +5629,34 @@
     ],
     "question": "¿Cómo sé si mi nave tiene dos circuitos separados?",
     "answer": "Identifica los puntos de recogida, sigue los ramales y verifica las salidas. Ver dos tuberías en un registro no aclara por sí solo su destino.",
+    "details": [
+      {
+        "heading": "Cómo comprobar si una separación funciona en la práctica",
+        "paragraphs": [
+          [
+            "En una nave que ha cambiado de uso, una antigua bajante de cubierta puede haber quedado conectada a un registro que también recibe aguas de aseos. Para aclararlo, se identifican entradas y salidas y se sigue el recorrido disponible con los medios adecuados. Si parte del trazado está bajo pavimento, interesa saber qué registros permiten confirmar el punto de conexión antes de decidir dónde abrir."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué conviene entregar después de corregir conexiones",
+        "paragraphs": [
+          [
+            "El croquis final debe identificar las dos redes, sus registros y el destino de cada salida. Si se corrige un cruce, anota qué ramal cambió de recorrido y cómo se comprobó que descarga donde corresponde. En instalaciones con vertidos de actividad, verifica las condiciones con quien gestione la red receptora y deja constancia de cualquier circuito que requiera revisión aparte."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede separar la red sin levantar todo el suelo?",
+        "Depende de dónde se crucen los circuitos y de si existe un trazado alternativo con las cotas adecuadas. La localización previa ayuda a limitar la zona de obra."
+      ],
+      [
+        "¿Sirven los colores del plano para saber qué red es cada una?",
+        "Sirven como orientación si el plano corresponde a lo ejecutado. Conviene contrastar el trazado con los registros y comprobar a qué salida llega cada conducción."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -5026,6 +5846,34 @@
     ],
     "question": "¿Se pueden comprobar ambas redes con una sola prueba?",
     "answer": "Abastecimiento y evacuación tienen funciones distintas. La propuesta debe distinguir qué circuito se prueba, con qué condiciones y qué resultado se entrega.",
+    "details": [
+      {
+        "heading": "Cómo evitar interferencias al renovar dos redes en la misma obra",
+        "paragraphs": [
+          [
+            "Si la actuación se hace en una calle interior, un recinto industrial o una urbanización, interesa ubicar cruces con otras conducciones y confirmar el punto de conexión de cada red. Abastecimiento y saneamiento pueden discurrir cerca, pero tienen funciones y condiciones distintas. Antes de abrir, identifica qué usuarios dependen del servicio y qué parte debe seguir disponible durante la ejecución."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué se debe separar en la propuesta y en la entrega",
+        "paragraphs": [
+          [
+            "Describe el alcance de cada circuito, los tramos que se conservan y los elementos de maniobra o registro que se instalarán. Si parte de la red queda bajo un pavimento nuevo, pide un plano que permita localizarla después. En la recepción conviene que las pruebas se identifiquen por tramo y circuito, con sus resultados y las partes que hayan quedado fuera del encargo."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede aprovechar una misma obra para renovar los dos circuitos?",
+        "Se puede estudiar si coincide el trazado y es posible coordinar accesos y cortes. Los requisitos de conexión y de entrega se definen para cada red."
+      ],
+      [
+        "¿Qué ayuda a identificar quién mantiene un tramo?",
+        "Reúne planos, documentación de titularidad y referencias del punto de conexión. Si hay varias entidades o comunidades, confirma con ellas quién recibe cada parte del trabajo."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -5219,6 +6067,34 @@
     ],
     "question": "¿Qué significa que varios pozos estén en carga?",
     "answer": "Indica que el nivel es alto en más de un punto. Comparar el orden de los pozos afectados ayuda a localizar la zona que se debe revisar.",
+    "details": [
+      {
+        "heading": "Cómo se acota una incidencia que aparece en varios pozos",
+        "paragraphs": [
+          [
+            "Si el primer pozo que recibe agua está bajo y el siguiente aparece cargado, comparar el nivel de ambos orienta dónde revisar el paso. Si todos se cargan durante la lluvia y recuperan el nivel después, puede hacer falta comprobar la capacidad de la red o las condiciones de descarga. Anota cuándo empieza el problema y qué zonas se ven afectadas. Mantén los pozos cerrados para que el equipo compruebe el acceso."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué intervención corresponde según el diagnóstico",
+        "paragraphs": [
+          [
+            "En un tramo con material acumulado y sin daños visibles, se puede valorar retirar sedimentos y comprobar el paso. Si hay una obstrucción repetida junto a una junta, interesa inspeccionar tras limpiar. Una deformación, una conexión dañada o un hundimiento pueden requerir reparación. La propuesta debe indicar qué tramo se atiende y cómo se documentará el resultado para el titular."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Se puede sanear un tramo que tiene aporte constante?",
+        "Depende de los caudales, los accesos y la posibilidad de organizar el servicio durante la actuación. Es una condición que conviene plantear antes de cerrar el alcance."
+      ],
+      [
+        "¿La limpieza de un pozo resuelve un rebose aguas arriba?",
+        "Puede ayudar si la acumulación está en ese pozo o su salida. Si el nivel alto se mantiene, interesa revisar el recorrido y las condiciones del tramo siguiente."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -5417,6 +6293,34 @@
     ],
     "question": "¿Qué diferencia hay entre red separativa y saneamiento autónomo?",
     "answer": "La primera organiza por separado la lluvia y las aguas usadas. El segundo trata las aguas residuales de un inmueble que no dispone de conexión adecuada a la red pública.",
+    "details": [
+      {
+        "heading": "Cómo reconocer la red en dos situaciones frecuentes",
+        "paragraphs": [
+          [
+            "En una comunidad, la lluvia del tejado puede bajar por un conducto distinto del que usan los baños. Ambos podrían acabar en el mismo colector o seguir separados. Antes de modificar una conexión, verifica el destino. En una vivienda aislada, la presencia de un depósito no explica por sí sola cómo se tratan las aguas ni qué sucede después. Hay que identificar la salida y las condiciones de la finca."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué tipo de problema corresponde a cada red",
+        "paragraphs": [
+          [
+            "Si el agua vuelve durante tormentas, revisa primero cómo se recoge la lluvia y qué tramo puede cargarse. Si el retorno aparece al descargar varios baños, sigue el colector que comparten. Si el inmueble tiene saneamiento autónomo, distingue problemas de entrada, acumulación de lodos y dificultades de salida. Registrar en qué momento ocurre el síntoma ayuda a elegir la revisión."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Dos bajantes visibles significan que la red es separativa?",
+        "Hay que seguir ambas hasta el punto de salida. Dos recorridos independientes dentro del edificio pueden unirse antes de conectar a una red receptora."
+      ],
+      [
+        "¿Qué documentación es útil antes de reformar?",
+        "Planos de evacuación, croquis de registros y datos del punto de conexión. Si no hay planos, indica dónde se han hecho cambios y qué registros siguen accesibles."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -5564,7 +6468,7 @@
     "heading": "Inspección de tuberías en Bilbao y Bizkaia",
     "description": "Localizamos defectos visibles en redes de saneamiento con el equipo de inspección adecuado al acceso y al diámetro.",
     "intro": "Localizamos defectos visibles en redes de saneamiento con el equipo de inspección adecuado al acceso y al diámetro. El resultado ayuda a decidir si basta con limpiar o conviene reparar.",
-    "image": "/assets/source/792b575091-ZAZ_3353-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -5610,6 +6514,34 @@
     ],
     "question": "¿La cámara localiza cualquier fuga?",
     "answer": "Solo muestra lo que puede verse desde el interior y hasta donde llega el equipo. Si se necesita comprobar si un tramo pierde, puede hacer falta una prueba específica.",
+    "details": [
+      {
+        "heading": "Qué debe incluir una inspección que ayude a decidir",
+        "paragraphs": [
+          [
+            "Un vídeo de un colector resulta más útil si indica por dónde entró la cámara, en qué dirección avanzó y a qué distancia se observó el defecto. Conviene distinguir una junta desplazada, una intrusión o un tramo que queda fuera de visión por agua o suciedad. Si el objetivo es localizar una reparación, aporta al técnico un croquis de los registros y explica qué síntoma debe poder relacionar con lo que encuentre."
+          ]
+        ]
+      },
+      {
+        "heading": "Cuándo limpiar antes de inspeccionar",
+        "paragraphs": [
+          [
+            "En un tramo con depósitos, la imagen puede mostrar la obstrucción sin dejar ver la pared del tubo. Limpiar primero puede mejorar la lectura, aunque a veces interesa registrar qué bloqueaba el paso antes de retirarlo. Si se puede entrar por ambos extremos, indica qué registro corresponde a cada vídeo. Antes de solicitar presupuesto, confirma si necesitas grabación, localización de hallazgos o una valoración de la técnica de reparación."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿La inspección puede localizar el recorrido bajo un suelo?",
+        "Puede ayudar a seguir el tramo accesible. Si hace falta marcar la posición en superficie, pregunta qué método se puede usar y qué precisión permiten la profundidad y las condiciones del lugar."
+      ],
+      [
+        "¿Qué ocurre si la cámara se detiene a mitad del recorrido?",
+        "Debe quedar anotado el punto aproximado y la causa si es visible. Con esa información se puede valorar limpiar, acceder desde otro registro o revisar por separado la parte pendiente."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -5803,6 +6735,34 @@
     ],
     "question": "¿Hay que intervenir a la vez en toda la red?",
     "answer": "Se puede plantear por tramos si el diagnóstico y el servicio lo permiten. El plan debe identificar qué zonas quedan operativas y qué accesos se necesitan.",
+    "details": [
+      {
+        "heading": "Cómo se decide el orden de reparación en una red con varios daños",
+        "paragraphs": [
+          [
+            "Una inspección puede encontrar sedimentos en un colector, una unión desplazada en el siguiente y raíces cerca de un registro. Si la red sigue en servicio, interesa distinguir qué defecto impide la evacuación y qué trabajo prepara el siguiente. Por ejemplo, retirar un obstáculo puede permitir inspeccionar un tramo que todavía no se pudo valorar, y esa inspección puede cambiar el alcance previsto."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué comprobar y documentar por fases",
+        "paragraphs": [
+          [
+            "Identifica los tramos entre registros y asigna a cada uno un método y una comprobación. Si hay varios usuarios, aclara qué partes se dejan en servicio y cuáles requieren un corte. El documento de entrega puede recoger los tramos recuperados, los defectos pendientes y las limitaciones que afecten a futuras limpiezas. Así se puede retomar el plan sin volver a diagnosticar zonas ya documentadas."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Puede combinarse manga con sustitución localizada?",
+        "Se puede valorar cuando el estado varía entre tramos. La propuesta debe señalar dónde cambia el método, por qué y cómo se comprobó la continuidad de la evacuación."
+      ],
+      [
+        "¿Qué pasa si durante el trabajo aparece otro defecto?",
+        "Conviene documentarlo, comprobar cómo afecta al tramo previsto y acordar el alcance adicional con el responsable. La intervención debe dejar claro qué queda resuelto y qué necesita otra actuación."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6001,6 +6961,34 @@
     ],
     "question": "¿Se puede cambiar la tapa sin sustituir la arqueta?",
     "answer": "Si el registro, el marco y el apoyo están en buen estado, puede valorarse una intervención limitada. Si hay filtraciones o defectos en las conexiones, hay que revisar el conjunto.",
+    "details": [
+      {
+        "heading": "Cómo localizar y dejar accesible una arqueta que quedó oculta",
+        "paragraphs": [
+          [
+            "Si hay un croquis antiguo, contrasta los puntos de cambio de dirección y el recorrido entre registros conocidos. Una reforma puede haber cubierto la tapa o desviado el colector. La inspección desde un registro accesible o la localización técnica pueden ayudar a acotar el punto antes de levantar un pavimento. Si el registro queda bajo una zona de paso, revisa dónde se puede colocar una tapa que permita abrirlo en futuras visitas."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo comprobar la conexión antes de cerrar la obra",
+        "paragraphs": [
+          [
+            "Identifica qué ramales llegan, las cotas de entrada y salida y el sentido del flujo. Si se añade una arqueta para recoger varios desagües, interesa que no quede un punto donde se acumulen residuos con facilidad y que el equipo pueda acceder al tramo. Al terminar, conserva un croquis o referencias claras respecto al edificio, y deja anotado qué conexiones se comprobaron."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Hay que levantar todo el pavimento para encontrarla?",
+        "Se puede estudiar la localización desde otros registros o con la documentación disponible. La necesidad de abrir depende de dónde quede el acceso y de si puede confirmarse la posición desde otro punto."
+      ],
+      [
+        "¿Qué datos ayudan si la tapa queda en una zona de vehículos?",
+        "Indica qué tipo de tráfico pasa por encima, si existe un marco y en qué estado está el apoyo. La solución debe adecuarse al uso del lugar y permitir mantenimiento."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6012,7 +7000,7 @@
     "heading": "Inspección de tuberías con cámara robotizada en Bilbao y Bizkaia",
     "description": "Inspeccionamos colectores y conducciones compatibles con cámara robotizada. El vídeo sirve para situar defectos y preparar una limpieza, reparación o.",
     "intro": "Inspeccionamos colectores y conducciones compatibles con cámara robotizada. El vídeo sirve para situar defectos y preparar una limpieza, reparación o comprobación posterior.",
-    "image": "/assets/source/792b575091-ZAZ_3353-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -6058,6 +7046,34 @@
     ],
     "question": "¿Se puede inspeccionar un conducto parcialmente inundado?",
     "answer": "El agua puede limitar lo visible y el avance. Indica si el nivel es habitual o puntual para valorar limpieza, acceso alternativo o una nueva visita.",
+    "details": [
+      {
+        "heading": "Cuándo aporta más información una cámara robotizada",
+        "paragraphs": [
+          [
+            "En un colector largo con varios registros, el robot permite avanzar por la conducción mientras se observa el interior. Para que el vídeo sirva de diagnóstico conviene vincular cada hallazgo con el sentido del recorrido, la distancia y las derivaciones próximas. El equipo se elige según el diámetro, la geometría y las condiciones de acceso. Un ramal estrecho o con varios codos puede requerir otro sistema de inspección."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué debe quedar registrado para aprovechar el vídeo",
+        "paragraphs": [
+          [
+            "Antes de empezar, acuerda si se busca explicar un atasco, acotar una reparación o comprobar una obra. Si hay una junta abierta o una intrusión, interesa registrar su posición desde un punto que el equipo pueda volver a localizar. Si el agua impide ver el fondo, deja constancia de lo que no se observó. La grabación y la identificación del tramo permiten comparar el antes y el después cuando se ha ejecutado un trabajo."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Conviene indicar el diámetro aunque sea aproximado?",
+        "Sí, junto con la distancia entre registros y los cambios de dirección conocidos. Son datos útiles para preparar un equipo que pueda avanzar y recuperarse desde los accesos disponibles."
+      ],
+      [
+        "¿Puede la cámara comprobar una reparación desde el mismo registro?",
+        "Si el recorrido sigue accesible, repetir el punto de entrada y el sentido facilita comparar imágenes. Si se cambia de acceso, conviene identificar la nueva referencia para ubicar los mismos defectos."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6256,6 +7272,34 @@
     ],
     "question": "¿El mantenimiento evita cualquier inundación?",
     "answer": "Ayuda a conservar el paso y retirar obstrucciones. Si el caudal supera la capacidad de la instalación, también hay que revisar el diseño y las condiciones de descarga.",
+    "details": [
+      {
+        "heading": "Cómo pasar de una limpieza puntual a un plan por tramos",
+        "paragraphs": [
+          [
+            "Si una red acumula arena en los puntos bajos y grasa cerca de determinadas entradas, conviene programar su revisión según el material y el historial. Una visita puede empezar por los pozos que tuvieron retornos o por el colector que recibe varios ramales. Si se retiran depósitos pero el mismo punto vuelve a cargarse, el plan debe prever un diagnóstico para buscar daños o condiciones de evacuación que expliquen la recurrencia."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué datos sirven para ajustar las siguientes visitas",
+        "paragraphs": [
+          [
+            "Anota desde qué pozos se trabajó, qué material se retiró y qué limitaciones hubo. Relaciona los avisos con los episodios de lluvia, cambios de uso o reparaciones próximas. Si el nivel sube en varios puntos a la vez, revisa qué tramo los conecta antes de añadir otra limpieza programada. El registro permite justificar cambios de frecuencia y distinguir conservación habitual de obras que requieren valoración."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Hay que programar la misma frecuencia para todos los colectores?",
+        "La frecuencia depende del uso, los aportes y el historial. Se puede dedicar más atención a los tramos con depósitos recurrentes y revisar el intervalo a partir de lo que se observa."
+      ],
+      [
+        "¿Qué ocurre si se detecta una junta dañada durante la limpieza?",
+        "Conviene identificar su posición y valorar si el daño requiere cámara o reparación. Deja anotado qué parte recuperó el paso y qué queda pendiente de comprobar."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6403,7 +7447,7 @@
     "heading": "Robot fresador para raíces en tuberías en Bilbao y Bizkaia",
     "description": "Localizamos la entrada de raíces, valoramos si se pueden cortar con robot y comprobamos después el tramo.",
     "intro": "Localizamos la entrada de raíces, valoramos si se pueden cortar con robot y comprobamos después el tramo. El fresado recupera paso y permite evaluar la junta o fisura de entrada.",
-    "image": "/assets/source/792b575091-ZAZ_3353-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -6449,6 +7493,34 @@
     ],
     "question": "¿Quitar las raíces resuelve el problema definitivamente?",
     "answer": "El corte recupera sección. Si queda abierta la vía por la que entraron, pueden volver. El vídeo posterior permite valorar qué reparación conviene.",
+    "details": [
+      {
+        "heading": "Qué hacer si las raíces reaparecen en el mismo punto",
+        "paragraphs": [
+          [
+            "Si el atasco vuelve junto a una junta, interesa localizar la entrada y comprobar cuánto tubo queda en buen estado alrededor. El fresado permite retirar la parte que invade la conducción cuando el acceso y el material lo admiten. Después, la cámara ayuda a ver si la raíz entraba por una junta abierta o por una fisura. Tratar ese punto puede ser necesario para evitar que el problema vuelva."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué revisar antes y después de cortar",
+        "paragraphs": [
+          [
+            "Antes de trabajar, identifica desde qué registro se llega, cuánto espacio queda y si el tubo conserva una pared que permita usar el cabezal. Después del corte, conviene retirar los restos y documentar el paso recuperado. Si la inspección muestra un hundimiento o una abertura extensa, valora si se requiere sustituir un tramo en lugar de tratar solo la zona de entrada."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Puede haber raíces aunque no haya un árbol junto al registro?",
+        "Sí, la posición del registro no indica dónde está el punto de entrada. La inspección permite situar la intrusión respecto al acceso y decidir qué tramo merece revisión."
+      ],
+      [
+        "¿El robot puede retirar raíces de cualquier conducción?",
+        "Depende de la sección que quede libre y del estado del tubo. Si hay una rotura importante o el equipo no puede avanzar, se debe estudiar otro acceso o método."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6596,7 +7668,7 @@
     "heading": "Robot fresador para tuberías en Bilbao y Bizkaia",
     "description": "El fresado interior permite retirar obstáculos resistentes de determinadas tuberías. Antes de trabajar valoramos qué material hay que retirar, cuánto espacio.",
     "intro": "El fresado interior permite retirar obstáculos resistentes de determinadas tuberías. Antes de trabajar valoramos qué material hay que retirar, cuánto espacio queda y en qué estado está el conducto.",
-    "image": "/assets/source/792b575091-ZAZ_3353-scaled.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -6642,6 +7714,34 @@
     ],
     "question": "¿Se utiliza el mismo cabezal para raíces y mortero?",
     "answer": "La elección depende del obstáculo y de la tubería. Identificar ambos antes de fresar ayuda a limitar el riesgo de dañar el conducto.",
+    "details": [
+      {
+        "heading": "Cómo se elige el cabezal según el obstáculo",
+        "paragraphs": [
+          [
+            "Un resto de mortero que sobresale y una raíz que atraviesa una junta requieren valorar herramientas distintas. Antes de fresar, la inspección permite saber cuánto sobresale el material, cómo se apoya en la pared y cuánto espacio queda para maniobrar. Si hay deformaciones o paredes deterioradas, conviene acotar el trabajo o elegir otra técnica. La preparación también debe prever cómo se retirarán los restos para que no queden en el siguiente tramo."
+          ]
+        ]
+      },
+      {
+        "heading": "Cómo se comprueba si el tubo está listo para volver a usarlo",
+        "paragraphs": [
+          [
+            "Tras retirar el obstáculo, verifica que queda paso y que no hay fragmentos sueltos en una conexión. Si el fresado prepara el conducto para una reparación posterior, importa saber qué defectos quedaron visibles y dónde están. Un vídeo desde un registro identificable permite comparar el tramo y decidir si hace falta una segunda actuación."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿Qué diferencia hay entre fresado y limpieza a presión?",
+        "La limpieza a presión puede mover suciedad y sedimentos. El fresado actúa de forma localizada sobre un obstáculo resistente cuando la tubería y el acceso permiten usar el equipo."
+      ],
+      [
+        "¿Se puede presupuestar con una foto del registro?",
+        "La foto ayuda a valorar el acceso. Para conocer el alcance del fresado conviene identificar qué hay dentro, el diámetro aproximado y la distancia hasta el obstáculo."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",
@@ -6789,7 +7889,7 @@
     "heading": "Instalación de fosas sépticas en Bilbao y Bizkaia",
     "description": "Valoramos instalaciones para viviendas y otras fincas sin una conexión de saneamiento disponible.",
     "intro": "Valoramos instalaciones para viviendas y otras fincas sin una conexión de saneamiento disponible. El proyecto parte del uso previsto, las características de la parcela y el destino del agua tratada.",
-    "image": "/assets/source/4059b288ad-14.jpg",
+    "image": "/assets/source/b5bf4f5581-16-e1725470887613.jpg",
     "urgent": false,
     "sections": [
       [
@@ -6835,6 +7935,34 @@
     ],
     "question": "¿Se puede aprovechar una fosa antigua al reformar la vivienda?",
     "answer": "Antes de decidir, conviene comprobar estado, capacidad, accesibilidad y destino del efluente. El uso previsto y las condiciones de la parcela pueden cambiar con la reforma.",
+    "details": [
+      {
+        "heading": "Cómo comprobar que la instalación encaja con la finca",
+        "paragraphs": [
+          [
+            "Antes de elegir el depósito, confirma si existe conexión posible a la red y reúne los datos de ocupación, uso y acceso. Si la parcela requiere saneamiento autónomo, estudia cómo se tratará el agua y dónde irá el efluente. En un caserío con patio en pendiente, conviene prever tanto el paso de maquinaria durante la obra como la posibilidad de vaciar el equipo en futuras visitas."
+          ]
+        ]
+      },
+      {
+        "heading": "Qué debe quedar definido antes de cerrar el terreno",
+        "paragraphs": [
+          [
+            "La propuesta debe indicar recorridos, cotas y puntos de registro, y cómo se comprobará el funcionamiento. Pide que se identifique la salida del sistema, el acceso a las tapas y lo que queda enterrado. Si hay que tramitar un vertido, confirma primero qué procedimiento corresponde al emplazamiento y al uso de la vivienda. Guarda el croquis y las indicaciones de mantenimiento junto con la documentación de obra."
+          ]
+        ]
+      }
+    ],
+    "faqs": [
+      [
+        "¿La capacidad se puede decidir solo por el número de dormitorios?",
+        "La ocupación prevista es un dato, pero también importan el uso, el terreno, el tipo de tratamiento y el destino del agua. La propuesta debe considerar el conjunto."
+      ],
+      [
+        "¿Conviene elegir dónde aparcará la cuba antes de instalar?",
+        "Sí. Comprueba acceso, distancia a la tapa y obstáculos en el recorrido. Pensarlo durante la obra puede facilitar el mantenimiento y evitar que una reforma posterior bloquee los registros."
+      ]
+    ],
     "locations": [
       [
         "Bilbao",

@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { restoreLocationMap, LOCATION_MAP } from '../lib/location-map.js';
 import { serviceLandingContent } from '../lib/service-landing.js';
 import ServiceLanding from '../components/ServiceLanding.astro';
-import ReviewedService from '../components/ReviewedService.astro';
+import ReviewedServiceContent from '../components/ReviewedServiceContent.astro';
 import navContent from '../data/nav-content.json';
 import serviceLandings from '../data/service-landings.json';
 import data from '../data/phase-data.json';
@@ -66,7 +66,31 @@ const isLegalUnavailable = page.status === 404;
 ---
 <Base title={title} description={reviewedService?.description || landing?.summary || legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {reviewedService ? (
-    <ReviewedService service={reviewedService} />
+    isNavService ? (
+      <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} reviewedService={reviewedService} />
+    ) : (
+      <>
+        <section class="interior-hero">
+          <div class="wrap">
+            <span class="eyebrow">Saneamientos Mungia</span>
+            <h1>{reviewedService.heading}</h1>
+            <p>{reviewedService.intro}</p>
+            {reviewedService.urgent && <a class="pill pill-dark" href="tel:+34601004005">Urgencias · 601 004 005</a>}
+          </div>
+        </section>
+        <section class="section wrap article-layout service-body-layout">
+          <article class="article-content">
+            {reviewedService.image && (
+              <div class="migrated-content">
+                <figure><img src={reviewedService.image} alt="" fetchpriority="high" /></figure>
+              </div>
+            )}
+            <ReviewedServiceContent service={reviewedService} />
+            <a class="pill pill-dark" href="/contacto/">Solicitar presupuesto</a>
+          </article>
+        </section>
+      </>
+    )
   ) : page.path === '/servicios/' ? (
     <>
       <section class="services-top services-directory-top"><div class="wrap"><h1>Encuéntranos en todo Bizkaia</h1><p>Instalación, mantenimiento y rehabilitación de redes de saneamiento y tuberías en Bizkaia</p></div></section>
