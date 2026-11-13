@@ -119,7 +119,13 @@
       [
         "Qué limpiamos y por dónde accedemos",
         [
-          "En comunidades revisamos el colector que une los ramales y su salida. En comercios y naves conviene identificar además arquetas de grasas, sumideros y cambios de dirección. Saber qué registros se pueden abrir permite trabajar sobre el tramo correcto."
+          "En comunidades revisamos el colector que une los ramales y su salida. En comercios y naves conviene identificar además arquetas de grasas, sumideros y cambios de dirección. Saber qué registros se pueden abrir permite trabajar sobre el tramo correcto.",
+          " Si la instalación tiene un depósito independiente, conviene coordinar la ",
+          {
+            "href": "/servicios/fosas-septicas-limpieza/",
+            "label": "limpieza y el vaciado de la fosa séptica"
+          },
+          " con la limpieza de su tubería de entrada."
         ]
       ],
       [
@@ -224,7 +230,13 @@
       [
         "Qué avisos atendemos",
         [
-          "Un fregadero que no traga puede tener una obstrucción en su propio ramal. Si el agua sale por la ducha al usar el inodoro o hay varios vecinos afectados, conviene revisar la bajante o el colector común. También atendemos arquetas rebosadas y desagües de garaje."
+          "Un fregadero que no traga puede tener una obstrucción en su propio ramal. Si el agua sale por la ducha al usar el inodoro o hay varios vecinos afectados, conviene revisar la bajante o el colector común. También atendemos arquetas rebosadas y desagües de garaje.",
+          " Si el desagüe sigue funcionando y puedes programar la visita, consulta el ",
+          {
+            "href": "/desatrancos/",
+            "label": "servicio de desatrancos programados"
+          },
+          "."
         ]
       ],
       [
@@ -1514,7 +1526,13 @@
       [
         "Cómo se localiza la avería",
         [
-          "Una humedad en el techo puede aparecer lejos de la unión que pierde. Conviene saber si la mancha coincide con el uso de un baño, con lluvias o con descargas desde varias plantas. Revisamos los registros accesibles y valoramos cámara cuando aporta información."
+          "Una humedad en el techo puede aparecer lejos de la unión que pierde. Conviene saber si la mancha coincide con el uso de un baño, con lluvias o con descargas desde varias plantas. Revisamos los registros accesibles y valoramos cámara cuando aporta información.",
+          " Si la pérdida reaparece tras un parche, consulta cómo se ",
+          {
+            "href": "/servicios/arreglo-bajantes/",
+            "label": "diagnostica y arregla una bajante"
+          },
+          " antes de volver a sellar la misma junta."
         ]
       ],
       [
@@ -2581,7 +2599,13 @@
       [
         "Cómo preparar el primer aviso",
         [
-          "Indica qué viviendas tienen humedad o retorno, si la incidencia aparece con lluvias o descargas, y dónde están los registros conocidos. Si hay agua saliendo, corta el uso de los aparatos afectados y avisa al responsable de la finca."
+          "Indica qué viviendas tienen humedad o retorno, si la incidencia aparece con lluvias o descargas, y dónde están los registros conocidos. Si hay agua saliendo, corta el uso de los aparatos afectados y avisa al responsable de la finca.",
+          " Si el aviso afecta a una columna de plástico, las juntas y las sujeciones orientan la ",
+          {
+            "href": "/servicios/reparar-bajante-pvc/",
+            "label": "reparación de una bajante de PVC"
+          },
+          "."
         ]
       ],
       [
@@ -2702,7 +2726,7 @@
         "/servicios/reparacion-bajantes-comunidad/bilbao/"
       ],
       [
-        "¿Dónde estamos?",
+        "Bermeo",
         "/servicios/reparacion-bajantes-comunidad/bermeo/"
       ],
       [
@@ -3114,7 +3138,13 @@
       [
         "Qué daños se pueden abordar desde dentro",
         [
-          "Una junta abierta o una fisura localizada puede admitir una reparación interior cuando el tramo sigue accesible y conserva sección suficiente. Un hundimiento, un cambio de trazado o un tubo muy deformado pueden requerir excavación."
+          "Una junta abierta o una fisura localizada puede admitir una reparación interior cuando el tramo sigue accesible y conserva sección suficiente. Un hundimiento, un cambio de trazado o un tubo muy deformado pueden requerir excavación.",
+          " Si una raíz tapa la unión, puede ser necesario ",
+          {
+            "href": "/servicios/robot-fresador-tuberias-raices/",
+            "label": "retirar las raíces con un robot fresador"
+          },
+          " antes de ver cuánto daño hay."
         ]
       ],
       [
@@ -3904,7 +3934,13 @@
       [
         "Qué aporta el vídeo antes de reparar",
         [
-          "Permite ver si hay fisuras, juntas abiertas, raíces, intrusiones u obstáculos. Asociar cada hallazgo a un registro y a una distancia ayuda a acotar el tramo. Si hay agua o suciedad que impide ver, puede ser necesario limpiar primero."
+          "Permite ver si hay fisuras, juntas abiertas, raíces, intrusiones u obstáculos. Asociar cada hallazgo a un registro y a una distancia ayuda a acotar el tramo. Si hay agua o suciedad que impide ver, puede ser necesario limpiar primero.",
+          " Cuando la cámara confirma que se puede trabajar desde un registro interior, consulta las opciones de ",
+          {
+            "href": "/servicios/rehabilitacion-tuberias-sin-obras/",
+            "label": "rehabilitación de tuberías sin obras"
+          },
+          "."
         ]
       ],
       [
@@ -5606,7 +5642,13 @@
       [
         "Cómo se distinguen los dos recorridos",
         [
-          "Los baños y cocinas descargan aguas residuales. Cubiertas, patios y rampas recogen lluvia. Según el trazado y el punto de conexión, ambas corrientes pueden llegar a la red pública por conducciones distintas o por un sistema unitario."
+          "Los baños y cocinas descargan aguas residuales. Cubiertas, patios y rampas recogen lluvia. Según el trazado y el punto de conexión, ambas corrientes pueden llegar a la red pública por conducciones distintas o por un sistema unitario.",
+          " Si la intervención también modifica la red de agua potable, conviene planificar juntas las ",
+          {
+            "href": "/servicios/redes-locales-abastecimiento-saneamiento/",
+            "label": "redes locales de abastecimiento y saneamiento"
+          },
+          "."
         ]
       ],
       [
@@ -5876,7 +5918,19 @@
       [
         "Cómo se sigue el recorrido en una comunidad",
         [
-          "Los aparatos descargan en ramales que llegan a una bajante o a un colector. Si el problema se manifiesta en plantas distintas, conviene seguir ese tramo compartido hasta los registros de salida. Un plano y los avisos por planta ayudan a orientar la revisión."
+          "Los aparatos descargan en ramales que llegan a una bajante o a un colector. Si el problema se manifiesta en plantas distintas, conviene seguir ese tramo compartido hasta los registros de salida. Un plano y los avisos por planta ayudan a orientar la revisión.",
+          " Si la arqueta de salida quedó oculta tras una reforma, conviene ",
+          {
+            "href": "/servicios/canalizacion-arquetas/",
+            "label": "localizar o renovar el registro de saneamiento"
+          },
+          " antes de abrir el pavimento en varios puntos.",
+          " Para una instalación con varios pozos y colectores, consulta cómo se organiza la ",
+          {
+            "href": "/servicios/limpieza-alcantarillado-mantenimiento-red/",
+            "label": "limpieza y conservación del alcantarillado"
+          },
+          "."
         ]
       ],
       [
@@ -6162,7 +6216,13 @@
             "href": "https://www.uragentzia.euskadi.eus/declaracion-responsable-de-vertidos-de-vivienda-unifamiliar/webura00-contents/es/",
             "label": "Agencia Vasca del Agua"
           },
-          "."
+          ".",
+          " En una vivienda que ya dispone de fosa, consulta el ",
+          {
+            "href": "/servicios/fosas-septicas-limpieza/",
+            "label": "mantenimiento y vaciado del depósito"
+          },
+          " para planificar el acceso de la cuba."
         ]
       ],
       [
@@ -7235,7 +7295,13 @@
       [
         "Qué señales apuntan a un problema en el tramo",
         [
-          "Si varios pozos registran niveles altos o el agua rebosa siempre en el mismo punto, interesa identificar los tramos aguas arriba y aguas abajo. Los avisos que coinciden con lluvia también ayudan a distinguir un problema de capacidad de un atasco localizado."
+          "Si varios pozos registran niveles altos o el agua rebosa siempre en el mismo punto, interesa identificar los tramos aguas arriba y aguas abajo. Los avisos que coinciden con lluvia también ayudan a distinguir un problema de capacidad de un atasco localizado.",
+          " Si los sedimentos reaparecen en los mismos registros, un ",
+          {
+            "href": "/servicios/mantenimiento-de-la-red-de-saneamiento/",
+            "label": "mantenimiento preventivo de la red"
+          },
+          " permite ajustar la frecuencia a cada tramo."
         ]
       ],
       [

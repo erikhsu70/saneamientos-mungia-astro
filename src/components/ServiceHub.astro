@@ -1,0 +1,185 @@
+---
+import { serviceHub } from '../lib/service-hub.js';
+
+const { path } = Astro.props;
+const { photo, links } = serviceHub(path);
+const profile = 'https://maps.app.goo.gl/vnSHLWkojk3SfG7x5';
+const map = 'https://maps.google.com/maps?cid=6959371042914955865&hl=es&z=15&output=embed';
+---
+
+<div class="wrap service-resources">
+  <section class="related-services" aria-labelledby="related-services-title">
+    <figure class="service-fleet-photo">
+      <img {...photo} loading="lazy" decoding="async" />
+    </figure>
+    <div class="related-services-body">
+      <h2 id="related-services-title">Servicios relacionados</h2>
+      <ul>
+        {links.map(({ href, label }) => (
+          <li><a href={href}>{label}<span aria-hidden="true">→</span></a></li>
+        ))}
+      </ul>
+      <a class="all-services" href="/servicios/">Ver todos los servicios <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="service-location" aria-labelledby="service-location-title">
+    <div class="service-location-info">
+      <img src="/assets/service-photos/sede-zamudio.webp" alt="Fachada de Saneamientos Mungia en Zamudio" width="356" height="510" loading="lazy" decoding="async" />
+      <div>
+        <h2 id="service-location-title">Nuestra sede en Zamudio</h2>
+        <address>Polígono Pinoa, parcela 2-H<br />48170 Zamudio, Bizkaia</address>
+        <a href={profile} target="_blank" rel="noopener noreferrer">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="service-map" data-service-map>
+      <div class="service-map-placeholder">
+        <button class="pill pill-dark" type="button" hidden>Cargar Google Maps</button>
+        <p hidden>Al cargar el mapa, se abrirá contenido de Google en esta página.</p>
+        <noscript><p>Consulta el enlace a Google Maps para ver la ubicación.</p></noscript>
+      </div>
+      <template>
+        <iframe src={map} title="Ubicación de Saneamientos Mungia en Google Maps" width="600" height="320" referrerpolicy="no-referrer" allowfullscreen></iframe>
+      </template>
+    </div>
+  </section>
+</div>
+
+<script>
+  document.querySelectorAll('[data-service-map]').forEach((holder) => {
+    const button = holder.querySelector('button');
+    const note = holder.querySelector('p');
+    const template = holder.querySelector('template');
+    if (!button || !note || !template) return;
+    button.hidden = false;
+    note.hidden = false;
+    button.addEventListener('click', () => {
+      holder.replaceChildren(template.content.cloneNode(true));
+      holder.querySelector('iframe')?.focus();
+    }, { once: true });
+  });
+</script>
+
+<style>
+  .service-resources {
+    display: grid;
+    gap: clamp(24px, 4vw, 48px);
+    margin-block: 0 clamp(40px, 6vw, 80px);
+  }
+
+  .related-services, .service-location {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid #dbe5dc;
+    border-radius: 18px;
+    background: #f0f5f1;
+  }
+
+  .service-fleet-photo {
+    margin: 0;
+  }
+
+  .service-fleet-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    max-height: 380px;
+    object-fit: cover;
+  }
+
+  .related-services-body, .service-location-info {
+    padding: clamp(20px, 3vw, 36px);
+  }
+
+  h2 {
+    margin: 0 0 16px;
+    font-size: clamp(23px, 2.25vw, 34px);
+    line-height: 1.2;
+    scroll-margin-top: calc(var(--site-header-height, 120px) + 24px);
+  }
+
+  ul {
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+    border-top: 1px solid #cfdbd0;
+  }
+
+  li {
+    border-bottom: 1px solid #cfdbd0;
+  }
+
+  li a, .all-services, .service-location-info a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--green);
+  }
+
+  li a {
+    justify-content: space-between;
+    padding-block: 8px;
+  }
+
+  a:hover, a:focus-visible {
+    text-decoration: underline;
+  }
+
+  .service-location-info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(68px, 0.55fr) minmax(0, 1fr);
+    gap: clamp(12px, 2.5vw, 24px);
+  }
+
+  .service-location-info img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .service-location-info address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .service-map {
+    display: grid;
+    min-height: 270px;
+    background: #e4eee7;
+  }
+
+  .service-map-placeholder {
+    align-self: center;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .service-map-placeholder p {
+    margin: 12px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .service-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 270px;
+    border: 0;
+  }
+
+  @media (max-width: 600px) {
+    .service-fleet-photo img {
+      aspect-ratio: 3 / 2;
+      height: auto;
+      min-height: 0;
+    }
+  }
+</style>
