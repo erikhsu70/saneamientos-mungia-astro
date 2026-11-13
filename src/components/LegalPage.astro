@@ -1,10 +1,10 @@
 ---
+import PageDate from './PageDate.astro';
 const { page } = Astro.props;
 ---
-<section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><p>{page.intro}</p></div></section>
+<section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><PageDate date={page.updatedOn} /><p>{page.intro}</p></div></section>
 <div class="wrap legal-layout">
   <article class="legal-content">
-    <p class="legal-updated">Última revisión: 4 de octubre de 2026</p>
     {page.key === 'notice' && <>
       <h2>Identificación del titular</h2>
       <p>Este sitio web es gestionado por <strong>Anulaciones Sépticas Mungia, S.L.</strong>, que opera bajo la denominación comercial Saneamientos Mungia.</p>

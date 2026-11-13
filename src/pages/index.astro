@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageDate from '../components/PageDate.astro';
 import data from '../data/phase-data.json';
 const home = data.pages.find((p) => p.path === '/');
 const image = (name) => home.blocks.find((b) => b.type === 'image' && b.src.includes(name))?.src;
@@ -33,6 +34,7 @@ const news = [
       <div class="hero-inner">
         <p class="hero-kicker">Empresa de Saneamiento en Bizkaia</p>
         <h1>Quítate el marrón con un trabajo de calidad</h1>
+        <PageDate date="2026-11-13" light />
         <p>La única empresa de saneamientos que atiende en el mismo día.</p>
         <a class="pill pill-light" href="/contacto/">CONTACTA</a>
       </div>

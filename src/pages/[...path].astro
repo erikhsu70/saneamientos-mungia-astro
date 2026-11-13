@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageDate from '../components/PageDate.astro';
+import { SERVICE_REVIEW_DATE, latestContentDate } from '../lib/page-dates.js';
 import { restoreLocationMap, LOCATION_MAP } from '../lib/location-map.js';
 import { serviceLandingContent } from '../lib/service-landing.js';
 import ServiceLanding from '../components/ServiceLanding.astro';
@@ -43,6 +45,11 @@ const reviewedService = reviewedServices[path];
 const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === path);
 const localGuide = localGuides[path];
 const city = cityService(path);
+const isContact = path === '/contacto/' || path === '/contacto2/';
+const publishedOn = latestContentDate(page.date);
+const updatedOn = city || reviewedService || localGuide || path === '/servicios/'
+  ? SERVICE_REVIEW_DATE
+  : latestContentDate(page.date, page.modified);
 const parentPath = /^\/servicios\/[^/]+\/[^/]+\/$/.test(path) ? `/servicios/${path.split('/')[2]}/` : null;
 const generalServicePath = parentPath && (redirects[parentPath] || parentPath);
 const generalServiceTitle = generalServicePath && (reviewedServices[generalServicePath]?.heading || 'Ver servicio general');
@@ -79,13 +86,14 @@ const isLegalUnavailable = page.status === 404;
 <Base title={title} description={reviewedService?.description || (city && localGuide ? `${heading}. ${city.summary}` : city?.description) || (path === '/servicios/' ? directory.description : null) || landing?.summary || legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {reviewedService ? (
     isNavService ? (
-      <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} reviewedService={reviewedService} />
+      <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} reviewedService={reviewedService} updatedOn={updatedOn} />
     ) : (
       <>
         <section class="interior-hero">
           <div class="wrap">
             <span class="eyebrow">Saneamientos Mungia</span>
             <h1>{reviewedService.heading}</h1>
+            <PageDate date={updatedOn} />
             <p>{reviewedService.intro}</p>
             {reviewedService.urgent && <a class="pill pill-dark" href="tel:+34601004005">Urgencias · 601 004 005</a>}
           </div>
@@ -104,21 +112,21 @@ const isLegalUnavailable = page.status === 404;
       </>
     )
   ) : page.path === '/servicios/' ? (
-    <ServiceDirectory images={directoryImages} coverageImage={getImage('DONDE-TRABAJAMOS')} />
+    <ServiceDirectory images={directoryImages} coverageImage={getImage('DONDE-TRABAJAMOS')} updatedOn={updatedOn} />
   ) : page.path === '/blog/' ? (
     <BlogListing />
-  ) : page.path === '/contacto' || page.path === '/contacto2/' ? (
-    <><div class="contact-page"><section class="contact-top wrap"><h1>Contacta con nosotros</h1><p>A través de nuestro mail o rellenando nuestro formulario.</p></section><section class="wrap contact-intro"><div class="contact-info"><h2>mungia@saneamientosmungia.com</h2><p>Te responderemos lo más rápido posible y uno de nuestros expertos se pondrá en contacto contigo.</p><p>O si lo prefieres a través de nuestro teléfono <a href="tel:+34944460209">94 446 02 09</a>.</p></div><img src="/assets/source/7ac0440d1f-Frame-206.png" alt="Zonas de servicio en Bizkaia" /></section><section class="wrap contact-form-section"><form id="contact-form" class="contact-form"><h2>Presupuesto gratuito, sin compromiso</h2><div class="contact-fields"><label>Nombre (requerido)<input name="nombre" autocomplete="name" required /></label><label>Correo electrónico (requerido)<input name="correo" type="email" autocomplete="email" required /></label><label class="contact-field-wide">Asunto<input name="asunto" /></label><label class="contact-field-wide">Mensaje<textarea name="mensaje" rows="6" required></textarea></label></div><button type="submit" class="pill pill-light">Enviar</button><small>Responsable: Anulaciones Sépticas Mungia, S.L. Usaremos los datos del correo para responder a tu consulta. Puedes ejercer tus derechos escribiendo a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a>. <a href="/política-de-privacidad/">Más información sobre privacidad</a>.</small><small>El envío abrirá tu aplicación de correo.</small></form></section><section class="wrap contact-urgent"><h3>Servicio urgente para desatascos 24 h</h3><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p><a href="tel:+34601004005">601 004 005</a></section></div></>
+  ) : isContact ? (
+    <><div class="contact-page"><section class="contact-top wrap"><h1>Contacta con nosotros</h1><PageDate date="2026-10-04" /><p>A través de nuestro mail o rellenando nuestro formulario.</p></section><section class="wrap contact-intro"><div class="contact-info"><h2>mungia@saneamientosmungia.com</h2><p>Te responderemos lo más rápido posible y uno de nuestros expertos se pondrá en contacto contigo.</p><p>O si lo prefieres a través de nuestro teléfono <a href="tel:+34944460209">94 446 02 09</a>.</p></div><img src="/assets/source/7ac0440d1f-Frame-206.png" alt="Zonas de servicio en Bizkaia" /></section><section class="wrap contact-form-section"><form id="contact-form" class="contact-form"><h2>Presupuesto gratuito, sin compromiso</h2><div class="contact-fields"><label>Nombre (requerido)<input name="nombre" autocomplete="name" required /></label><label>Correo electrónico (requerido)<input name="correo" type="email" autocomplete="email" required /></label><label class="contact-field-wide">Asunto<input name="asunto" /></label><label class="contact-field-wide">Mensaje<textarea name="mensaje" rows="6" required></textarea></label></div><button type="submit" class="pill pill-light">Enviar</button><small>Responsable: Anulaciones Sépticas Mungia, S.L. Usaremos los datos del correo para responder a tu consulta. Puedes ejercer tus derechos escribiendo a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a>. <a href="/política-de-privacidad/">Más información sobre privacidad</a>.</small><small>El envío abrirá tu aplicación de correo.</small></form></section><section class="wrap contact-urgent"><h3>Servicio urgente para desatascos 24 h</h3><p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica.</p><a href="tel:+34601004005">601 004 005</a></section></div></>
   ) : legalPage ? (
     <LegalPage page={legalPage} />
   ) : isLegalUnavailable ? (
     <section class="interior-hero"><div class="wrap"><h1>{heading}</h1><p>Este documento no está disponible en la web original. Su dirección se ha conservado para completar la migración cuando dispongamos del texto vigente.</p></div></section>
   ) : isNavService ? (
-    <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} localGuide={localGuide} />
+    <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} localGuide={localGuide} updatedOn={updatedOn} />
   ) : page.kind === 'post' ? (
-    <><section class="interior-hero blog-article-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1>{page.date && <time datetime={page.date}>{new Date(page.date).toLocaleDateString('es-ES', {day:'numeric',month:'long',year:'numeric'})}</time>}</div></section><BlogArticle page={page} /></>
+    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1><PageDate date={updatedOn} label={updatedOn === publishedOn ? 'Publicado en' : undefined} /></div></section><BlogArticle page={page} /></>
   ) : (
-    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1>{city ? <p>{city.summary}</p> : footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout service-body-layout"><article class="article-content">
+    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1><PageDate date={updatedOn} />{city ? <p>{city.summary}</p> : footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout service-body-layout"><article class="article-content">
       {parentPath && <p class="service-parent-links"><a href="/servicios/">Todos los servicios</a> <span aria-hidden="true">·</span> <a href={generalServicePath}>{generalServiceTitle}</a></p>}
       {localGuide && <ServiceLocalGuide sections={localGuide.sections} />}
       {city && <CityServiceGuide service={city} />}

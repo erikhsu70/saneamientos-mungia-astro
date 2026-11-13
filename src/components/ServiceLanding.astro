@@ -1,4 +1,5 @@
 ---
+import PageDate from './PageDate.astro';
 import FooterContent from './FooterContent.astro';
 import ServiceLocalGuide from './ServiceLocalGuide.astro';
 import ReviewedServiceContent from './ReviewedServiceContent.astro';
@@ -6,7 +7,7 @@ import landings from '../data/service-landings.json';
 import redirects from '../data/service-redirects.json';
 import data from '../data/phase-data.json';
 import socialLinks from '../data/social-links.json';
-const { heading, intro, html, landing, reviewedService, localGuide } = Astro.props;
+const { heading, intro, html, landing, reviewedService, localGuide, updatedOn } = Astro.props;
 const photo = html.match(/<figure>[^]*?<\/figure>/)?.[0] || '';
 const lead = html.match(/^<p class="source-lead">([^]*?)<\/p>/)?.[0] || '';
 const legacyUrgencyBlock = /<h2>Servicio de desatascos urgentes 24h<\/h2>\s*<p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica\.<\/p>(?:\s*<p class="source-button"><a href="\/contacto\/?">\s*Contactar\s*<\/a><\/p>)?/;
@@ -33,6 +34,7 @@ const steps = [
       <div>
         <a class="eyebrow" href="/servicios/">Saneamientos Mungia · Desde 1990</a>
         <h1>{reviewedService?.heading || localGuide?.title || landing.h1}</h1>
+        <PageDate date={updatedOn} />
         <p>{reviewedService?.intro || landing.summary}</p>
         <div class="service-landing-actions"><a class="pill pill-dark" href="/contacto/">Solicitar presupuesto</a>{reviewedService?.urgent ? <a class="service-landing-phone" href="tel:+34601004005">Urgencias · 601 004 005</a> : <a class="service-landing-phone" href="tel:+34944460209">Llamar al 944 46 02 09</a>}</div>
         <span class="landing-hero-note">Presupuesto sin compromiso · Bilbao y Bizkaia</span>

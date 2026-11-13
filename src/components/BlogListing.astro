@@ -1,14 +1,18 @@
 ---
 import { blogPosts, blogPageCount, blogPageUrl, blogFallbackImages, POSTS_PER_PAGE } from '../lib/blog.js';
 
+import PageDate from './PageDate.astro';
+import { latestContentDate } from '../lib/page-dates.js';
+
 const { currentPage = 1 } = Astro.props;
 const start = (currentPage - 1) * POSTS_PER_PAGE;
 const posts = blogPosts.slice(start, start + POSTS_PER_PAGE);
+const updatedOn = latestContentDate(...posts.flatMap(({ date, modified }) => [date, modified]));
 const visiblePages = Array.from({ length: blogPageCount }, (_, i) => i + 1).filter((number) =>
   number === 1 || number === blogPageCount || Math.abs(number - currentPage) <= 2
 );
 ---
-<section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>Blog</h1><p>Sigue las últimas noticias</p></div></section>
+<section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>Blog</h1><PageDate date={updatedOn} /><p>Sigue las últimas noticias</p></div></section>
 <section class="section wrap">
   <div class="card-grid blog-grid">
     {posts.map((post, i) => <article class="news-card"><img src={post.featuredImage || post.images?.[0] || blogFallbackImages[(start + i) % blogFallbackImages.length]} alt="" loading="lazy" /><div><h2>{post.title}</h2><p>{post.description || post.intro}</p><a href={post.path}>Seguir leyendo →</a></div></article>)}

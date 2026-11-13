@@ -1,12 +1,14 @@
 ---
+import PageDate from './PageDate.astro';
 import directory from '../data/service-directory.json';
 import { LOCATION_MAP } from '../lib/location-map.js';
-const { images, coverageImage } = Astro.props;
+const { images, coverageImage, updatedOn } = Astro.props;
 ---
 
 <section class="services-top services-directory-top">
   <div class="wrap">
     <h1>{directory.title}</h1>
+    <PageDate date={updatedOn} />
     <p>Desatascos urgentes, limpieza y mantenimiento de redes, inspección con cámara y reparación de tuberías. Desde Zamudio atendemos viviendas, comunidades, empresas e instalaciones en Bilbao y el resto de Bizkaia.</p>
     <div class="directory-actions">
       <a class="pill pill-dark" href="tel:+34601004005">Urgencias 24 h · 601 004 005</a>
