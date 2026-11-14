@@ -8,3 +8,12 @@ export function latestContentDate(...dates) {
     .sort()
     .at(-1);
 }
+
+export function blogPostDates(page) {
+  const published = latestContentDate(page.date);
+  const modified = latestContentDate(page.modified);
+  return {
+    published,
+    modified: modified && (!published || modified > published) ? modified : undefined,
+  };
+}

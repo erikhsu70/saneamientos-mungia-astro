@@ -1,4 +1,6 @@
 import fullData from '../data/full-data.json';
+import supplementalPages from '../data/supplemental-pages.json';
+import { blogPostDates } from './page-dates.js';
 import socialLinks from '../data/social-links.json';
 import serviceLandings from '../data/service-landings.json';
 import reviewedServices from '../data/services-bilbao.json';
@@ -9,7 +11,7 @@ import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from './
 export const SITE_URL = 'https://saneamientosmungia.com';
 export const normalizePath = (path) => `${path.replace(/\/+$/, '')}/`;
 export const canonicalUrl = (path) => new URL(normalizePath(path === '/contacto2/' ? '/contacto/' : path), SITE_URL).href;
-const pages = new Map(fullData.pages.map((page) => [normalizePath(page.path), page]));
+const pages = new Map([...fullData.pages, ...supplementalPages.filter((page) => page.kind === 'post')].map((page) => [normalizePath(page.path), page]));
 
 export function pageSeo({ path, title, description }) {
   const normalized = normalizePath(path);
@@ -42,12 +44,15 @@ export function pageSeo({ path, title, description }) {
       ...(isPost || isService ? { mainEntity: { '@id': `${url}#${isPost ? 'article' : 'service'}` } } : {}),
     },
   ];
-  if (isPost) graph.push({
-    '@type': 'BlogPosting', '@id': `${url}#article`, headline: page.title, description, image,
-    mainEntityOfPage: { '@id': webpageId }, publisher: { '@id': businessId }, inLanguage: 'es',
-    ...(page.date ? { datePublished: page.date.slice(0, 10) } : {}),
-    ...(page.modified ? { dateModified: page.modified.slice(0, 10) } : {}),
-  });
+  if (isPost) {
+    const { published, modified } = blogPostDates(page);
+    graph.push({
+      '@type': 'BlogPosting', '@id': `${url}#article`, headline: page.title, description, image,
+      mainEntityOfPage: { '@id': webpageId }, publisher: { '@id': businessId }, inLanguage: 'es',
+      datePublished: published,
+      dateModified: modified,
+    });
+  }
   if (isService) graph.push({
     '@type': 'Service', '@id': `${url}#service`, url,
     name: reviewedService?.heading || localGuides[normalized]?.title || city?.title || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),

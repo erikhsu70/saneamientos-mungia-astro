@@ -22,7 +22,7 @@ const firstLevel = Math.min(...entries.map((entry) => entry.level));
     </details>
   </aside>}
   <article class="article-content blog-article-content">
-    {page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.title} />}
+    {page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.featuredImageAlt || page.title} />}
     <div class="migrated-content" set:html={body} />
     <aside class="article-aside blog-article-help"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside>
   </article>

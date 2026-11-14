@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageDate from '../components/PageDate.astro';
-import { SERVICE_REVIEW_DATE, latestContentDate } from '../lib/page-dates.js';
+import { SERVICE_REVIEW_DATE, blogPostDates, latestContentDate } from '../lib/page-dates.js';
 import { restoreLocationMap, LOCATION_MAP } from '../lib/location-map.js';
 import { serviceLandingContent } from '../lib/service-landing.js';
 import ServiceLanding from '../components/ServiceLanding.astro';
@@ -46,7 +46,7 @@ const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === pa
 const localGuide = localGuides[path];
 const city = cityService(path);
 const isContact = path === '/contacto/' || path === '/contacto2/';
-const publishedOn = latestContentDate(page.date);
+const postDates = page.kind === 'post' ? blogPostDates(page) : undefined;
 const updatedOn = city || reviewedService || localGuide || path === '/servicios/'
   ? city?.review?.date || SERVICE_REVIEW_DATE
   : latestContentDate(page.date, page.modified);
@@ -124,7 +124,17 @@ const isLegalUnavailable = page.status === 404;
   ) : isNavService ? (
     <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} localGuide={localGuide} updatedOn={updatedOn} />
   ) : page.kind === 'post' ? (
-    <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Blog</span><h1>{page.title}</h1><PageDate date={updatedOn} label={updatedOn === publishedOn ? 'Publicado en' : undefined} /></div></section><BlogArticle page={page} /></>
+    <>
+      <section class="interior-hero">
+        <div class="wrap">
+          <span class="eyebrow">Blog</span>
+          <h1>{page.title}</h1>
+          <PageDate date={postDates?.published} fullDate label="Publicado el" />
+          <PageDate date={postDates?.modified} fullDate />
+        </div>
+      </section>
+      <BlogArticle page={page} />
+    </>
   ) : (
     <><section class="interior-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{heading}</h1><PageDate date={updatedOn} fullDate={Boolean(city?.review)} />{city ? <p>{city.summary}</p> : footerCopy?.intro ? <p>{footerCopy.intro}</p> : page.intro ? <p>{page.intro}</p> : firstPara ? <p>{firstPara.text}</p> : page.extraText?.[0] && <p>{page.extraText[0]}</p>}</div></section><section class="section wrap article-layout service-body-layout"><article class="article-content">
       {parentPath && <p class="service-parent-links"><a href="/servicios/">Todos los servicios</a> <span aria-hidden="true">·</span> <a href={generalServicePath}>{generalServiceTitle}</a></p>}
