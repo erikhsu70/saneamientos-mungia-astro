@@ -95,11 +95,13 @@ export function cityService(path) {
   };
 }
 
-// Remove only the repeated catalog of figure, heading and description cards.
+const legacyLocalPromo = /<h2\b[^>]*>[^<]+<\/h2>\s*<p\b[^>]*>Nuestro servicio de [^<]+ está diseñado para atender con rapidez a cualquier situación crítica\.<\/p>(?:\s*<figure>\s*<img\b[^>]*src="\/assets\/full\/bd7f288b9556-[^"]+"[^>]*>\s*<\/figure>)?/gi;
+
+// Strip repeated promotional content from migrated local service pages.
 export function cleanCityBody(html) {
   const updatedLinks = html.replace(/href="([^"]+)"/g, (original, href) => {
     const target = redirects[href];
     return target ? `href="${target}"` : original;
   });
-  return updatedLinks.replace(/<h2\b[^>]*>(?:(?!<\/h2>)[\s\S])*?Nuestros Servicios(?:(?!<\/h2>)[\s\S])*?<\/h2>(?:\s*<figure\b[^>]*>[\s\S]*?<\/figure>\s*<h3\b[^>]*>[\s\S]*?<\/h3>\s*<p(?!\sclass="source-button")[^>]*>[\s\S]*?<\/p>(?:\s*<p class="source-button">[\s\S]*?<\/p>)?){2,}/gi, '');
+  return updatedLinks.replace(legacyLocalPromo, '').replace(/<h2\b[^>]*>(?:(?!<\/h2>)[\s\S])*?Nuestros Servicios(?:(?!<\/h2>)[\s\S])*?<\/h2>(?:\s*<figure\b[^>]*>[\s\S]*?<\/figure>\s*<h3\b[^>]*>[\s\S]*?<\/h3>\s*<p(?!\sclass="source-button")[^>]*>[\s\S]*?<\/p>(?:\s*<p class="source-button">[\s\S]*?<\/p>)?){2,}/gi, '');
 }
