@@ -1,20 +1,27 @@
 import fullData from '../data/full-data.json';
+import supplementalPages from '../data/supplemental-pages.json';
+import { blogPostDates } from './page-dates.js';
 import socialLinks from '../data/social-links.json';
 import serviceLandings from '../data/service-landings.json';
+import reviewedServices from '../data/services-bilbao.json';
+import localGuides from '../data/service-local-content.json';
+import { cityService } from './city-services.js';
 import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from './bilbao-urgent.js';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
 export const normalizePath = (path) => `${path.replace(/\/+$/, '')}/`;
 export const canonicalUrl = (path) => new URL(normalizePath(path === '/contacto2/' ? '/contacto/' : path), SITE_URL).href;
-const pages = new Map(fullData.pages.map((page) => [normalizePath(page.path), page]));
+const pages = new Map([...fullData.pages, ...supplementalPages.filter((page) => page.kind === 'post')].map((page) => [normalizePath(page.path), page]));
 
 export function pageSeo({ path, title, description }) {
   const normalized = normalizePath(path);
   const page = pages.get(normalized);
+  const reviewedService = reviewedServices[normalized];
+  const city = cityService(normalized);
   const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === normalized);
   const url = canonicalUrl(path);
   const isBilbaoUrgent = normalized === BILBAO_URGENT_PATH;
-  const image = new URL((isBilbaoUrgent && BILBAO_URGENT_PHOTO) || page?.featuredImage || page?.images?.[0] || page?.blocks?.find((block) => block.type === 'image')?.src || '/assets/hero.jpg', SITE_URL).href;
+  const image = new URL(reviewedService?.image || (isBilbaoUrgent && BILBAO_URGENT_PHOTO) || page?.featuredImage || page?.images?.[0] || page?.blocks?.find((block) => block.type === 'image')?.src || '/assets/hero.jpg', SITE_URL).href;
   const businessId = `${SITE_URL}/#business`;
   const websiteId = `${SITE_URL}/#website`;
   const webpageId = `${url}#webpage`;
@@ -37,16 +44,20 @@ export function pageSeo({ path, title, description }) {
       ...(isPost || isService ? { mainEntity: { '@id': `${url}#${isPost ? 'article' : 'service'}` } } : {}),
     },
   ];
-  if (isPost) graph.push({
-    '@type': 'BlogPosting', '@id': `${url}#article`, headline: page.title, description, image,
-    mainEntityOfPage: { '@id': webpageId }, publisher: { '@id': businessId }, inLanguage: 'es',
-    ...(page.date ? { datePublished: page.date.slice(0, 10) } : {}),
-    ...(page.modified ? { dateModified: page.modified.slice(0, 10) } : {}),
-  });
+  if (isPost) {
+    const { published, modified } = blogPostDates(page);
+    graph.push({
+      '@type': 'BlogPosting', '@id': `${url}#article`, headline: page.title, description, image,
+      mainEntityOfPage: { '@id': webpageId }, publisher: { '@id': businessId }, inLanguage: 'es',
+      datePublished: published,
+      dateModified: modified,
+    });
+  }
   if (isService) graph.push({
     '@type': 'Service', '@id': `${url}#service`, url,
-    name: (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
+    name: reviewedService?.heading || localGuides[normalized]?.title || city?.title || (isBilbaoUrgent && BILBAO_URGENT_TITLE) || landing?.h1 || page?.heading || page?.blocks?.find((block) => /^h[1-3]$/.test(block.type))?.text || title.replace(' - Saneamientos Mungia', ''),
     description, provider: { '@id': businessId }, mainEntityOfPage: { '@id': webpageId },
+    ...(city ? { areaServed: { '@type': city.area.type, name: city.area.name } } : {}),
   });
   return { url, image, isPost, structuredData: { '@context': 'https://schema.org', '@graph': graph } };
 }

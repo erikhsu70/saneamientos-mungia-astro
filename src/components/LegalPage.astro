@@ -1,10 +1,10 @@
 ---
+import PageDate from './PageDate.astro';
 const { page } = Astro.props;
 ---
-<section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><p>{page.intro}</p></div></section>
+<section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><PageDate date={page.updatedOn} /><p>{page.intro}</p></div></section>
 <div class="wrap legal-layout">
   <article class="legal-content">
-    <p class="legal-updated">Última revisión: 4 de octubre de 2026</p>
     {page.key === 'notice' && <>
       <h2>Identificación del titular</h2>
       <p>Este sitio web es gestionado por <strong>Anulaciones Sépticas Mungia, S.L.</strong>, que opera bajo la denominación comercial Saneamientos Mungia.</p>
@@ -34,7 +34,7 @@ const { page } = Astro.props;
       <h2>Base jurídica</h2>
       <p>Atendemos solicitudes de presupuesto y gestionamos servicios sobre la base de las medidas precontractuales solicitadas por ti o de la relación contractual, según corresponda. Las comunicaciones generales que no estén ligadas a un presupuesto se atienden sobre la base de nuestro interés legítimo en responderlas. Los tratamientos exigidos por normas fiscales, contables u otras obligaciones se basan en el cumplimiento de dichas obligaciones. No utilizamos los datos del formulario para enviar publicidad por el mero hecho de que nos escribas.</p>
       <h2>Destinatarios y servicios externos</h2>
-      <p>El acceso a los datos se limita a quienes necesiten atender la consulta o prestar el servicio y a proveedores tecnológicos que actúen por nuestra cuenta, como los de correo y alojamiento. El enlace de WhatsApp y los vídeos externos, cuando decidas usarlos, te llevan a servicios gestionados por terceros con sus propias políticas. Las comunicaciones o proveedores pueden implicar tratamiento fuera del Espacio Económico Europeo; cuando sea aplicable, deberán utilizarse las garantías previstas por la normativa de protección de datos.</p>
+      <p>El acceso a los datos se limita a quienes necesiten atender la consulta o prestar el servicio y a proveedores tecnológicos que actúen por nuestra cuenta, como los de correo y alojamiento. WhatsApp, YouTube y Google Maps son servicios de terceros con sus propias políticas. Los mapas integrados se cargan cuando pulsas el botón correspondiente. Las comunicaciones o proveedores pueden implicar tratamiento fuera del Espacio Económico Europeo; cuando sea aplicable, deberán utilizarse las garantías previstas por la normativa de protección de datos.</p>
       <h2>Conservación</h2>
       <p>Conservamos las consultas durante el tiempo necesario para responderlas y gestionar el seguimiento, y después durante los plazos exigidos por obligaciones legales o para atender posibles responsabilidades. Los datos de una relación contractual se conservan durante los plazos legales que le correspondan. No tomamos decisiones exclusivamente automatizadas sobre tus consultas.</p>
       <h2>Tus derechos</h2>
@@ -46,6 +46,8 @@ const { page } = Astro.props;
       <div class="legal-table-wrap"><table><thead><tr><th>Elemento</th><th>Responsable</th><th>Finalidad</th><th>Duración</th></tr></thead><tbody><tr><td>sm-cookie-choice-v2 (localStorage)</td><td>Saneamientos Mungia</td><td>Recordar tu elección sobre el vídeo externo</td><td>Hasta seis meses o hasta que lo borres</td></tr></tbody></table></div>
       <h2>Vídeo externo</h2>
       <p>Una página del blog incluye un vídeo de YouTube. No se carga hasta que aceptas el contenido externo o pulsas el botón para verlo. Una vez cargado, YouTube puede utilizar sus propias tecnologías de almacenamiento y tratar datos de navegación conforme a su <a href="https://policies.google.com/privacy?hl=es">política de privacidad</a>. Si rechazas, puedes seguir leyendo el artículo sin cargar el vídeo.</p>
+      <h2>Mapas externos</h2>
+      <p>Las fichas de servicio incluyen un mapa que solo se carga cuando pulsas «Cargar Google Maps». Si lo cargas, Google puede tratar datos de navegación y utilizar sus propias tecnologías de almacenamiento de acuerdo con su <a href="https://policies.google.com/privacy?hl=es">política de privacidad</a>. La dirección de nuestra sede también está disponible en texto.</p>
       <h2>Cookies técnicas del alojamiento</h2>
       <p>El proveedor de alojamiento puede utilizar identificadores técnicos necesarios para entregar el sitio o protegerlo frente a usos abusivos. Su presencia puede variar según la configuración y las medidas de seguridad activadas. No usamos esos identificadores para elaborar perfiles comerciales.</p>
       <h2>Cambiar tu elección</h2>

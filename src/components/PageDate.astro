@@ -1,0 +1,24 @@
+---
+const { date, fullDate = false, label = fullDate ? 'Actualizado el' : 'Actualizado en', light = false } = Astro.props;
+const formattedDate = date && new Intl.DateTimeFormat('es-ES', {
+  day: fullDate ? 'numeric' : undefined,
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+}).format(new Date(`${date}T00:00:00Z`));
+---
+{formattedDate && <span class:list={['page-date', { 'page-date-light': light }]}>{label} <time datetime={date}>{formattedDate}</time></span>}
+
+<style>
+  .page-date {
+    display: block;
+    margin: 0.5rem 0 1rem;
+    color: #4b5e53;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .page-date-light {
+    color: #fff;
+  }
+</style>

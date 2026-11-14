@@ -1,0 +1,47 @@
+---
+import { LOCATION_MAP } from '../lib/location-map.js';
+
+const { groups, showGroupNames = groups.length > 1 } = Astro.props;
+---
+{groups.length > 0 && (
+  <section class="locations service-coverage" aria-labelledby="service-coverage-title">
+    <h2 id="service-coverage-title">Zonas de servicio</h2>
+    <figure class="location-map-figure">
+      <img class="location-map" src={LOCATION_MAP} alt="Mapa de las zonas de servicio en Bizkaia" loading="lazy" />
+    </figure>
+    {groups.map(({ heading, locations }) => (
+      <div class="service-coverage-group">
+        {showGroupNames && <h3>{heading}</h3>}
+        <ul class="locations-grid" role="list">
+          {locations.map(({ href, label }) => <li><a href={href}>{label}</a></li>)}
+        </ul>
+      </div>
+    ))}
+
+    <style is:inline>
+      .service-coverage .service-coverage-group + .service-coverage-group {
+        margin-top: 24px;
+      }
+
+      .service-coverage ul.locations-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr));
+        gap: 4px 16px;
+        margin: 12px 0 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .service-coverage li {
+        margin: 0;
+      }
+
+      .service-coverage li a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        text-decoration: underline;
+        text-underline-offset: .18em;
+      }
+    </style>
+  </section>
+)}

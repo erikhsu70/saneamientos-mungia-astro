@@ -1,0 +1,32 @@
+---
+const { service } = Astro.props;
+---
+
+<section class="city-guide" aria-labelledby="city-guide-title">
+  <h2 id="city-guide-title">Cómo valorar el trabajo</h2>
+  <p>{service.diagnosis}</p>
+  <p>{service.decision}</p>
+  <h3>Qué enviar para preparar la visita</h3>
+  <ul>
+    {service.inputs.map((item) => <li>{item}</li>)}
+    {service.review && <li>{service.review.visitTip}</li>}
+  </ul>
+  <p>{service.area.access}</p>
+  {service.publicResource && (
+    <p>Si la incidencia afecta a la vía pública, consulta el <a href={service.publicResource[1]}>{service.publicResource[0]}</a>.</p>
+  )}
+  <h3>Qué comprobar al terminar</h3>
+  <p>{service.check}</p>
+  <a class="pill pill-dark" href={service.urgent ? 'tel:+34601004005' : '/contacto/'}>
+    {service.urgent ? 'Llamar a urgencias · 601 004 005' : 'Solicitar una valoración'}
+  </a>
+</section>
+
+<style>
+  .city-guide{margin-block:28px 40px;padding:clamp(20px,3vw,36px);border:1px solid #dbe5dc;border-radius:16px;background:#f3f7f3}
+  .city-guide h2{margin:0 0 14px;font-size:clamp(24px,2.6vw,34px);line-height:1.2}
+  .city-guide h3{margin:24px 0 8px;font-size:clamp(18px,2vw,23px)}
+  .city-guide ul{padding-inline-start:1.4em;margin-block:0 16px}
+  .city-guide li{margin-block:6px;line-height:1.55}
+  .city-guide p a{color:var(--green);text-decoration:underline}
+</style>
