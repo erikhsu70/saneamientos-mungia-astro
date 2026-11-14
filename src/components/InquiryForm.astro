@@ -1,0 +1,72 @@
+---
+const { compact = false, path } = Astro.props;
+const endpoint = import.meta.env.PUBLIC_INQUIRY_ENDPOINT || '';
+---
+<form class={compact ? 'service-inquiry-form' : 'contact-form'} method="post" data-inquiry-endpoint={endpoint}>
+  {!compact && <h2>Presupuesto gratuito, sin compromiso</h2>}
+  <div class={compact ? 'inquiry-fields' : 'contact-fields'}>
+    <label>Nombre<input name="nombre" autocomplete="name" maxlength="120" required /></label>
+    <label>Correo electrónico<input name="correo" type="email" autocomplete="email" maxlength="254" required /></label>
+    <label>Teléfono (opcional)<input name="telefono" type="tel" autocomplete="tel" maxlength="40" /></label>
+    <label>Municipio (opcional)<input name="municipio" autocomplete="address-level2" maxlength="120" /></label>
+    <label class="contact-field-wide">Asunto (opcional)<input name="asunto" maxlength="180" /></label>
+    <label class="contact-field-wide">Petición<textarea name="mensaje" rows={compact ? 3 : 6} maxlength="5000" required></textarea></label>
+  </div>
+  <input type="hidden" name="origen" value={new URL(path, 'https://saneamientosmungia.com').href} />
+  <div hidden><label>Empresa<input name="empresa" tabindex="-1" autocomplete="off" /></label></div>
+  <button class:list={['pill', compact ? 'pill-dark' : 'pill-light']} type="submit" disabled>{endpoint ? 'Enviar consulta' : 'Abrir correo'}</button>
+  <p class="inquiry-status" role="status" aria-live="polite" hidden></p>
+  {!endpoint && <small>Se abrirá tu aplicación de correo con la consulta preparada.</small>}
+  <small>Usaremos tus datos para responder a tu consulta. <a href="/política-de-privacidad/">Política de privacidad</a>.</small>
+</form>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('form[data-inquiry-endpoint]').forEach((form) => {
+    const button = form.querySelector<HTMLButtonElement>('button[type=submit]');
+    const status = form.querySelector<HTMLElement>('.inquiry-status');
+    const endpoint = form.dataset.inquiryEndpoint;
+    if (!button || !status) return;
+    let id = endpoint ? crypto.randomUUID() : undefined;
+    button.disabled = false;
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const data = Object.fromEntries(new FormData(form));
+      if (!endpoint) {
+        const subject = encodeURIComponent(String(data.asunto || 'Consulta desde la web'));
+        const body = encodeURIComponent([
+          `Nombre: ${data.nombre}`,
+          `Correo: ${data.correo}`,
+          `Teléfono: ${data.telefono}`,
+          `Municipio: ${data.municipio}`,
+          `Página: ${data.origen}`,
+          '',
+          String(data.mensaje),
+        ].join('\n'));
+        window.location.href = `mailto:mungia@saneamientosmungia.com?subject=${subject}&body=${body}`;
+        return;
+      }
+      button.disabled = true;
+      status.hidden = false;
+      status.textContent = 'Enviando consulta…';
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({...data, id}),
+          signal: AbortSignal.timeout(22000),
+        });
+        const result = await response.json();
+        if (!response.ok || !result.ok) throw Error('Submission failed');
+        form.reset();
+        id = crypto.randomUUID();
+        status.textContent = 'Hemos recibido tu consulta.';
+      } catch {
+        status.textContent = 'No pudimos confirmar el envío. Puedes volver a intentarlo.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  });
+</script>

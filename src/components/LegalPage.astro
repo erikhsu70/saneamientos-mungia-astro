@@ -1,6 +1,7 @@
 ---
 import PageDate from './PageDate.astro';
 const { page } = Astro.props;
+const directInquiry = Boolean(import.meta.env.PUBLIC_INQUIRY_ENDPOINT);
 ---
 <section class="interior-hero legal-hero"><div class="wrap"><span class="eyebrow">Saneamientos Mungia</span><h1>{page.title}</h1><PageDate date={page.updatedOn} /><p>{page.intro}</p></div></section>
 <div class="wrap legal-layout">
@@ -30,7 +31,7 @@ const { page } = Astro.props;
       <p><strong>Anulaciones Sépticas Mungia, S.L.</strong> (NIF B95029781), Polígono Pinoa, parcela 2-H, 48170 Zamudio, Bizkaia. Puedes escribir a <a href="mailto:mungia@saneamientosmungia.com">mungia@saneamientosmungia.com</a> o llamar al <a href="tel:+34944460209">944 46 02 09</a>.</p>
       <h2>Datos que tratamos y para qué</h2>
       <p>Cuando nos contactas, podemos recibir tu nombre, dirección de correo, teléfono y la información que incluyas en tu consulta. Los utilizamos para responder, preparar un presupuesto, gestionar una posible prestación del servicio y mantener las comunicaciones relacionadas. Si llegamos a contratar un servicio, también trataremos los datos necesarios para ejecutarlo, facturarlo y cumplir nuestras obligaciones legales.</p>
-      <p>El formulario de esta web <strong>abre tu aplicación de correo</strong>: no envía los datos directamente a un servidor de la web. Antes de enviar el mensaje puedes revisarlo y modificarlo en tu aplicación de correo. Si nos llamas o contactas mediante WhatsApp, utilizaremos los datos que facilites por esos canales para atenderte.</p>
+      <p>{directInquiry ? 'El formulario de esta web envía la consulta de forma directa. Guardamos la petición y sus datos de contacto en un registro de acceso restringido en Google Sheets y enviamos un aviso por correo al equipo que la atiende.' : 'El formulario de esta web abre tu aplicación de correo con la consulta preparada. Puedes revisarla antes de enviarla.'} Si nos llamas o contactas mediante WhatsApp, utilizaremos los datos que facilites por esos canales para atenderte.</p>
       <h2>Base jurídica</h2>
       <p>Atendemos solicitudes de presupuesto y gestionamos servicios sobre la base de las medidas precontractuales solicitadas por ti o de la relación contractual, según corresponda. Las comunicaciones generales que no estén ligadas a un presupuesto se atienden sobre la base de nuestro interés legítimo en responderlas. Los tratamientos exigidos por normas fiscales, contables u otras obligaciones se basan en el cumplimiento de dichas obligaciones. No utilizamos los datos del formulario para enviar publicidad por el mero hecho de que nos escribas.</p>
       <h2>Destinatarios y servicios externos</h2>
@@ -61,7 +62,7 @@ const { page } = Astro.props;
       <h2>Información y presupuestos</h2>
       <p>Las descripciones de servicios, contenidos del blog y referencias generales de esta web tienen finalidad informativa. Una solicitud de contacto no supone la contratación automática de un servicio. Antes de realizar un trabajo se concretarán, según el caso, el alcance, disponibilidad, precio, plazos y demás condiciones mediante presupuesto o acuerdo individual. No se efectúan pagos ni contrataciones directamente en esta web.</p>
       <h2>Uso correcto de los canales de contacto</h2>
-      <p>Al enviarnos una consulta, procura que los datos de contacto y la descripción de la incidencia sean correctos. No incluyas información personal de otras personas salvo que estés autorizado para comunicarla. El formulario abre tu programa de correo, desde donde podrás revisar el mensaje antes de enviarlo. Para una urgencia, utiliza los teléfonos indicados en la web.</p>
+      <p>Al enviarnos una consulta, procura que los datos de contacto y la descripción de la incidencia sean correctos. No incluyas información personal de otras personas salvo que estés autorizado para comunicarla. {directInquiry ? 'Puedes revisar el mensaje antes de pulsar «Enviar consulta».' : 'El formulario abre tu programa de correo, donde puedes revisar el mensaje antes de enviarlo.'} Para una urgencia, utiliza los teléfonos indicados en la web.</p>
       <h2>Disponibilidad y enlaces</h2>
       <p>Podemos actualizar la web y sus contenidos para reflejar cambios en los servicios. La disponibilidad efectiva y las condiciones de cada intervención se confirmarán al atender la solicitud. Los enlaces a sitios externos, incluido WhatsApp o un vídeo de YouTube, se rigen por las condiciones de sus respectivos prestadores.</p>
       <h2>Derechos y resolución de incidencias</h2>
