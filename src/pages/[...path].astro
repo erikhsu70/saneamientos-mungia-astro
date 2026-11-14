@@ -12,7 +12,7 @@ import directory from '../data/service-directory.json';
 import ServiceLocalGuide from '../components/ServiceLocalGuide.astro';
 import CityServiceGuide from '../components/CityServiceGuide.astro';
 import CityRelatedServices from '../components/CityRelatedServices.astro';
-import { cityService, cleanCityBody } from '../lib/city-services.js';
+import { cityService, cleanCityBody, serviceCoverage } from '../lib/city-services.js';
 import localGuides from '../data/service-local-content.json';
 import redirects from '../data/service-redirects.json';
 import navContent from '../data/nav-content.json';
@@ -45,6 +45,7 @@ const reviewedService = reviewedServices[path];
 const landing = serviceLandings.find((item) => `/servicios/${item.slug}/` === path);
 const localGuide = localGuides[path];
 const city = cityService(path);
+const coverage = serviceCoverage(path);
 const isContact = path === '/contacto/' || path === '/contacto2/';
 const postDates = page.kind === 'post' ? blogPostDates(page) : undefined;
 const updatedOn = city || reviewedService || localGuide || path === '/servicios/'
@@ -86,7 +87,7 @@ const isLegalUnavailable = page.status === 404;
 <Base title={title} description={reviewedService?.description || (city && localGuide ? `${heading}. ${city.summary}` : city?.description) || (path === '/servicios/' ? directory.description : null) || landing?.summary || legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>
   {reviewedService ? (
     isNavService ? (
-      <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} reviewedService={reviewedService} updatedOn={updatedOn} />
+      <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} reviewedService={reviewedService} updatedOn={updatedOn} coverage={coverage} />
     ) : (
       <>
         <section class="interior-hero">
@@ -105,7 +106,7 @@ const isLegalUnavailable = page.status === 404;
                 <figure><img src={reviewedService.image} alt="" fetchpriority="high" /></figure>
               </div>
             )}
-            <ReviewedServiceContent service={reviewedService} />
+            <ReviewedServiceContent service={reviewedService} coverage={coverage} />
             <a class="pill pill-dark" href="/contacto/">Solicitar presupuesto</a>
           </article>
         </section>
@@ -122,7 +123,7 @@ const isLegalUnavailable = page.status === 404;
   ) : isLegalUnavailable ? (
     <section class="interior-hero"><div class="wrap"><h1>{heading}</h1><p>Este documento no está disponible en la web original. Su dirección se ha conservado para completar la migración cuando dispongamos del texto vigente.</p></div></section>
   ) : isNavService ? (
-    <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} localGuide={localGuide} updatedOn={updatedOn} />
+    <ServiceLanding landing={landing} heading={heading} intro={landingIntro} html={landingHtml} localGuide={localGuide} updatedOn={updatedOn} coverage={coverage} />
   ) : page.kind === 'post' ? (
     <>
       <section class="interior-hero">

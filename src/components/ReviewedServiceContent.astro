@@ -1,6 +1,6 @@
 ---
-import { LOCATION_MAP } from '../lib/location-map.js';
-const { service } = Astro.props;
+import ServiceCoverage from './ServiceCoverage.astro';
+const { service, coverage } = Astro.props;
 const [checklistHeading, ...checklistItems] = service.checklist;
 ---
 
@@ -32,15 +32,5 @@ const [checklistHeading, ...checklistItems] = service.checklist;
       </details>
     ))}
   </section>
-  {service.locations.length > 0 && (
-    <section class="locations">
-      <h2>Zonas de servicio</h2>
-      <figure class="location-map-figure">
-        <img class="location-map" src={LOCATION_MAP} alt="Mapa de las zonas de servicio en Bizkaia" loading="lazy" />
-      </figure>
-      <div class="locations-grid">
-        {service.locations.map(([label, path]) => <a href={path}>{label}</a>)}
-      </div>
-    </section>
-  )}
+  <ServiceCoverage groups={coverage} />
 </div>

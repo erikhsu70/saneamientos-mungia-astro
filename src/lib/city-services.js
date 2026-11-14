@@ -11,6 +11,44 @@ const normalize = (path) => path.replace(/\/+$/, '') + '/';
 const routes = new Set([...fullData.pages, ...supplementalPages].map(({ path }) => normalize(path)));
 const areaAliases = { 'urduna-orduna': 'urduna' };
 const familyAliases = { 'canalizacion-de-arquetas': 'canalizacion-arquetas' };
+const localPathPattern = /^\/servicios\/([^/]+)\/([^/]+)\/$/;
+const landingCoverage = {
+  '/servicios/instalacion-y-vaciado-de-fosas-septicas/': ['/servicios/instalacion-fosas-septicas/', '/servicios/fosas-septicas-limpieza/'],
+  '/servicios/pruebas-de-estanquedad/': ['/servicios/prueba-estanqueidad-alcantarillado/', '/servicios/prueba-hermeticidad-drenaje-sanitario/'],
+  '/servicios/mantenimiento-de-la-red-de-saneamiento/': ['/servicios/limpieza-alcantarillado-mantenimiento-red/'],
+  '/servicios/limpiezas-en-redes-de-saneamientos/': ['/servicios/limpieza-alcantarillado-mantenimiento-red/'],
+};
+const locationsByLanding = new Map();
+
+function addLocation(path, family, area) {
+  const parent = `/servicios/${family}/`;
+  const landing = redirects[parent] || parent;
+  const service = familyAliases[family] || family;
+  const [label] = areas[areaAliases[area] || area];
+  const groups = locationsByLanding.get(landing) || new Map();
+  const locations = groups.get(service) || [];
+  locations.push({ href: path, label });
+  groups.set(service, locations);
+  locationsByLanding.set(landing, groups);
+}
+
+for (const route of routes) {
+  const match = localPathPattern.exec(route);
+  if (!match || redirects[route] || route === BILBAO_URGENT_ALTERNATE) continue;
+  addLocation(route, match[1], match[2]);
+}
+addLocation(BILBAO_URGENT_PATH, 'desatascos-urgentes', 'bilbao');
+
+const sortSpanish = new Intl.Collator('es');
+export function serviceCoverage(path) {
+  return (landingCoverage[path] || [path]).flatMap((landing) =>
+    Array.from(locationsByLanding.get(landing) || [], ([service, locations]) => ({
+      heading: editorial[service].name,
+      locations: [...locations].sort((a, b) => sortSpanish.compare(a.label, b.label)),
+    }))
+  );
+}
+
 const publicResources = {
   muskiz: ['Canal municipal de incidencias de Muskiz', 'https://www.lineaverdemuskiz.org/lv/incidencias_online.asp'],
   vitoria: ['Aguas Municipales de Vitoria-Gasteiz (AMVISA)', 'https://www.vitoria-gasteiz.org/wb021/was/contenidoAction.do?idioma=es&uid=65c21a87_117e9336274__7fbb'],
@@ -33,7 +71,7 @@ function relatedService(service, area) {
 }
 
 export function cityService(path) {
-  const match = /^\/servicios\/([^/]+)\/([^/]+)\/$/.exec(path);
+  const match = localPathPattern.exec(path);
   if (!match || redirects[path] || path === BILBAO_URGENT_ALTERNATE) return null;
   const [, family, area] = match;
   const content = editorial[familyAliases[family] || family];

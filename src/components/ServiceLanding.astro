@@ -3,11 +3,12 @@ import PageDate from './PageDate.astro';
 import FooterContent from './FooterContent.astro';
 import ServiceLocalGuide from './ServiceLocalGuide.astro';
 import ReviewedServiceContent from './ReviewedServiceContent.astro';
+import ServiceCoverage from './ServiceCoverage.astro';
 import landings from '../data/service-landings.json';
 import redirects from '../data/service-redirects.json';
 import data from '../data/phase-data.json';
 import socialLinks from '../data/social-links.json';
-const { heading, intro, html, landing, reviewedService, localGuide, updatedOn } = Astro.props;
+const { heading, intro, html, landing, reviewedService, localGuide, updatedOn, coverage } = Astro.props;
 const photo = html.match(/<figure>[^]*?<\/figure>/)?.[0] || '';
 const lead = html.match(/^<p class="source-lead">([^]*?)<\/p>/)?.[0] || '';
 const legacyUrgencyBlock = /<h2>Servicio de desatascos urgentes 24h<\/h2>\s*<p>Nuestro servicio de urgencias en desatascos está diseñado para atender con rapidez a cualquier situación crítica\.<\/p>(?:\s*<p class="source-button"><a href="\/contacto\/?">\s*Contactar\s*<\/a><\/p>)?/;
@@ -47,7 +48,7 @@ const steps = [
   {reviewedService ? (
     <section class="service-landing-section">
       <div class="wrap article-content">
-        <ReviewedServiceContent service={reviewedService} />
+        <ReviewedServiceContent service={reviewedService} coverage={coverage} />
       </div>
     </section>
   ) : (
@@ -65,6 +66,9 @@ const steps = [
   <div class="service-landing-sections">{sections.map((section) => <section class="service-landing-section"><div class="wrap article-content"><FooterContent html={section} /></div></section>)}</div>
   <section class="landing-block wrap landing-faq"><div class="section-heading"><h2>Antes de solicitar el servicio</h2></div><details><summary>¿Trabajáis en Bilbao y en el resto de Bizkaia?</summary><p>Prestamos servicios de saneamiento en Bizkaia. Indícanos tu municipio y la ubicación de la instalación para concretar la atención.</p></details><details><summary>¿Qué información necesitáis para preparar un presupuesto?</summary><p>Cuéntanos qué ocurre, dónde se encuentra la instalación y qué servicio necesitas. Nuestro equipo te indicará si hace falta más información o valorar la instalación antes de concretar el trabajo.</p></details><details><summary>¿A qué teléfono llamo si tengo un atasco urgente?</summary><p>Para desatascos urgentes contamos con atención 24 horas. Llámanos al <a href="tel:+34601004005">601 004 005</a> y explica tu situación.</p></details></section>
     </>
+  )}
+  {!reviewedService && coverage.length > 0 && (
+    <section class="landing-block wrap"><ServiceCoverage groups={coverage} showGroupNames /></section>
   )}
   <section class="service-landing-contact"><div class="wrap"><div><span class="landing-contact-kicker">Bilbao y el resto de Bizkaia</span><h2>Hablemos de tu instalación</h2><p>Solicita información sobre {landing.name.toLowerCase()} y cuéntanos qué necesitas.</p></div><div class="service-landing-actions"><a class="pill pill-light" href="/contacto/">Pedir presupuesto sin compromiso</a><a href="tel:+34601004005">Desatascos urgentes 24 h · 601 004 005</a></div></div></section>
 </div>
