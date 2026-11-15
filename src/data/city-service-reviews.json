@@ -11,6 +11,10 @@
     "date": "2026-11-13",
     "visitTip": "Si el problema aparece al abrir la vivienda tras varias semanas cerrada, indica si el primer síntoma fue olor, desagüe lento o retorno de agua. Cuenta si afecta a un único aparato o también a otros desagües del edificio."
   },
+  "/servicios/desatascos-urgentes/lekeitio/": {
+    "date": "2026-11-15",
+    "visitTip": "Si el atasco se repite después de un desatasco reciente, indica cuánto tardó en volver y desde qué punto se trabajó, si te lo indicaron en el parte."
+  },
   "/servicios/desatascos-urgentes/vitoria/": {
     "date": "2026-11-14",
     "visitTip": "Si el agua ha alcanzado un enchufe, un cuadro eléctrico o el ascensor, avísalo al llamar y evita entrar en la zona. Indica por dónde puede acceder el equipo sin atravesar el área inundada."
@@ -27,6 +31,14 @@
     "date": "2026-11-14",
     "visitTip": "Si la entrada a la finca se confunde con la de una parcela vecina, envía un pin del portón por el que debe entrar la cuba y una foto desde la carretera. Hazlo desde el exterior, con las tapas de la fosa cerradas."
   },
+  "/servicios/inspeccion-tuberias-camara-robotizada/bilbao/": {
+    "date": "2026-11-15",
+    "visitTip": "Si buscas localizar un ramal que se añadió al reformar un local, señala en el plano dónde salen sus desagües y qué registros del garaje o del portal se pueden abrir."
+  },
+  "/servicios/inspeccion-tuberias-camara-robotizada/getxo/": {
+    "date": "2026-11-15",
+    "visitTip": "Si el objetivo es localizar un defecto para abrir el pavimento, indica una referencia fija que aparezca tanto en el croquis como en las fotos del lugar, como una esquina o un pilar."
+  },
   "/servicios/inspeccion-tuberias/barakaldo/": {
     "date": "2026-11-14",
     "visitTip": "Si el retorno aparece en un garaje con varias rejillas, numéralas en un croquis y marca cuál se llenó primero. Indica si el episodio coincidió con lluvia o con descargas del edificio."
@@ -39,6 +51,22 @@
     "date": "2026-11-13",
     "visitTip": "En una reforma, distingue cuántas personas usan hoy la vivienda y cuántas la ocuparán tras la obra. Si dispones del plano, señala dónde salen los desagües y por dónde podría acceder el equipo para el mantenimiento."
   },
+  "/servicios/prueba-estanqueidad-alcantarillado/mundaka/": {
+    "date": "2026-11-15",
+    "visitTip": "Si el ensayo se hará antes de cubrir la conducción, señala en el plano qué parte quedará enterrada e indica cuándo está previsto taparla para coordinar la comprobación."
+  },
+  "/servicios/prueba-hermeticidad-drenaje-sanitario/bizkaia/": {
+    "date": "2026-11-15",
+    "visitTip": "Si la humedad apareció tras recolocar un aparato sanitario, señala qué unión quedó oculta y reúne las fotos tomadas antes de cerrar el revestimiento."
+  },
+  "/servicios/red-evacuacion-aguas-pluviales/getxo/": {
+    "date": "2026-11-15",
+    "visitTip": "Si el agua entra por una rampa, marca en una foto de dónde viene y dónde se acumula. Indica si el sumidero recibe también agua de la cubierta o del patio."
+  },
+  "/servicios/red-saneamiento-edificio/santurtzi/": {
+    "date": "2026-11-15",
+    "visitTip": "Si tras una reforma aparecieron olores en varias plantas, prepara un listado de las viviendas afectadas e indica qué baños o cocinas se modificaron y cuáles siguen igual."
+  },
   "/servicios/red-saneamiento-municipal/barakaldo/": {
     "date": "2026-11-13",
     "visitTip": "Si varios portales comparten salida, identifica cuáles tienen retorno y si el agua sube por los sótanos o por registros a pie de calle. Indica si empezó con lluvia o durante un día seco."
@@ -46,6 +74,10 @@
   "/servicios/red-saneamiento-municipal/getxo/": {
     "date": "2026-11-13",
     "visitTip": "Si el agua sale por una tapa en la calle, indica el portal más próximo y si también rebosa la última arqueta de la finca. Si puedes documentarlo desde un lugar seguro, una foto de ambos puntos ayuda a orientar el aviso."
+  },
+  "/servicios/red-saneamiento-municipal/urduliz/": {
+    "date": "2026-11-15",
+    "visitTip": "Si el problema aparece entre dos registros de la calle, aporta el número del portal o un punto de referencia para cada uno. Toma las fotos desde un lugar seguro y deja las tapas cerradas."
   },
   "/servicios/red-saneamiento-vivienda-familiar/bilbao/": {
     "date": "2026-11-13",
@@ -58,6 +90,10 @@
   "/servicios/rehabilitacion-bajantes/vitoria/": {
     "date": "2026-11-14",
     "visitTip": "Si una parte de la bajante quedó oculta al reformar un baño, identifica la vivienda y señala en una foto dónde quedó el registro. Si conservas imágenes previas al cierre, adjúntalas para ubicar las derivaciones."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/vitoria/": {
+    "date": "2026-11-15",
+    "visitTip": "Si hay una reparación anterior en el mismo conducto, envía el parte y señala el tramo revestido en el plano. Indica dónde empieza con respecto a la arqueta de acceso."
   },
   "/servicios/reparacion-tuberias-sin-zanja/bilbao/": {
     "date": "2026-11-13",
@@ -74,6 +110,10 @@
   "/servicios/saneamiento-alcantarillado/getxo/": {
     "date": "2026-11-14",
     "visitTip": "Si el rebose en el patio desaparece antes de la visita, marca en una foto hasta dónde llegó el agua y señala la tapa o rejilla por la que salió. Eso permite localizar el primer punto afectado aunque ya esté seco."
+  },
+  "/servicios/saneamiento-alcantarillado/urduliz/": {
+    "date": "2026-11-15",
+    "visitTip": "Si se limpiaron varios pozos durante una incidencia anterior, recupera el parte con el orden de intervención y marca en cuál volvió a observarse el problema primero."
   },
   "/servicios/tipos-redes-saneamiento/bilbao/": {
     "date": "2026-11-14",
