@@ -14,6 +14,7 @@ import LegalPage from '../components/LegalPage.astro';
 import FooterContent from '../components/FooterContent.astro';
 import BlogArticle from '../components/BlogArticle.astro';
 import { legalPages } from '../lib/legal.js';
+import { marked } from 'marked';
 
 export function getStaticPaths() {
   return [...fullData.pages, ...supplementalPages].filter((page) => page.path !== '/').map((page) => ({
@@ -23,6 +24,14 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const articleSources = import.meta.glob('../../content/blog/*.md', { eager: true, query: '?raw', import: 'default' });
+const articleRaw = page.markdownFile
+  ? Object.entries(articleSources).find(([sourcePath]) => sourcePath.endsWith(`/${page.markdownFile}`))?.[1]
+  : '';
+const articleBody = String(articleRaw || '')
+  .replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '')
+  .replace(/^\s*# .+\r?\n+/, '');
+const pageBodyHtml = articleBody ? marked.parse(articleBody) : page.bodyHtml;
 const path = page.path.endsWith('/') ? page.path : `${page.path}/`;
 const legalPage = legalPages[page.path];
 const footerCopy = footerContent[page.path];
@@ -56,7 +65,7 @@ const firstPara = cleanBlocks.find((b) => b.type === 'p');
 const heading = page.heading || firstHeading?.text || title.replace(' - Saneamientos Mungia', '');
 const isNavService = data.nav.some((item) => item.path === path && path.startsWith('/servicios/') && path !== '/servicios/');
 const landingCopy = footerCopy || navContent[page.path];
-const {landingIntro,landingHtml} = serviceLandingContent({landingCopy,page,firstPara,firstHeading,cleanBlocks});
+const {landingIntro,landingHtml} = serviceLandingContent({landingCopy,page: {...page, bodyHtml: pageBodyHtml},firstPara,firstHeading,cleanBlocks});
 const isLegalUnavailable = page.status === 404;
 ---
 <Base title={title} description={landing?.summary || legalPage?.description || page.description || `${heading} | Saneamientos Mungia en Bizkaia.`} path={path}>

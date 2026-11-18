@@ -16,7 +16,8 @@
     "featuredMedia": 0,
     "date": "2026-11-09T10:00:00",
     "modified": "2026-11-18T17:00:00+01:00",
-    "featuredImage": ""
+    "featuredImage": "",
+    "markdownFile": "rehabilitacion-tuberias-camara-gatika.md"
   },
   {
     "path": "/servicios/canalizacion-arquetas/bakio/",
@@ -35,7 +36,8 @@
     "featuredMedia": 0,
     "date": "2026-11-09T14:30:00",
     "modified": "2026-11-18T17:00:00+01:00",
-    "featuredImage": ""
+    "featuredImage": "",
+    "markdownFile": "canalizacion-arquetas-bakio.md"
   },
   {
     "path": "/blog/que-hacer-cuando-una-arqueta-rebosa/",
@@ -209,7 +211,8 @@
     "featuredMedia": 0,
     "date": "2026-11-09T16:10:00+01:00",
     "modified": "2026-11-09T16:10:00+01:00",
-    "featuredImage": "/assets/full/792b575091c6-ZAZ_3353-scaled.jpg"
+    "featuredImage": "/assets/full/792b575091c6-ZAZ_3353-scaled.jpg",
+    "markdownFile": "atasco-reaparece-despues-limpiar-tuberia.md"
   },
   {
     "path": "/blog/que-hacer-arqueta-rebosa/",
@@ -220,7 +223,7 @@
     "description": "Si una arqueta rebosa, deja de usar agua, aísla la zona y no añadas productos. Aprende a interpretar las señales y a quién avisar.",
     "heading": "Qué hacer si una arqueta está rebosando en 6 pasos",
     "intro": "Qué debes hacer durante los primeros minutos, qué señales permiten situar el problema y cuándo se necesita una intervención urgente.",
-    "markdownFile": "que-hacer-cuando-una-arqueta-rebosa.md",
+    "markdownFile": "que-hacer-arqueta-rebosa.md",
     "bodyReplacements": [
       [
         "<p>El objetivo de los primeros minutos no es desatascar a ciegas, sino cortar el caudal y evitar que un bloqueo localizado termine inundando un garaje, un local o una planta baja.</p>",
