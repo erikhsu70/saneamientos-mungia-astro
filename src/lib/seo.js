@@ -1,11 +1,12 @@
 import fullData from '../data/full-data.json';
+import supplementalPages from '../data/supplemental-pages.json';
 import socialLinks from '../data/social-links.json';
 import serviceLandings from '../data/service-landings.json';
 
 export const SITE_URL = 'https://saneamientosmungia.com';
 export const normalizePath = (path) => `${path.replace(/\/+$/, '')}/`;
 export const canonicalUrl = (path) => new URL(normalizePath(path === '/contacto2/' ? '/contacto/' : path), SITE_URL).href;
-const pages = new Map(fullData.pages.map((page) => [normalizePath(page.path), page]));
+const pages = new Map([...fullData.pages, ...supplementalPages].map((page) => [normalizePath(page.path), page]));
 
 export function pageSeo({ path, title, description }) {
   const normalized = normalizePath(path);
