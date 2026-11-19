@@ -380,3 +380,5 @@ img.location-map,.migrated-content figure img.location-map{width:auto;height:aut
 }
 
 main .inquiry-status { margin: 0; font-size: 14px; color: inherit; }
+.article-aside .help-title{font-size:25px;font-weight:700;line-height:1.2;margin-bottom:18px}
+.article-copy-button{display:block;margin:0 0 24px auto;border:1px solid #cfd5cf;border-radius:999px;background:#fff;color:var(--ink);padding:10px 18px;font:inherit;font-weight:700;cursor:pointer}.article-copy-button:hover{background:#f3f6f3}.article-copy-button:focus-visible{outline:3px solid #6fa986;outline-offset:2px}
