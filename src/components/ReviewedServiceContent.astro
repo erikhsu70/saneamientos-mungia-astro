@@ -1,0 +1,36 @@
+---
+import ServiceCoverage from './ServiceCoverage.astro';
+const { service, coverage } = Astro.props;
+const [checklistHeading, ...checklistItems] = service.checklist;
+---
+
+<div class="migrated-content reviewed-service-content">
+  {service.sections.map(([heading, parts]) => (
+    <section>
+      <h2>{heading}</h2>
+      <p>{parts.map((part) => typeof part === 'string' ? part : <a href={part.href}>{part.label}</a>)}</p>
+    </section>
+  ))}
+  {service.details.map(({ heading, paragraphs }) => (
+    <section>
+      <h2>{heading}</h2>
+      {paragraphs.map((paragraph) => (
+        <p>{paragraph.map((part) => typeof part === 'string' ? part : <a href={part.href}>{part.label}</a>)}</p>
+      ))}
+    </section>
+  ))}
+  <section>
+    <h2>{checklistHeading}</h2>
+    <ul>{checklistItems.map((item) => <li>{item}</li>)}</ul>
+  </section>
+  <section class="landing-faq">
+    <h2>Preguntas frecuentes</h2>
+    {[[service.question, service.answer], ...service.faqs].map(([question, answer]) => (
+      <details>
+        <summary>{question}</summary>
+        <p>{answer}</p>
+      </details>
+    ))}
+  </section>
+  <ServiceCoverage groups={coverage} />
+</div>

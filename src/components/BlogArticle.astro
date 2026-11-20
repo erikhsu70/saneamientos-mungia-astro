@@ -1,7 +1,20 @@
 ---
+import { marked } from 'marked';
 const { page } = Astro.props;
 const entries = [];
-const source = page.bodyHtml || '';
+const markdownSources = import.meta.glob('../../content/blog/*.md', { eager: true, query: '?raw', import: 'default' });
+const markdownRaw = page.markdownFile
+  ? Object.entries(markdownSources).find(([path]) => path.endsWith(`/${page.markdownFile}`))?.[1]
+  : '';
+const markdownBody = String(markdownRaw || '')
+  .replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '')
+  .replace(/^\s*# .+\r?\n+/, '');
+let source = markdownBody ? marked.parse(markdownBody) : page.revisedBodyHtml || page.bodyHtml || '';
+if (!markdownBody) {
+  for (const [original, replacement] of page.bodyReplacements || []) {
+    source = source.replaceAll(original, replacement);
+  }
+}
 const body = source.replace(/<h([2-4])\b[^>]*>([\s\S]*?)<\/h\1>/gi, (heading, level, inner) => {
   const label = inner.replace(/<[^>]*>/g, '').trim();
   if (!label) return heading;
@@ -22,12 +35,43 @@ const firstLevel = Math.min(...entries.map((entry) => entry.level));
     </details>
   </aside>}
   <article class="article-content blog-article-content">
-    {page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.title} />}
+    <button class="article-copy-button" type="button" data-copy-title={page.title}>Copiar con formato</button>
+    {page.featuredImage && <img class="article-featured" src={page.featuredImage} alt={page.featuredImageAlt || page.title} />}
     <div class="migrated-content" set:html={body} />
-    <aside class="article-aside blog-article-help"><h2>¿Necesitas ayuda?</h2><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside>
+    <aside class="article-aside blog-article-help"><div class="help-title">¿Necesitas ayuda?</div><p>Atendemos urgencias de saneamiento las 24 horas.</p><a href="tel:+34601004005">601 004 005</a><a class="pill pill-dark" href="/contacto/">CONTACTA</a></aside>
   </article>
 </section>
 <script>
+  const copyButton = document.querySelector<HTMLButtonElement>('.article-copy-button');
+  copyButton?.addEventListener('click', async () => {
+    const content = document.querySelector<HTMLElement>('.migrated-content');
+    if (!content) return;
+    const title = copyButton.dataset.copyTitle || document.title;
+    const copyContent = content.cloneNode(true) as HTMLElement;
+    copyContent.querySelectorAll<HTMLAnchorElement>('a[href^="/"]').forEach((link) => {
+      link.href = new URL(link.getAttribute('href') || '/', 'https://saneamientosmungia.com').href;
+    });
+    const html = `<h1>${title.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]!)}</h1>${copyContent.innerHTML}`;
+    const plain = `${title}\n\n${content.innerText}`;
+    try {
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/html': new Blob([html], { type: 'text/html' }),
+        'text/plain': new Blob([plain], { type: 'text/plain' }),
+      })]);
+      copyButton.textContent = 'Copiado con formato';
+    } catch {
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(content);
+      selection?.removeAllRanges();
+      selection?.addRange(range);
+      document.execCommand('copy');
+      selection?.removeAllRanges();
+      copyButton.textContent = 'Copiado';
+    }
+    window.setTimeout(() => { copyButton.textContent = 'Copiar con formato'; }, 2500);
+  });
+
   const toc = document.querySelector<HTMLElement>('.blog-toc');
   if (toc) {
     const details = toc.querySelector('details')!;

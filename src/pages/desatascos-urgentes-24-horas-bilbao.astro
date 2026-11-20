@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageDate from '../components/PageDate.astro';
 import { BILBAO_URGENT_PATH, BILBAO_URGENT_TITLE, BILBAO_URGENT_PHOTO } from '../lib/bilbao-urgent.js';
 
 const description = 'Desatascos urgentes 24 horas en Bilbao. Atendemos atascos en inodoros, tuberías, bajantes y arquetas. Llama al 601 004 005 y cuéntanos qué ocurre.';
@@ -9,6 +10,7 @@ const description = 'Desatascos urgentes 24 horas en Bilbao. Atendemos atascos e
     <div class="wrap">
       <span class="eyebrow">Saneamientos Mungia</span>
       <h1>{BILBAO_URGENT_TITLE}</h1>
+      <PageDate date="2026-11-12" />
       <p>Atendemos atascos en tuberías, inodoros, bajantes y arquetas en Bilbao. Si el agua no desagua o está rebosando, llama al equipo de urgencias.</p>
       <a class="pill pill-light" href="tel:+34601004005">Llamar a urgencias · 601 004 005</a>
     </div>

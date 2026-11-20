@@ -1,0 +1,22 @@
+---
+const { sections } = Astro.props;
+---
+
+<div class="service-local-guide">
+  {sections.map(({ heading, paragraphs }) => (
+    <section>
+      <h2>{heading}</h2>
+      {paragraphs.map((parts) => (
+        <p>{parts.map((part) => typeof part === 'string' ? part : <a href={part.href}>{part.label}</a>)}</p>
+      ))}
+    </section>
+  ))}
+</div>
+
+<style>
+  .service-local-guide{margin-block:30px;padding:clamp(18px,3vw,32px);border:1px solid #dbe5dc;border-radius:14px;background:#f3f7f3}
+  .service-local-guide section + section{margin-top:28px}
+  h2{margin:0 0 12px;font-size:clamp(22px,2.4vw,30px);line-height:1.25}
+  p:last-child{margin-bottom:0}
+  a{color:var(--green);text-decoration:underline;text-underline-offset:.15em}
+</style>

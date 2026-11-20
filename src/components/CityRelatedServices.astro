@@ -1,0 +1,19 @@
+---
+const { links } = Astro.props;
+---
+
+<section class="city-related" aria-labelledby="city-related-title">
+  <h2 id="city-related-title">Servicios relacionados</h2>
+  <ul>{links.map(({ href, label }) => <li><a href={href}>{label} <span aria-hidden="true">→</span></a></li>)}</ul>
+  <a class="city-directory-link" href="/servicios/">Ver todos los servicios <span aria-hidden="true">→</span></a>
+</section>
+
+<style>
+  .city-related{margin-block:36px 0;padding:clamp(20px,3vw,36px);border:1px solid #dbe5dc;border-radius:16px}
+  .city-related h2{margin:0 0 12px;font-size:clamp(23px,2.5vw,32px)}
+  .city-related ul{list-style:none;margin:0;padding:0;border-top:1px solid #dbe5dc}
+  .city-related li{border-bottom:1px solid #dbe5dc}
+  .city-related a{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;padding-block:8px;color:var(--green);font-weight:600}
+  .city-related a:hover,.city-related a:focus-visible{text-decoration:underline}
+  .city-related .city-directory-link{display:inline-flex;margin-top:8px}
+</style>

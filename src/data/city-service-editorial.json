@@ -1,0 +1,650 @@
+{
+  "arreglo-bajantes": {
+    "name": "Arreglo de bajantes",
+    "summary": "Localización de humedades, atascos y uniones dañadas para decidir qué parte de la bajante hay que arreglar.",
+    "diagnosis": "Una mancha bajo un baño puede venir de su ramal, de una junta de la columna o de una fuga que desciende desde otro piso. Anota si aparece al usar un aparato concreto, al descargar desde varias viviendas o con la lluvia. Si ya se cambió una pieza, guarda la referencia del tramo reparado para comparar.",
+    "decision": "Antes de abrir un techo, conviene reproducir la descarga que provoca el fallo y revisar los registros disponibles. Una junta accesible puede requerir un arreglo localizado. Si hay daños en varias plantas o el tubo se ha movido, hay que valorar la columna completa y sus apoyos.",
+    "inputs": [
+      "Planta donde aparece la humedad y momento en que se reproduce.",
+      "Material visible, fotos de las uniones y reparaciones anteriores.",
+      "Acceso al pie de bajante y contacto de la persona que puede abrirlo."
+    ],
+    "check": "Antes de cerrar el acceso, comprueba si el arreglo responde a la misma descarga que provocaba la fuga. Anota qué uniones o viviendas quedaron fuera de la prueba.",
+    "related": [
+      "reparacion-bajantes",
+      "reparar-bajante-pvc",
+      "inspeccion-tuberias"
+    ]
+  },
+  "canalizacion-arquetas": {
+    "name": "Canalización de arquetas",
+    "summary": "Localización y renovación de registros de saneamiento con revisión de cotas, entradas y salida de los ramales.",
+    "diagnosis": "Si una tapa ha quedado bajo pavimento, un plano antiguo y la posición de los registros vecinos pueden acotar la búsqueda. Si la arqueta está visible pero retiene agua, interesa comprobar qué ramales llegan, a qué altura y dónde continúa la salida.",
+    "decision": "Una arqueta que solo necesita limpieza puede recuperarse manteniendo su trazado. Una salida mal alineada, un fondo deteriorado o una tapa incompatible con el tránsito puede requerir ajustar la canalización o sustituir el registro.",
+    "inputs": [
+      "Croquis con las tapas y conducciones que ya conoces.",
+      "Fotos de la superficie, de los accesos y del pavimento que habría que reponer.",
+      "Uso de la zona y espacio libre para levantar la tapa o introducir el equipo."
+    ],
+    "check": "Antes de cerrar la obra, comprueba por qué salida evacúa cada entrada y deja la ubicación de la tapa anotada respecto a una referencia fija.",
+    "related": [
+      "inspeccion-tuberias",
+      "red-evacuacion-aguas-pluviales",
+      "reparacion-tuberias-sin-zanja"
+    ]
+  },
+  "desatascos-urgentes": {
+    "name": "Desatascos urgentes 24 horas",
+    "summary": "Atención de atascos con retorno de agua, desagües que rebosan o conducciones comunes bloqueadas.",
+    "diagnosis": "Cuando sale agua por un inodoro, una rejilla o una arqueta, deja de usar la instalación afectada y llama al 601 004 005. Si también hay retorno en otras viviendas, comunícalo antes de la visita. Indica si alguien ha usado un producto químico en el desagüe.",
+    "decision": "El punto de acceso cambia según si la obstrucción está junto al aparato, en una bajante o en el colector. La prioridad es recuperar la evacuación. Si aparecen fragmentos del tubo o raíces, se puede planificar un diagnóstico del tramo cuando vuelva a haber visibilidad.",
+    "inputs": [
+      "Dirección, planta y primer punto por el que salió agua.",
+      "Aparatos o viviendas afectados y si sigue entrando agua.",
+      "Llaves, persona de contacto y restricciones de entrada al garaje o local."
+    ],
+    "check": "Pide que se anote desde qué registro se actuó y qué se retiró. Si el atasco vuelve, esa referencia permite comprobar el mismo tramo.",
+    "urgent": true,
+    "related": [
+      "desatranco-tuberias",
+      "inspeccion-tuberias",
+      "fosas-septicas-limpieza"
+    ]
+  },
+  "desatranco-tuberias": {
+    "name": "Desatranco de tuberías",
+    "summary": "Diagnóstico de obstrucciones en ramales, bajantes y colectores con comprobación del paso de agua.",
+    "diagnosis": "Si solo va lento un aparato, se empieza por su ramal. Cuando al vaciar el fregadero sube agua en otro desagüe, conviene localizar el tramo donde se juntan. Un retorno en varias viviendas apunta a revisar el tramo común antes de intervenir por separado.",
+    "decision": "La entrada para el equipo depende del diámetro, las curvas y el acceso a los registros. Los restos adheridos, un objeto caído y una junta que sobresale requieren actuaciones distintas. Si el paso se recupera y vuelve a fallar, el vídeo puede identificar el punto que vuelve a retener residuos.",
+    "inputs": [
+      "Orden en que fallaron los aparatos y si hubo un retorno.",
+      "Registro o arqueta que se puede abrir y si el tramo pasa bajo pavimento.",
+      "Intervenciones anteriores y material que se retiró, si se conoce."
+    ],
+    "check": "Comprueba la evacuación desde los aparatos que descargan en la tubería intervenida y observa si el agua llega al siguiente registro.",
+    "related": [
+      "desatascos-urgentes",
+      "inspeccion-tuberias-camara-robotizada",
+      "robot-fresador-tuberias"
+    ]
+  },
+  "desatrancos": {
+    "name": "Servicio de desatrancos",
+    "summary": "Desatrancos de desagües domésticos y redes comunes, con valoración del origen cuando el problema se repite.",
+    "diagnosis": "Un sifón seco puede provocar olor aunque el agua evacúe. Si el síntoma es lentitud o retorno, indica qué desagüe falla y si reacciona cuando se usa otro. En un inmueble con varios ocupantes, conviene reunir los avisos antes de decidir dónde entrar.",
+    "decision": "Para un atasco aislado puede bastar recuperar el paso desde un registro próximo. Cuando el problema aparece varias veces en la misma línea, interesa identificar el tipo de residuo y comprobar si hay un codo, una unión desplazada o un tramo que acumula agua.",
+    "inputs": [
+      "Lugar del atasco y si afecta a un baño, cocina, patio o zona común.",
+      "Fecha de los últimos desatrancos y si coincidieron con lluvia o reformas.",
+      "Acceso disponible a la instalación y horario en que puede interrumpirse el uso."
+    ],
+    "check": "Distingue si el paso se recuperó en un aparato o en toda la línea común. Si quedan tramos fuera, anótalos para la siguiente visita.",
+    "related": [
+      "desatranco-tuberias",
+      "desatascos-urgentes",
+      "inspeccion-tuberias"
+    ]
+  },
+  "desatrancos-urgentes": {
+    "name": "Desatrancos urgentes 24 horas",
+    "summary": "Intervención ante desagües que desbordan y atascos que impiden utilizar baños, cocinas o redes comunes.",
+    "diagnosis": "Si el agua ya rebosa, interrumpe las descargas que alimentan el tramo y avisa a los ocupantes afectados. Llama al 601 004 005 e indica si el agua sale desde el interior o llega desde la calle. No vuelvas a descargar para intentar mover el atasco.",
+    "decision": "Si el retorno se produce en un local bajo varias viviendas, una arqueta del garaje o un cuarto cerrado puede ser el punto de trabajo. Cuando el atasco cede, conviene distinguir el restablecimiento de la evacuación de una segunda visita para revisar la causa.",
+    "inputs": [
+      "Punto donde comenzó el desbordamiento y si varias plantas comparten la bajante.",
+      "Persona que tiene las llaves y puede avisar al resto de la finca.",
+      "Horario, restricciones de acceso y productos usados antes de llamar."
+    ],
+    "check": "Una descarga controlada permite ver si vuelve a evacuar. Si sale agua por otro punto o reaparecen raíces o restos de obra, pide que quede anotado.",
+    "urgent": true,
+    "related": [
+      "desatranco-tuberias",
+      "desatascos-urgentes",
+      "reparacion-bajantes-comunidad"
+    ]
+  },
+  "fosas-septicas-limpieza": {
+    "name": "Limpieza y vaciado de fosas sépticas",
+    "summary": "Extracción de lodos y revisión de las conexiones accesibles, con planificación de la entrada de la cuba.",
+    "diagnosis": "El nivel del agua por sí solo no indica si una fosa necesita vaciado. Interesa saber cuándo se retiraron lodos, qué viviendas descargan y si la incidencia coincide con lluvia. Si vuelve a subir con la vivienda vacía, conviene revisar también entradas y salida.",
+    "decision": "El acceso condiciona la intervención. Indica dónde puede estacionar la cuba y el recorrido hasta las tapas. El presupuesto debe aclarar los compartimentos, el alcance de la limpieza y la gestión de los residuos. No entres al depósito ni manipules las tapas para inspeccionarlo.",
+    "inputs": [
+      "Fecha del último vaciado y capacidad aproximada, si se conoce.",
+      "Distancia, desnivel y obstáculos desde el estacionamiento hasta las tapas.",
+      "Señales de retorno en la entrada, rebose o humedad cerca de la salida."
+    ],
+    "check": "Deja registradas la fecha, las conexiones visibles revisadas y la anomalía que justificaría revisar la salida antes de otro vaciado.",
+    "related": [
+      "instalacion-fosas-septicas",
+      "red-saneamiento-vivienda-familiar",
+      "desatranco-tuberias"
+    ]
+  },
+  "inspeccion-tuberias": {
+    "name": "Inspección de tuberías",
+    "summary": "Revisión del tramo afectado para localizar un defecto, valorar su alcance y decidir si hace falta intervenir.",
+    "diagnosis": "Define primero la pregunta que debe responder la inspección. Puede ser localizar un atasco, saber dónde se abre una junta o comprobar qué ramal llega a una arqueta. La entrada, el diámetro y el agua retenida condicionan el equipo y lo que se ve.",
+    "decision": "Si hay un depósito que tapa el fondo, puede convenir limpiar o entrar por el extremo contrario. Pide que el informe distinga qué se recorrió y qué quedó fuera. Una imagen del tubo ayuda a localizar el daño, pero no sustituye un ensayo de estanqueidad.",
+    "inputs": [
+      "Registros de entrada y salida y sentido aproximado del flujo.",
+      "Síntomas, fecha de la última limpieza y vídeos disponibles.",
+      "Uso que se dará al informe, como diagnosticar un retorno o comparar reparaciones."
+    ],
+    "check": "Comprueba que cada hallazgo identifica un punto de partida y una distancia aproximada. Así se puede volver al defecto sin repetir todo el recorrido.",
+    "related": [
+      "inspeccion-tuberias-camara-robotizada",
+      "rehabilitacion-tuberias-camara",
+      "desatranco-tuberias"
+    ]
+  },
+  "inspeccion-tuberias-camara-robotizada": {
+    "name": "Inspección de tuberías con cámara robotizada",
+    "summary": "Vídeo interior de colectores y conducciones accesibles con referencias de distancia y sentido de avance.",
+    "diagnosis": "Para usar una cámara robotizada hay que comprobar el espacio de entrada, el diámetro y si el fondo permite avanzar. Un nivel alto de agua puede ocultar una junta. Si el robot no llega al siguiente registro, interesa saber por qué y valorar la entrada opuesta.",
+    "decision": "Antes de la visita, acuerda si se busca un defecto concreto o un inventario de daños. En la entrega, solicita referencias del punto de partida y de las conexiones visibles. Si el vídeo se usa para presupuestar, separa las observaciones de los tramos que aún falta comprobar.",
+    "inputs": [
+      "Croquis de arquetas y longitud aproximada del tramo.",
+      "Espacio para bajar el equipo y confirmar si la línea sigue en carga.",
+      "Inspecciones previas y acceso alternativo en el otro extremo."
+    ],
+    "check": "Para comparar grabaciones, identifica el mismo registro y sentido. Si se midió desde extremos distintos, contrasta la distancia con el trazado real.",
+    "related": [
+      "inspeccion-tuberias",
+      "reparacion-tuberias-sin-zanja",
+      "robot-fresador-tuberias-raices"
+    ]
+  },
+  "instalacion-fosas-septicas": {
+    "name": "Instalación de fosas sépticas",
+    "summary": "Valoración de parcelas y sistemas autónomos según conexión disponible, uso, cotas y destino del efluente.",
+    "diagnosis": "Antes de elegir el depósito, comprueba si existe una conexión viable a la red de saneamiento. Si procede valorar una instalación autónoma, el proyecto necesita definir el uso previsto, el terreno, las cotas y el destino del efluente. El trámite aplicable depende de la parcela y del vertido.",
+    "decision": "El presupuesto debe separar excavación, equipo, conexiones, tratamiento complementario y reposición. Si hay una fosa antigua, aclara si se conserva, se retira o se anula. Deja previstas las tapas y el acceso de la cuba para vaciados futuros.",
+    "inputs": [
+      "Plano o croquis, cota de salida de la vivienda y punto de conexión conocido.",
+      "Número de viviendas o usos previstos y estado del depósito existente.",
+      "Entrada de maquinaria y posición disponible para el mantenimiento."
+    ],
+    "check": "Antes de cubrir las conducciones, conserva el trazado, las imágenes de las conexiones y la ubicación de las tapas. Aclara qué documentación y comprobaciones se entregarán.",
+    "related": [
+      "fosas-septicas-limpieza",
+      "red-saneamiento-vivienda-familiar",
+      "canalizacion-arquetas"
+    ]
+  },
+  "limpieza-alcantarillado-mantenimiento-red": {
+    "name": "Limpieza y mantenimiento de alcantarillado",
+    "summary": "Limpieza de colectores por tramos y planificación de revisiones a partir de los residuos y los retornos observados.",
+    "diagnosis": "Identifica qué pozos presentan sedimentos y de dónde puede llegar el material. Arena tras episodios de lluvia y grasa en una línea con cocinas no requieren el mismo seguimiento. Si el agua retrocede con los registros despejados, interesa comprobar el tramo que sigue aguas abajo.",
+    "decision": "Planifica por tramos y fija prioridades según los retornos y los usos afectados. Si los depósitos reaparecen en el mismo lugar, revisa cotas, juntas y aportes antes de aumentar la frecuencia de limpieza. El acceso para retirar residuos debe definirse junto con la entrada del equipo.",
+    "inputs": [
+      "Pozos accesibles, dirección del flujo y posibles aportes de obras o patios.",
+      "Historial de limpiezas y fechas de los últimos desbordamientos.",
+      "Restricciones de estacionamiento, caudal y horario para trabajar."
+    ],
+    "check": "Registra dónde se retiró material, qué tipo era y si el siguiente pozo recibió agua después. Ese parte ayuda a ajustar las visitas.",
+    "related": [
+      "saneamiento-alcantarillado",
+      "inspeccion-tuberias-camara-robotizada",
+      "red-saneamiento-municipal"
+    ]
+  },
+  "prueba-estanqueidad-alcantarillado": {
+    "name": "Prueba de estanqueidad de alcantarillado",
+    "summary": "Comprobación de pérdidas en un tramo exterior delimitado, con identificación del método y del alcance.",
+    "diagnosis": "Aclara si el ensayo forma parte de la recepción de una obra o busca acotar una pérdida en servicio. Identifica los pozos, las derivaciones y qué cierres deben aislar el tramo. El método y el criterio de aceptación dependen del proyecto y de las condiciones aplicables.",
+    "decision": "Si se observa una pérdida, conviene revisar el montaje y los cierres antes de atribuirla a la conducción. Cuando el resultado sigue siendo desfavorable, ensayar tramos por separado puede ayudar a acotar qué unión o conexión necesita revisión.",
+    "inputs": [
+      "Plano, extremos del tramo, derivaciones y registros accesibles.",
+      "Objetivo del ensayo y documentación requerida en el proyecto.",
+      "Información sobre caudal, uso de la línea y posibilidad de aislarla."
+    ],
+    "check": "Pide que el acta identifique el tramo, el método y el criterio de evaluación. Si hubo reparación y repetición del ensayo, conserva ambos resultados.",
+    "related": [
+      "prueba-hermeticidad-drenaje-sanitario",
+      "inspeccion-tuberias-camara-robotizada",
+      "saneamiento-alcantarillado"
+    ]
+  },
+  "prueba-hermeticidad-drenaje-sanitario": {
+    "name": "Prueba de hermeticidad en drenaje sanitario",
+    "summary": "Comprobación del tramo de evacuación de un inmueble para localizar pérdidas o documentar una recepción.",
+    "diagnosis": "Una humedad bajo un baño puede venir de una conexión, de la bajante o de otra instalación. Identifica qué descarga la reproduce antes de aislar el tramo. Si la obra es nueva, confirma qué ramales se van a comprobar antes de ocultar las uniones.",
+    "decision": "Comprobar que el agua pasa y comprobar que el tramo no pierde responden a preguntas distintas. Define qué cierres permiten ensayar la línea y si hay que separar ramales. Si la cámara ayuda a localizar un defecto, conserva su referencia junto con el resultado de la prueba.",
+    "inputs": [
+      "Aparatos conectados, registros disponibles y croquis del recorrido.",
+      "Síntoma, fecha de la reforma y cuándo aparece la humedad.",
+      "Finalidad del informe y criterio de aceptación si figura en el proyecto."
+    ],
+    "check": "Identifica en el resultado qué quedó comprobado y qué derivaciones no entraban en el ensayo. Si se repara una unión, registra qué parte se volvió a ensayar.",
+    "related": [
+      "prueba-estanqueidad-alcantarillado",
+      "red-saneamiento-edificio",
+      "reparacion-bajantes"
+    ]
+  },
+  "red-evacuacion-aguas-pluviales": {
+    "name": "Red de evacuación de aguas pluviales",
+    "summary": "Revisión de sumideros, canalones, bajantes y colectores que recogen agua de lluvia.",
+    "diagnosis": "Si una rampa se inunda con el sumidero limpio, importa saber si el agua pasa por encima de la rejilla o sale desde ella. El primer caso apunta a revisar la captación. El segundo pide comprobar el colector, la salida y los retornos aguas abajo.",
+    "decision": "Antes de aumentar el diámetro, identifica qué cubiertas y patios aportan caudal y si existe bombeo. Una capa de arena, una cota incorrecta y una salida insuficiente requieren correcciones distintas.",
+    "inputs": [
+      "Superficies que descargan, fotos de la rampa y punto donde aparece el agua.",
+      "Arquetas, salida conocida y datos sobre el bombeo si existe.",
+      "Si ocurre con toda lluvia o solo con episodios intensos."
+    ],
+    "check": "Comprueba por separado qué entradas llegan a cada registro y si quedan accesibles tras la obra. Una prueba controlada ayuda a verificar el trazado.",
+    "related": [
+      "canalizacion-arquetas",
+      "red-saneamiento-separativa",
+      "red-evacuacion-aguas-residuales-pluviales"
+    ]
+  },
+  "red-evacuacion-aguas-residuales-pluviales": {
+    "name": "Red de evacuación de aguas residuales y pluviales",
+    "summary": "Comprobación de los recorridos de baños, cocinas y lluvia para detectar conexiones cruzadas.",
+    "diagnosis": "Una salida de patio puede recoger lluvia y otra cercana puede recibir aguas usadas. Después de una reforma, los recorridos visibles no siempre coinciden con el plano. Un olor en tiempo seco o un retorno que solo aparece al llover ayuda a decidir qué orígenes comprobar primero.",
+    "decision": "Sigue las entradas por separado y registra en qué arqueta descarga cada una. Antes de mover un ramal, confirma las cotas, el punto de entrega y las condiciones de la red receptora. Deja espacio para revisar las uniones después.",
+    "inputs": [
+      "Plano anterior a la reforma y lista de aparatos o sumideros modificados.",
+      "Ubicación de los registros y salidas conocidas.",
+      "Fecha, duración y condiciones en que aparece el retorno."
+    ],
+    "check": "Comprueba cada descarga por separado antes de cerrar las uniones. Si se modifica el trazado, conserva el croquis y fotos con referencias.",
+    "related": [
+      "red-saneamiento-separativa",
+      "red-evacuacion-aguas-pluviales",
+      "red-saneamiento-edificio"
+    ]
+  },
+  "red-saneamiento-edificio": {
+    "name": "Red de saneamiento de edificios",
+    "summary": "Revisión de ramales, bajantes, colectores y puntos de salida de una comunidad o inmueble.",
+    "diagnosis": "Los avisos de varias plantas ayudan a localizar un tramo común. Si solo falla un aparato, se empieza por su conexión. Si el agua aparece en un sótano o garaje, comprueba si la evacuación depende de bombeo y si el fallo coincide con lluvia.",
+    "decision": "Antes de abrir un techo, reúne el recorrido de la instalación, quién puede dar acceso y qué descargas hay que limitar. Una red con sedimentos puede necesitar limpieza. Una conexión dañada, un colector hundido o una bajante que pierde requieren valorar otra intervención.",
+    "inputs": [
+      "Avisos por planta y zona, y relación con el uso de baños, cocinas o lluvia.",
+      "Llaves de registros y contacto de la administración o mantenimiento.",
+      "Planos y fotografías de reparaciones y conducciones vistas."
+    ],
+    "check": "Relaciona lo que se comprobó con el plano del edificio. Anota el acceso y las plantas o ramales que aún quedan por revisar.",
+    "related": [
+      "reparacion-bajantes-comunidad",
+      "red-evacuacion-aguas-pluviales",
+      "inspeccion-tuberias"
+    ]
+  },
+  "red-saneamiento-municipal": {
+    "name": "Red de saneamiento municipal",
+    "summary": "Identificación del límite entre la instalación privada y la red pública para acotar incidencias y actuaciones.",
+    "diagnosis": "Una arqueta privada llena no basta para saber dónde está el atasco. Sitúa la última arqueta de la finca, la acometida y el primer punto donde se observó el retorno. Si aparece en la vía pública o en varias fincas, comunica la incidencia al gestor correspondiente.",
+    "decision": "Para un encargo sobre la red, confirma qué registros se pueden abrir, qué tramos están autorizados y cómo se mantendrá el caudal. El plano, los avisos previos y el acceso de equipos condicionan si procede limpiar, inspeccionar o intervenir por fases.",
+    "inputs": [
+      "Dirección o referencia del registro y si el agua apareció durante la lluvia.",
+      "Plano, tramos autorizados y contacto de quien coordina el acceso.",
+      "Usos conectados, restricciones de paso y actuaciones previas."
+    ],
+    "check": "Identifica en el parte los pozos y el sentido de la inspección. Señala las acometidas revisadas y las que quedaron fuera.",
+    "related": [
+      "saneamiento-alcantarillado",
+      "redes-locales-abastecimiento-saneamiento",
+      "inspeccion-tuberias-camara-robotizada"
+    ]
+  },
+  "red-saneamiento-separativa": {
+    "name": "Red de saneamiento separativa",
+    "summary": "Trazado y comprobación de las líneas de lluvia y aguas usadas para corregir cruces y definir su salida.",
+    "diagnosis": "Que se vean dos conducciones no acredita que todos los ramales estén separados. Comprueba si la descarga de cada cubierta, baño o cocina llega al registro esperado. Un sumidero que recibe agua de un aparato es una pista para investigar el cruce.",
+    "decision": "Cuando se reforma solo una zona, define qué partes de la red se conservan y cómo se enlaza cada tramo con su salida. Antes de ejecutar, comprueba el trazado real y las condiciones de conexión de la parcela con la red receptora.",
+    "inputs": [
+      "Plano y fotos de las arquetas que reúnen entradas.",
+      "Origen de cada bajante visible y reformas recientes.",
+      "Resultados de descargas o pruebas anteriores por separado."
+    ],
+    "check": "Deja un croquis de ambas líneas, con sus registros y puntos de entrega. Marca cualquier salida que no se haya podido comprobar.",
+    "related": [
+      "red-evacuacion-aguas-residuales-pluviales",
+      "red-evacuacion-aguas-pluviales",
+      "tipos-redes-saneamiento"
+    ]
+  },
+  "red-saneamiento-vivienda-familiar": {
+    "name": "Red de saneamiento de viviendas unifamiliares",
+    "summary": "Revisión del trazado desde los aparatos hasta la acometida o el sistema autónomo de la parcela.",
+    "diagnosis": "Antes de ampliar una casa, sigue los desagües de cocina, baños y cubierta hasta la salida. Un aparato nuevo bajo la cota de la calle puede requerir otra forma de evacuación. Localiza las tapas que deben quedar disponibles una vez termine la reforma.",
+    "decision": "Si el colector existente pasa bajo pavimento, una inspección puede aclarar si admite la nueva conexión. Cuando no hay una acometida viable, conviene valorar el saneamiento autónomo y el destino del efluente antes de escoger un depósito.",
+    "inputs": [
+      "Plano de parcela, cotas de salida y acceso desde la calle.",
+      "Ubicación de los registros y de los aparatos que se añadirán.",
+      "Datos de la conexión pública o del sistema autónomo existente."
+    ],
+    "check": "Comprueba el recorrido de los aparatos nuevos hasta la salida antes de cubrir las conducciones. Conserva referencias para volver a encontrar las tapas.",
+    "related": [
+      "instalacion-fosas-septicas",
+      "canalizacion-arquetas",
+      "red-evacuacion-aguas-pluviales"
+    ]
+  },
+  "redes-locales-abastecimiento-saneamiento": {
+    "name": "Redes locales de abastecimiento y saneamiento",
+    "summary": "Planificación de redes de suministro y evacuación con revisión de cruces, accesos y pruebas de entrega.",
+    "diagnosis": "Si una obra afecta al suministro de agua y al saneamiento, representa ambas redes por separado. Señala las conducciones existentes, los cruces y las instalaciones que deben seguir funcionando. Un cambio de trazado puede afectar a una acometida próxima.",
+    "decision": "Conviene acordar qué redes se comprobarán antes de cerrar la zanja y quién coordina los cortes y las conexiones. La evacuación por gravedad requiere revisar cotas y sentido de flujo. La puesta en servicio del abastecimiento tiene sus propias comprobaciones.",
+    "inputs": [
+      "Plano actualizado con cruces, acometidas y servicios existentes.",
+      "Zonas y usuarios que deben seguir operativos durante la obra.",
+      "Puntos de conexión, responsables y pruebas previstas."
+    ],
+    "check": "Diferencia en la entrega los planos y pruebas de cada red. Señala qué ramales quedan preparados para una conexión futura.",
+    "related": [
+      "red-saneamiento-municipal",
+      "red-saneamiento-separativa",
+      "prueba-estanqueidad-alcantarillado"
+    ]
+  },
+  "rehabilitacion-bajantes": {
+    "name": "Rehabilitación de bajantes",
+    "summary": "Valoración de la columna completa y sus ramales para decidir entre conservar, revestir o sustituir tramos.",
+    "diagnosis": "Una fuga junto a una derivación y varios defectos a distintas alturas cambian el alcance. Anota qué plantas presentan síntomas y si hubo intervenciones en la misma bajante. Revisa también la transición al colector, porque un retorno puede empezar al pie de la columna.",
+    "decision": "Un revestimiento interior puede encajar si la conducción conserva su forma y hay acceso para tratar las derivaciones. Si existe un desplazamiento importante o un apoyo deficiente, la propuesta debe explicar cómo se corrige ese punto y qué tramos se conservan.",
+    "inputs": [
+      "Número de plantas, tipo de tubo y posición de las derivaciones.",
+      "Planos, vídeos o reparaciones anteriores.",
+      "Ventana de trabajo y acceso a viviendas o zonas comunes."
+    ],
+    "check": "Comprueba las descargas que pasan por el tramo y pide que la entrega identifique los límites de la actuación. Marca cualquier conexión que quede pendiente.",
+    "related": [
+      "rehabilitacion-bajantes-sin-obras",
+      "reparacion-bajantes-comunidad",
+      "reparacion-bajantes"
+    ]
+  },
+  "rehabilitacion-bajantes-sin-obras": {
+    "name": "Rehabilitación de bajantes sin obras",
+    "summary": "Estudio del revestimiento interior de una bajante y de las aperturas necesarias según sus accesos y derivaciones.",
+    "diagnosis": "Antes de revestir, identifica la entrada superior, la salida inferior y los ramales en uso. La inspección debe comprobar que las herramientas alcanzan el tramo y pueden trabajar en él. Una cámara que llega a una unión no garantiza espacio para instalar el sistema.",
+    "decision": "En una comunidad, acuerda cuándo se dejan de usar las descargas y cuándo se reanuda cada ramal. Una deformación o un codo desplazado puede exigir una apertura puntual. Compara ese alcance con el de una sustitución y quién se encarga de reponer los acabados.",
+    "inputs": [
+      "Registros disponibles, plantas y accesos a las derivaciones.",
+      "Vídeo previo y estado conocido del pie de bajante.",
+      "Ocupantes afectados y posibilidad de detener las descargas."
+    ],
+    "check": "Comprueba los ramales que se conservaron o reabrieron. Pide que el informe indique cuáles se verificaron y desde qué punto.",
+    "related": [
+      "reparacion-bajantes-sin-obra",
+      "rehabilitacion-bajantes",
+      "reparacion-bajantes-comunidad"
+    ]
+  },
+  "rehabilitacion-redes-saneamiento": {
+    "name": "Rehabilitación de redes de saneamiento",
+    "summary": "Inventario de daños y planificación por tramos cuando la incidencia afecta a varios colectores o registros.",
+    "diagnosis": "Ordena las incidencias por arqueta, tramo y consecuencia. Un defecto en la línea que recibe varios ramales puede requerir prioridad frente a un daño aislado. Señala qué registros no se pudieron revisar y cómo se obtuvo cada observación.",
+    "decision": "La solución puede combinar limpieza, reparación localizada, revestimiento y sustitución. Si se trabaja por fases, comprueba que cada salida sigue teniendo un tramo receptor operativo y define cómo se mantendrán las descargas.",
+    "inputs": [
+      "Mapa de registros y tramos que dependen entre sí.",
+      "Vídeo, pruebas y reparaciones anteriores con fecha.",
+      "Uso de las instalaciones y restricciones durante cada fase."
+    ],
+    "check": "Deja la posición de cada reparación en el plano final y detalla qué tramos quedan en seguimiento. Documenta las pruebas por fase.",
+    "related": [
+      "rehabilitacion-tuberias-sin-zanja",
+      "saneamiento-alcantarillado",
+      "prueba-estanqueidad-alcantarillado"
+    ]
+  },
+  "rehabilitacion-tuberias": {
+    "name": "Rehabilitación de tuberías",
+    "summary": "Comparación de reparación localizada, revestimiento o sustitución según el defecto y el acceso disponible.",
+    "diagnosis": "Un tubo puede evacuar y seguir perdiendo por una junta. Un tramo que se atasca de nuevo puede estar deformado o retener agua. Antes de elegir técnica, identifica el material, el estado de la pared y el recorrido que se quiere recuperar.",
+    "decision": "Una reparación puntual trata un punto. El revestimiento puede abarcar un tramo continuo si hay sección y acceso. Si la tubería está hundida, conviene estudiar cómo corregir su apoyo o su cota. Incluye en la decisión los ramales que deben seguir funcionando.",
+    "inputs": [
+      "Material y diámetro estimado, registros y longitud aproximada.",
+      "Fecha del último fallo, vídeo disponible y modificaciones previas.",
+      "Usos que no se pueden interrumpir y pavimento o acabados a conservar."
+    ],
+    "check": "Relaciona el parte con los puntos de inicio y fin del tramo. Pide pruebas de los ramales incluidos y la posición de las transiciones.",
+    "related": [
+      "rehabilitacion-tuberias-camara",
+      "rehabilitacion-tuberias-sin-zanja",
+      "reparacion-tuberias-manga"
+    ]
+  },
+  "rehabilitacion-tuberias-camara": {
+    "name": "Rehabilitación de tuberías con diagnóstico por cámara",
+    "summary": "Uso de la grabación interior para decidir si limpiar, reparar una unión o renovar un tramo de tubería.",
+    "diagnosis": "El vídeo permite relacionar raíces, juntas abiertas y deformaciones con la distancia a un registro. Si hay una obstrucción que oculta la pared, pide que se indique qué quedó sin inspeccionar. Conviene identificar también las derivaciones que podrían quedar afectadas por la obra.",
+    "decision": "Una fisura aislada en una sección estable se valora de forma distinta de un tramo con varios daños o una pendiente alterada. El presupuesto debe poder relacionar cada trabajo propuesto con una observación y explicar qué otras comprobaciones harían cambiar el alcance.",
+    "inputs": [
+      "Vídeo completo, registro de partida y sentido de la grabación.",
+      "Fotos de los accesos y cualquier punto donde se detuvo el equipo.",
+      "Objetivo de la obra y zonas donde conviene evitar aperturas."
+    ],
+    "check": "Repite la inspección desde referencias comparables y comprueba los ramales incluidos. Registra qué zonas no se pudieron ver después.",
+    "related": [
+      "inspeccion-tuberias-camara-robotizada",
+      "reparacion-tuberias-sin-zanja",
+      "rehabilitacion-tuberias"
+    ]
+  },
+  "rehabilitacion-tuberias-manga": {
+    "name": "Rehabilitación de tuberías con manga",
+    "summary": "Revestimiento interior continuo, con estudio de preparación, curado y recuperación de las conexiones.",
+    "diagnosis": "Antes de revestir, conviene limpiar y comprobar que el tubo admite el equipo y conserva sección. Las entradas laterales, las curvas y los cambios de diámetro pueden limitar la longitud. Una manga sigue el trazado de la conducción existente y no corrige por sí sola un hundimiento.",
+    "decision": "La propuesta debe indicar desde qué registro se trabaja, dónde empieza y termina el revestimiento y cómo se tratarán las derivaciones. Aclara las condiciones de curado, las descargas que deben detenerse y el tipo de comprobación antes de volver a usar la línea.",
+    "inputs": [
+      "Grabación previa, material, diámetro y extremos del tramo.",
+      "Listado de conexiones activas y registros practicables.",
+      "Restricciones de uso durante la preparación y el curado."
+    ],
+    "check": "Comprueba que se cubrió la longitud acordada, que las derivaciones vuelven a evacuar y que se conserva una grabación del tramo.",
+    "related": [
+      "reparacion-tuberias-manga",
+      "rehabilitacion-tuberias-sin-zanja",
+      "inspeccion-tuberias-camara-robotizada"
+    ]
+  },
+  "rehabilitacion-tuberias-sin-obras": {
+    "name": "Rehabilitación de tuberías sin obras",
+    "summary": "Estudio de los accesos disponibles para limitar aperturas en viviendas, locales y zonas comunes.",
+    "diagnosis": "Antes de programar, localiza las entradas practicables, los ramales conectados y los elementos que hay que proteger. Un registro detrás de un mueble o en un falso techo puede servir para inspeccionar y quedar corto para instalar el equipo.",
+    "decision": "La solución debe explicar qué acabados se conservan, qué apertura puntual puede ser necesaria y cuánto tiempo se interrumpirá cada descarga según el método. Si el tubo está colapsado o ha perdido cota, se valora una corrección que resuelva el daño físico.",
+    "inputs": [
+      "Plano o fotos del recorrido bajo solera o por falso techo.",
+      "Horarios de uso y espacios que deben seguir accesibles.",
+      "Vídeo previo y partes de reparaciones anteriores."
+    ],
+    "check": "Comprueba los aparatos y ramales incluidos antes de restablecer el uso. Pide que el presupuesto aclare qué reposiciones están incluidas.",
+    "related": [
+      "rehabilitacion-tuberias",
+      "reparacion-tuberias-manga",
+      "inspeccion-tuberias"
+    ]
+  },
+  "rehabilitacion-tuberias-sin-zanja": {
+    "name": "Rehabilitación de tuberías sin zanja",
+    "summary": "Renovación de conducciones entre registros cuando hay varios defectos o deterioro repartido.",
+    "diagnosis": "Si la cámara muestra varias juntas dañadas entre dos arquetas, conviene valorar el tramo completo. Antes de elegir técnica, limpia el conducto y revisa sección, cota y derivaciones. Si parte del tubo está hundida, identifica qué punto necesita corrección antes de revestir.",
+    "decision": "En redes en servicio, prepara un plan para los aportes de agua y el acceso a cada extremo. Compara la renovación del tramo con reparaciones localizadas y define qué pruebas y vídeo se incluirán al terminar.",
+    "inputs": [
+      "Ubicación de arquetas, longitud y material del tramo.",
+      "Cotas, cambios de dirección y conexiones activas.",
+      "Restricciones de caudal, acceso y reposición de pavimento."
+    ],
+    "check": "Compara las imágenes de antes y después desde las mismas referencias. Comprueba que las conexiones previstas siguen abiertas y evacúan.",
+    "related": [
+      "reparacion-tuberias-sin-zanja",
+      "reparacion-tuberias-manga",
+      "rehabilitacion-redes-saneamiento"
+    ]
+  },
+  "reparacion-bajantes": {
+    "name": "Reparación de bajantes",
+    "summary": "Localización de fugas y valoración de uniones, ramales y tramos verticales dañados.",
+    "diagnosis": "Si la mancha crece con una descarga, anota desde qué planta y aparato. El agua puede bajar por fuera de la tubería antes de aparecer en el techo. Conviene distinguir una conexión particular, la columna y el codo por el que la bajante entra al colector.",
+    "decision": "Una junta que pierde puede requerir un arreglo puntual. Si el tubo está deformado o ha perdido apoyo, puede ser necesario sustituir una pieza o un tramo. El acceso determina qué acabados hay que abrir y cómo se repondrán.",
+    "inputs": [
+      "Plantas y aparatos afectados y momento en que aparece el agua.",
+      "Material visible, registros y fotos de la zona dañada.",
+      "Estado de las uniones y arreglos anteriores, si los hay."
+    ],
+    "check": "Repite las descargas que provocaban la fuga y comprueba las uniones accesibles antes de reponer el acabado.",
+    "related": [
+      "reparacion-bajantes-sin-obra",
+      "reparacion-bajantes-comunidad",
+      "reparar-bajante-pvc"
+    ]
+  },
+  "reparacion-bajantes-comunidad": {
+    "name": "Reparación de bajantes en comunidades",
+    "summary": "Diagnóstico de la columna compartida y coordinación de accesos, cortes de uso y comprobaciones por planta.",
+    "diagnosis": "Reúne los avisos de cada vivienda y señala si coinciden con el uso de la misma bajante. Pide al administrador que identifique los accesos comunes y las llaves. Si no se puede entrar en algún piso, deja claro qué comprobaciones quedan pendientes.",
+    "decision": "El presupuesto debe distinguir la avería de la columna de una derivación particular y explicar dónde se abrirá, quién protegerá los acabados y qué descargas deben suspenderse. Si existen varios daños, compara reparar el punto con rehabilitar la vertical.",
+    "inputs": [
+      "Listado de plantas, avisos y horarios de acceso acordados.",
+      "Croquis de las bajantes y reparaciones anteriores.",
+      "Contacto de administración, conserjería y locales afectados."
+    ],
+    "check": "Antes de dar por acabada la actuación, registra qué conexiones se probaron y qué viviendas recuperaron el uso. Conserva fotos de las uniones que quedarán ocultas.",
+    "related": [
+      "reparacion-bajantes",
+      "rehabilitacion-bajantes-sin-obras",
+      "red-saneamiento-edificio"
+    ]
+  },
+  "reparacion-bajantes-sin-obra": {
+    "name": "Reparación de bajantes sin obra",
+    "summary": "Valoración de fisuras y uniones que pueden tratarse desde dentro de la bajante o desde un registro existente.",
+    "diagnosis": "Una fisura localizada puede admitir una reparación interior si la bajante mantiene su forma y se puede llegar con el equipo. Si la unión ha cedido, el ramal está suelto o el tubo ha perdido sección, puede hacer falta una apertura puntual para corregir el daño.",
+    "decision": "Antes de presupuestar, comprueba desde dónde se puede entrar y qué derivaciones quedan cerca. En una comunidad, acuerda qué descargas se interrumpen. Distingue la reparación del tramo de la apertura y reposición de acabados, si fueran necesarias.",
+    "inputs": [
+      "Planta donde aparece la humedad y qué descargas la provocan.",
+      "Ubicación del registro, falso techo o acceso al pie de bajante.",
+      "Material, vídeo disponible y número de viviendas conectadas."
+    ],
+    "check": "Reproduce las descargas que provocaban la pérdida y verifica el paso en el ramal más cercano. Pide que se indique el tramo reparado y los puntos pendientes.",
+    "related": [
+      "reparacion-bajantes-comunidad",
+      "rehabilitacion-bajantes-sin-obras",
+      "inspeccion-tuberias"
+    ]
+  },
+  "reparacion-tuberias-manga": {
+    "name": "Reparación de tuberías con manga",
+    "summary": "Valoración del revestimiento interior para fisuras y uniones dañadas, con comprobación de los ramales conectados.",
+    "diagnosis": "La manga recubre el interior del tramo existente. El estado del tubo, los cambios de sección y las derivaciones influyen en si puede colocarse. Si el defecto está concentrado en una junta, conviene comparar un tratamiento localizado con un revestimiento continuo.",
+    "decision": "La preparación incluye retirar obstáculos que impidan asentar el revestimiento. El encargo debe definir dónde acaba la manga, cómo se gestionará el caudal durante el curado y qué conexiones se revisarán antes de volver a usar la tubería.",
+    "inputs": [
+      "Diámetro, material, accesos y longitud que muestran los informes.",
+      "Derivaciones activas y tipo de pavimento que se quiere conservar.",
+      "Plazos disponibles para interrumpir el uso y grabaciones del tramo."
+    ],
+    "check": "Comprueba la continuidad interior y el paso de las conexiones previstas. Conserva la referencia de los extremos para distinguir futuros avisos fuera de la reparación.",
+    "related": [
+      "rehabilitacion-tuberias-manga",
+      "rehabilitacion-tuberias-sin-zanja",
+      "robot-fresador-tuberias"
+    ]
+  },
+  "reparacion-tuberias-sin-zanja": {
+    "name": "Reparación de tuberías sin zanja",
+    "summary": "Diagnóstico de daños bajo pavimento y estudio de la intervención desde las arquetas existentes.",
+    "diagnosis": "Una junta abierta debajo de un patio o un vial puede tratarse desde un registro si la conducción conserva sección. Si el tubo se ha hundido, está aplastado o ha perdido pendiente, conviene estudiar dónde abrir para resolver el defecto físico.",
+    "decision": "Una inspección desde ambos extremos puede aclarar a qué distancia está la avería y qué derivaciones se conservan. Indica si hay paso de vehículos o una salida que debe seguir disponible. El alcance debe separar la reparación interior de una posible apertura y reposición.",
+    "inputs": [
+      "Arquetas de entrada y salida, material y distancia aproximada.",
+      "Vídeo disponible y circunstancias de los retornos.",
+      "Horarios, accesos y pavimento que se quiere conservar."
+    ],
+    "check": "Verifica el paso y el defecto intervenido desde una referencia que se pueda volver a identificar. Documenta las conexiones que quedaron fuera.",
+    "related": [
+      "inspeccion-tuberias-camara-robotizada",
+      "rehabilitacion-tuberias-sin-zanja",
+      "reparacion-tuberias-manga"
+    ]
+  },
+  "reparar-bajante-pvc": {
+    "name": "Reparación de bajantes de PVC",
+    "summary": "Revisión de juntas, piezas de transición y sujeciones para localizar y reparar una fuga en PVC.",
+    "diagnosis": "Una fuga cerca de una unión puede deberse a una junta deteriorada, un apoyo desplazado o una pieza fisurada. Revisa si la humedad aparece al descargar desde arriba y si el agua ha recorrido el exterior de la bajante antes de hacerse visible.",
+    "decision": "En una transición con otro material conviene comprobar los diámetros reales y el espacio para montar una pieza compatible. Si la columna se ha movido, interesa corregir su sujeción junto con la reparación. Antes de cerrar, prueba desde los ramales que pasan por esa unión.",
+    "inputs": [
+      "Material y fotos de la unión, las abrazaderas y las transiciones.",
+      "Plantas que descargan por ese tramo y situación del acceso.",
+      "Arreglos previos y punto donde se observa la primera gota."
+    ],
+    "check": "Conserva un croquis del tramo y las piezas sustituidas. Repite las descargas que provocaban la fuga y comprueba que la unión mantiene su posición.",
+    "related": [
+      "reparacion-bajantes",
+      "arreglo-bajantes",
+      "reparacion-bajantes-comunidad"
+    ]
+  },
+  "robot-fresador-tuberias": {
+    "name": "Robot fresador para tuberías",
+    "summary": "Retirada selectiva de obstáculos adheridos o preparación de la conducción antes de una reparación.",
+    "diagnosis": "Mortero, incrustaciones y salientes de una conexión requieren comprobar primero qué material se va a retirar. La cámara puede llegar por un acceso demasiado estrecho para el fresador. Conviene conocer la sección, las curvas y el estado de la pared antes de elegir cabezal.",
+    "decision": "Si el trabajo prepara el tubo para una manga, la grabación posterior debe mostrar qué superficie quedó y si hay pasos estrechos. Cuando el tubo está roto, la retirada del material puede descubrir un defecto que obligue a cambiar el método previsto.",
+    "inputs": [
+      "Vídeo del obstáculo y referencia de distancia desde el registro.",
+      "Diámetro y material del tubo si están disponibles.",
+      "Acceso para retirar residuos y finalidad del trabajo, como recuperar paso o preparar un revestimiento."
+    ],
+    "check": "Comprueba qué material se retiró, si se recuperó el paso y cómo quedó la pared junto a la derivación o el punto de contacto.",
+    "related": [
+      "robot-fresador-tuberias-raices",
+      "inspeccion-tuberias-camara-robotizada",
+      "reparacion-tuberias-manga"
+    ]
+  },
+  "robot-fresador-tuberias-raices": {
+    "name": "Robot fresador para raíces en tuberías",
+    "summary": "Corte de raíces y comprobación de la junta, fisura o abertura por la que entraron.",
+    "diagnosis": "La raíz puede ocultar la pared o una junta desplazada. Identifica el punto de entrada desde un registro y revisa el vídeo después de despejarlo. Si el trazado pasa bajo un jardín, la distancia interior no siempre coincide con la distancia recta sobre el terreno.",
+    "decision": "Cortar recupera paso, pero una abertura sin tratar puede permitir que las raíces reaparezcan. Según lo que se vea, se puede comparar seguimiento, sellado, revestimiento o sustitución puntual. Distingue el fresado de la reparación del punto de entrada en el presupuesto.",
+    "inputs": [
+      "Grabaciones anteriores y referencia de los registros disponibles.",
+      "Tipo de tubo y si hubo fresados en el mismo tramo.",
+      "Ubicación de la obstrucción y de los ramales próximos."
+    ],
+    "check": "Compara las imágenes antes y después del corte. Si hay otra entrada o la junta queda pendiente de reparación, anota su posición y cuándo conviene revisarla.",
+    "related": [
+      "robot-fresador-tuberias",
+      "reparacion-tuberias-sin-zanja",
+      "inspeccion-tuberias-camara-robotizada"
+    ]
+  },
+  "saneamiento-alcantarillado": {
+    "name": "Saneamiento de alcantarillado",
+    "summary": "Diagnóstico de retornos y depósitos entre registros para decidir entre limpieza, inspección y reparación.",
+    "diagnosis": "El registro que rebosa puede quedar aguas arriba del defecto. Indica qué pozos están altos, si el siguiente recibe agua y si varias fincas han tenido avisos simultáneos. En vía pública, comunícalo al gestor sin abrir tapas por cuenta propia.",
+    "decision": "La limpieza recupera sección cuando hay residuos. Si el material vuelve siempre al mismo punto, interesa comprobar la cota, las uniones y los ramales que aportan sedimento. Una red en uso exige coordinar accesos y caudales antes de intervenir.",
+    "inputs": [
+      "Pozos o registros, sentido de flujo conocido y puntos de retorno.",
+      "Fechas de aviso y si coincidieron con lluvia u obras.",
+      "Titularidad del tramo y acceso autorizado para los equipos."
+    ],
+    "check": "Anota el tramo inspeccionado o limpiado, el residuo retirado y si se comprobó la salida. Identifica los defectos que necesitan otra actuación.",
+    "related": [
+      "limpieza-alcantarillado-mantenimiento-red",
+      "red-saneamiento-municipal",
+      "inspeccion-tuberias-camara-robotizada"
+    ]
+  },
+  "tipos-redes-saneamiento": {
+    "name": "Tipos de redes de saneamiento",
+    "summary": "Identificación del recorrido de las aguas usadas y de lluvia para elegir la comprobación que corresponde.",
+    "diagnosis": "Una red unitaria reúne aguas residuales y pluviales. Una separativa las conduce por líneas distintas. Si una finca tiene dos recorridos, conviene comprobar dónde termina cada uno. El tipo de conexión en la calle y la distribución dentro del edificio pueden diferir.",
+    "decision": "Antes de reformar un baño o ampliar una cubierta, contrasta el plano con los registros y observa cada descarga por separado. Si no hay conexión pública viable, la alternativa autónoma exige valorar el tratamiento y el destino del efluente.",
+    "inputs": [
+      "Origen de las bajantes y de las rejillas o sumideros.",
+      "Croquis de los registros y condiciones de conexión conocidas.",
+      "Reformas recientes y síntomas en tiempo seco o con lluvia."
+    ],
+    "check": "Deja identificado qué recorrido sigue cada corriente y cuál no se ha podido verificar. Esa información evita cruzar los ramales en una intervención posterior.",
+    "related": [
+      "red-saneamiento-separativa",
+      "red-evacuacion-aguas-residuales-pluviales",
+      "red-saneamiento-vivienda-familiar"
+    ]
+  }
+}
