@@ -198,5 +198,45 @@
   "/servicios/instalacion-fosas-septicas/balmaseda/": {
     "date": "2026-11-19",
     "visitTip": "En el croquis de la parcela, reserva referencias para la entrada de maquinaria y el futuro acceso de mantenimiento; adjunta las cotas conocidas y aclara si la propuesta incluye conservar, retirar o anular un depósito antiguo."
+  },
+  "/servicios/reparacion-bajantes/getxo/": {
+    "date": "2026-11-20",
+    "visitTip": "Indica qué vivienda permite acceder al patio o al registro y qué uso de agua precedió a la mancha; adjunta una foto general del recorrido visible y señala las uniones reparadas anteriormente."
+  },
+  "/servicios/saneamiento-alcantarillado/bizkaia/": {
+    "date": "2026-11-20",
+    "visitTip": "Reúne las referencias de los registros donde se observó retorno y las fechas de los avisos; distingue lo visto desde fuera de los datos del plano, sin abrir tapas de la vía pública."
+  },
+  "/servicios/desatascos-urgentes/derio/": {
+    "date": "2026-11-20",
+    "visitTip": "Si el acceso está controlado, facilita el nombre o referencia de la puerta y el contacto que autoriza la entrada; añade qué desagüe rebosó primero y si hay otros usuarios afectados."
+  },
+  "/servicios/desatascos-urgentes/muskiz/": {
+    "date": "2026-11-20",
+    "visitTip": "Marca en un croquis la entrada desde la calle y el punto del rebose cuando estén en lados distintos del inmueble; indica si sigue entrando agua aunque se haya dejado de usar la instalación."
+  },
+  "/servicios/reparacion-bajantes-comunidad/galdakao/": {
+    "date": "2026-11-20",
+    "visitTip": "Prepara una tabla por planta con síntoma, hora observada y persona que puede abrir; señala los pisos sin acceso confirmado para que se distinga lo comprobable en la visita de lo pendiente."
+  },
+  "/servicios/redes-locales-abastecimiento-saneamiento/berango/": {
+    "date": "2026-11-20",
+    "visitTip": "Envía un croquis que diferencie abastecimiento y evacuación, con los cruces conocidos y las conexiones que deben mantenerse; identifica quién coordina el acceso si el recorrido alcanza otra finca."
+  },
+  "/servicios/robot-fresador-tuberias/barakaldo/": {
+    "date": "2026-11-20",
+    "visitTip": "Acompaña el vídeo del obstáculo con la referencia del registro y el portal al que pertenece; indica si se busca retirar una incrustación o preparar un revestimiento para planificar la retirada de restos."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/barakaldo/": {
+    "date": "2026-11-20",
+    "visitTip": "Señala qué portales descargan al tramo entre arquetas y quién facilita cada extremo; adjunta las imágenes de daños y las derivaciones conocidas para organizar la revisión sin dejar ramales sin identificar."
+  },
+  "/servicios/fosas-septicas-limpieza/sopela/": {
+    "date": "2026-11-20",
+    "visitTip": "Anota si el nivel o el rebose cambió con la lluvia y aporta el último parte de vaciado disponible; sitúa por separado las tapas de la fosa y los registros del patio sin manipularlos."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/santurtzi/": {
+    "date": "2026-11-20",
+    "visitTip": "Describe el paso hasta las arquetas con anchura, altura y horario disponible si atraviesa un garaje o zona de carga; adjunta el vídeo con su registro de partida para relacionar el daño con el pavimento."
   }
 }
