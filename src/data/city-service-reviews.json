@@ -238,5 +238,45 @@
   "/servicios/reparacion-tuberias-sin-zanja/santurtzi/": {
     "date": "2026-11-20",
     "visitTip": "Describe el paso hasta las arquetas con anchura, altura y horario disponible si atraviesa un garaje o zona de carga; adjunta el vídeo con su registro de partida para relacionar el daño con el pavimento."
+  },
+  "/servicios/fosas-septicas-limpieza/berango/": {
+    "date": "2026-11-21",
+    "visitTip": "Si el recorrido de salida atraviesa otro terreno, señálalo en el croquis disponible e indica quién facilita ese segundo acceso; acompáñalo del último parte de vaciado para separar el depósito de una posible incidencia en la salida."
+  },
+  "/servicios/saneamiento-alcantarillado/vitoria/": {
+    "date": "2026-11-21",
+    "visitTip": "Facilita la dirección completa y la entrada de servicio si el tramo está en una nave; reúne los avisos con fecha y lluvia observada, distinguiendo los registros privados de los situados en la vía pública."
+  },
+  "/servicios/reparacion-bajantes/barakaldo/": {
+    "date": "2026-11-21",
+    "visitTip": "Identifica el portal al que corresponde cada aviso de humedad y quién abre el garaje o pie de bajante compartido; adjunta las fotografías de uniones accesibles y la referencia de arreglos anteriores."
+  },
+  "/servicios/fosas-septicas-limpieza/getxo/": {
+    "date": "2026-11-21",
+    "visitTip": "Describe el recorrido desde el estacionamiento hasta las tapas cuando pase por un patio interior; confirma quién abre cada puerta y aporta el último vaciado conocido sin levantar las tapas para obtener más datos."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/barakaldo/": {
+    "date": "2026-11-21",
+    "visitTip": "Relaciona el vídeo del daño con las arquetas de ambos extremos y el portal desde el que se accede a cada una; señala los pasos compartidos que deben mantenerse disponibles durante la visita."
+  },
+  "/servicios/reparacion-bajantes-sin-obra/getxo/": {
+    "date": "2026-11-21",
+    "visitTip": "Prepara un croquis del registro disponible y de los ramales próximos a la pérdida; indica las viviendas conectadas y quién puede facilitar acceso para valorar si el equipo alcanza el punto sin abrir acabados."
+  },
+  "/servicios/red-evacuacion-aguas-residuales-pluviales/bizkaia/": {
+    "date": "2026-11-21",
+    "visitTip": "Reúne el plano previo y los cambios de baños, cocinas o sumideros realizados en la reforma; marca qué síntoma aparece en seco y cuál con lluvia para planificar la comprobación de cada recorrido por separado."
+  },
+  "/servicios/reparacion-bajantes-comunidad/bilbao/": {
+    "date": "2026-11-21",
+    "visitTip": "Solicita a la administración una relación de viviendas y locales con aviso, horario de acceso y contacto; identifica los pisos sin disponibilidad confirmada para organizar las pruebas y registrar lo que quede pendiente."
+  },
+  "/servicios/desatascos-urgentes/bermeo/": {
+    "date": "2026-11-21",
+    "visitTip": "Si hay entradas a distintos niveles, señala cuál llega al registro y en cuál apareció primero el agua; añade si otros aparatos o viviendas presentan retorno y si se utilizó algún producto químico."
+  },
+  "/servicios/fosas-septicas-limpieza/bermeo/": {
+    "date": "2026-11-21",
+    "visitTip": "En el croquis de acceso, distingue la cota del estacionamiento y la posición de las tapas si están a niveles diferentes; aporta la distancia aproximada y el parte anterior para preparar el recorrido de la manguera."
   }
 }
