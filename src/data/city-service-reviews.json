@@ -278,5 +278,45 @@
   "/servicios/fosas-septicas-limpieza/bermeo/": {
     "date": "2026-11-21",
     "visitTip": "En el croquis de acceso, distingue la cota del estacionamiento y la posición de las tapas si están a niveles diferentes; aporta la distancia aproximada y el parte anterior para preparar el recorrido de la manguera."
+  },
+  "/servicios/rehabilitacion-bajantes-sin-obras/bilbao/": {
+    "date": "2026-11-22",
+    "visitTip": "Reúne los accesos conocidos al inicio y al pie de la vertical y una lista de ramales por planta; identifica quién coordina a los ocupantes para acordar después qué descargas se interrumpen."
+  },
+  "/servicios/rehabilitacion-redes-saneamiento/bizkaia/": {
+    "date": "2026-11-22",
+    "visitTip": "En el mapa de la red, relaciona cada aviso con un tramo entre registros y anota de qué inspección procede; marca los puntos sin revisar para preparar una visita que distinga daños confirmados de zonas pendientes."
+  },
+  "/servicios/canalizacion-arquetas/bilbao/": {
+    "date": "2026-11-22",
+    "visitTip": "Si la tapa quedó oculta tras una reforma, aporta una foto anterior o un croquis con referencias fijas y el acabado actual; indica qué uso tiene la superficie sin levantar pavimento para localizarla por tu cuenta."
+  },
+  "/servicios/desatascos-urgentes/santurtzi/": {
+    "date": "2026-11-22",
+    "visitTip": "Facilita el acceso al registro con anchura, altura de paso y contacto para abrir el garaje o zona de carga; explica qué aparato rebosó primero y si continúa entrando agua aunque se haya detenido el uso."
+  },
+  "/servicios/arreglo-bajantes/getxo/": {
+    "date": "2026-11-22",
+    "visitTip": "Adjunta fotografías de la mancha y de las uniones visibles con la planta y el momento en que aparecieron; sitúa el acceso al patio o pie de bajante y señala qué pieza se cambió en una reparación previa."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/muskiz/": {
+    "date": "2026-11-22",
+    "visitTip": "Separa en el croquis la entrada desde la calle y las arquetas que delimitan el tramo; adjunta el vídeo con su punto de partida e indica qué paso o pavimento debe conservarse durante la intervención."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/mundaka/": {
+    "date": "2026-11-22",
+    "visitTip": "Si la vivienda se usa de forma esporádica, aporta las fechas de los últimos fallos y el contacto de quien puede abrir ambos registros; identifica las conexiones que seguirán recibiendo agua mientras esté vacía."
+  },
+  "/servicios/reparacion-bajantes-sin-obra/galdakao/": {
+    "date": "2026-11-22",
+    "visitTip": "Marca por separado la posición de la humedad y el registro por el que se accede a la bajante; añade las derivaciones próximas y el vídeo disponible para valorar hasta dónde puede trabajar el equipo."
+  },
+  "/servicios/rehabilitacion-bajantes/berango/": {
+    "date": "2026-11-22",
+    "visitTip": "Ordena por planta las incidencias y reparaciones de la columna e identifica su conexión al colector; si el acceso a esa salida requiere pasar por otra finca, facilita quién puede coordinarlo."
+  },
+  "/servicios/reparacion-bajantes/leioa/": {
+    "date": "2026-11-22",
+    "visitTip": "Indica qué viviendas descargan sobre la zona húmeda y quién abre el cuarto o garaje desde el que se ve el tramo; aporta las fotos previas y los horarios disponibles para organizar las comprobaciones."
   }
 }
