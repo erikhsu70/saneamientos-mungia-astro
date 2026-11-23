@@ -318,5 +318,45 @@
   "/servicios/reparacion-bajantes/leioa/": {
     "date": "2026-11-22",
     "visitTip": "Indica qué viviendas descargan sobre la zona húmeda y quién abre el cuarto o garaje desde el que se ve el tramo; aporta las fotos previas y los horarios disponibles para organizar las comprobaciones."
+  },
+  "/servicios/desatascos-urgentes/lezama/": {
+    "date": "2026-11-23",
+    "visitTip": "Si hubo una reforma, aporta las fotos disponibles de las conexiones y tapas antes de cubrirlas; indica qué aparato falló primero y quién facilita el acceso al registro conocido, sin descubrirlo por tu cuenta."
+  },
+  "/servicios/prueba-estanqueidad-alcantarillado/bilbao/": {
+    "date": "2026-11-23",
+    "visitTip": "Envía el plano con los extremos y derivaciones del tramo y la documentación del ensayo prevista en el proyecto; aclara si la red sigue en uso y quién coordina el acceso para valorar cómo aislarla."
+  },
+  "/servicios/reparacion-bajantes-sin-obra/santurtzi/": {
+    "date": "2026-11-23",
+    "visitTip": "Adjunta el vídeo disponible y sitúa el registro respecto a la planta donde aparece la humedad; indica quién abre la zona de carga o garaje y qué derivaciones próximas deben comprobarse."
+  },
+  "/servicios/robot-fresador-tuberias-raices/vitoria/": {
+    "date": "2026-11-23",
+    "visitTip": "Reúne los vídeos y partes de fresados anteriores con su registro de partida; señala si el trazado conocido pasa bajo un jardín para no confundir la distancia recorrida dentro del tubo con su posición en superficie."
+  },
+  "/servicios/instalacion-fosas-septicas/bermeo/": {
+    "date": "2026-11-23",
+    "visitTip": "Prepara un croquis con la salida de la vivienda, el depósito existente y el acceso de maquinaria; si hay entradas a distintos niveles, identifica también el recorrido previsto para futuros vaciados."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/laukiz/": {
+    "date": "2026-11-23",
+    "visitTip": "Si no hay plano actualizado, marca las tapas visibles en una foto general y describe las obras que pudieron cambiar el trazado; acompaña el vídeo con la referencia del registro desde el que se grabó."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/sestao/": {
+    "date": "2026-11-23",
+    "visitTip": "Reúne los avisos del local y de las plantas que descargan al tramo común, con hora y síntoma; identifica quién abre cada arqueta para preparar la inspección desde los extremos disponibles."
+  },
+  "/servicios/reparacion-bajantes/derio/": {
+    "date": "2026-11-23",
+    "visitTip": "Indica la puerta de entrada al recinto y quién autoriza el acceso al tramo visible; añade la planta afectada, el uso de agua que precedió a la mancha y las fotos de arreglos anteriores."
+  },
+  "/servicios/desatascos-urgentes/urduliz/": {
+    "date": "2026-11-23",
+    "visitTip": "Si una obra cubrió registros, envía fotos anteriores con referencias fijas y señala qué acceso sigue disponible; añade si el retorno afecta a un solo aparato o a varios, sin provocar nuevas descargas."
+  },
+  "/servicios/desatranco-tuberias/muskiz/": {
+    "date": "2026-11-23",
+    "visitTip": "Describe por separado dónde se observa el atasco y por dónde se llega al registro desde la calle; aporta el orden de fallo de los aparatos y el parte del desatranco anterior si el problema se repite."
   }
 }
