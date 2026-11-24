@@ -358,5 +358,45 @@
   "/servicios/desatranco-tuberias/muskiz/": {
     "date": "2026-11-23",
     "visitTip": "Describe por separado dónde se observa el atasco y por dónde se llega al registro desde la calle; aporta el orden de fallo de los aparatos y el parte del desatranco anterior si el problema se repite."
+  },
+  "/servicios/instalacion-fosas-septicas/urduliz/": {
+    "date": "2026-11-24",
+    "visitTip": "Adjunta el croquis de la parcela con la salida de la vivienda y los registros que una reforma pudo ocultar; añade las fotos previas disponibles y distingue el acceso para instalar el equipo del previsto para vaciados futuros."
+  },
+  "/servicios/red-saneamiento-vivienda-familiar/vitoria/": {
+    "date": "2026-11-24",
+    "visitTip": "Marca los aparatos que se añadirán y sus cotas conocidas respecto a la salida existente; indica si la vivienda evacúa a una acometida o a un sistema autónomo para preparar la revisión del recorrido completo."
+  },
+  "/servicios/desatrancos/sestao/": {
+    "date": "2026-11-24",
+    "visitTip": "Reúne los avisos del local y las viviendas con el orden de fallo de los desagües; añade las fechas de desatrancos anteriores y el contacto de quien abre el registro común si el atasco se repite."
+  },
+  "/servicios/reparacion-bajantes-comunidad/getxo/": {
+    "date": "2026-11-24",
+    "visitTip": "Identifica en el croquis qué vivienda o puerta permite llegar al registro del patio y reúne los contactos por planta; señala los accesos aún sin confirmar para organizar las comprobaciones de la columna."
+  },
+  "/servicios/desatrancos-urgentes/gatika/": {
+    "date": "2026-11-24",
+    "visitTip": "Si el vehículo no puede parar junto al registro, describe el recorrido a pie, la distancia y el desnivel; facilita quién abre el portón y avisa de cualquier producto vertido antes de la llamada."
+  },
+  "/servicios/red-saneamiento-edificio/bizkaia/": {
+    "date": "2026-11-24",
+    "visitTip": "Prepara una relación de síntomas por planta y zona, indicando si coinciden con lluvia o uso de aparatos; adjunta el plano disponible y señala si conoces un equipo de bombeo en el sótano, sin manipularlo."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/ortuella/": {
+    "date": "2026-11-24",
+    "visitTip": "Sitúa las arquetas de ambos extremos sobre una foto del vial o aparcamiento e indica qué paso debe seguir abierto; acompaña el vídeo con su registro de partida para relacionar el daño con el pavimento."
+  },
+  "/servicios/fosas-septicas-limpieza/gorliz/": {
+    "date": "2026-11-24",
+    "visitTip": "Si el fallo apareció al reabrir una vivienda cerrada, anota cuándo se retomó el uso y el primer punto afectado; aporta el último vaciado conocido y confirma quién abre el recorrido hasta las tapas sin levantarlas."
+  },
+  "/servicios/rehabilitacion-bajantes/gernika-lumo/": {
+    "date": "2026-11-24",
+    "visitTip": "Reúne los avisos por planta y los vídeos o partes de intervenciones anteriores; indica si un local conectado debe seguir funcionando y quién coordina los accesos a la columna y su salida al colector."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/santurtzi/": {
+    "date": "2026-11-24",
+    "visitTip": "Indica las ventanas de acceso por el garaje o zona de carga y qué ramales siguen en uso; adjunta el plano de arquetas y el vídeo previo para preparar la revisión de ambos extremos y las conexiones intermedias."
   }
 }
