@@ -398,5 +398,45 @@
   "/servicios/rehabilitacion-tuberias-sin-zanja/santurtzi/": {
     "date": "2026-11-24",
     "visitTip": "Indica las ventanas de acceso por el garaje o zona de carga y qué ramales siguen en uso; adjunta el plano de arquetas y el vídeo previo para preparar la revisión de ambos extremos y las conexiones intermedias."
+  },
+  "/servicios/reparacion-bajantes/berango/": {
+    "date": "2026-11-25",
+    "visitTip": "Sitúa en un croquis la planta húmeda y la transición de la bajante al colector; si llegar a la salida exige pasar por un jardín o por otra finca, indica quién facilita ese acceso y aporta las fotos de arreglos previos."
+  },
+  "/servicios/reparacion-tuberias-sin-zanja/derio/": {
+    "date": "2026-11-25",
+    "visitTip": "Identifica la puerta autorizada del recinto y los registros a ambos lados del tramo; adjunta el vídeo con su punto de partida y señala qué circulación debe mantenerse sobre el pavimento durante la visita."
+  },
+  "/servicios/reparar-bajante-pvc/bizkaia/": {
+    "date": "2026-11-25",
+    "visitTip": "Envía fotos de la unión de PVC, las abrazaderas y cualquier transición visible a otro material; indica dónde se observó la primera gota y qué plantas descargan por ese tramo, sin desmontar las piezas."
+  },
+  "/servicios/rehabilitacion-bajantes/getxo/": {
+    "date": "2026-11-25",
+    "visitTip": "Reúne los avisos por planta y los partes de reparaciones anteriores; marca por qué puerta se llega al registro del patio y quién puede abrir el acceso al pie de la columna."
+  },
+  "/servicios/arreglo-bajantes/gernika-lumo/": {
+    "date": "2026-11-25",
+    "visitTip": "Describe cuándo crece la mancha y si coincide con el uso de un aparato o con lluvia; añade el tramo arreglado anteriormente y el contacto que permite revisar la bajante sin interrumpir innecesariamente un local."
+  },
+  "/servicios/inspeccion-tuberias-camara-robotizada/laredo/": {
+    "date": "2026-11-25",
+    "visitTip": "Acompaña el croquis de arquetas con el registro desde el que se grabaron los vídeos anteriores; confirma el acceso opuesto y, si la vivienda estuvo cerrada, cuándo volvió a utilizarse y apareció el síntoma."
+  },
+  "/servicios/rehabilitacion-bajantes/portugalete/": {
+    "date": "2026-11-25",
+    "visitTip": "Distingue en el croquis el acceso al local afectado y el de la conducción común; reúne las plantas con avisos y quién abre cada zona para valorar la columna y sus derivaciones en la misma visita."
+  },
+  "/servicios/reparacion-bajantes-comunidad/barakaldo/": {
+    "date": "2026-11-25",
+    "visitTip": "Relaciona cada aviso con planta y portal, e identifica la entrada al registro del garaje compartido; pide a la administración que confirme los accesos disponibles y marque las viviendas aún pendientes."
+  },
+  "/servicios/desatascos-urgentes/urduna/": {
+    "date": "2026-11-25",
+    "visitTip": "Si el tramo está en una parcela, señala desde la entrada el camino hasta los registros conocidos y dónde apareció primero el agua; indica si sigue entrando caudal y avisa de cualquier producto vertido."
+  },
+  "/servicios/rehabilitacion-bajantes-sin-obras/orozko/": {
+    "date": "2026-11-25",
+    "visitTip": "Si la bajante queda alejada de la entrada de la parcela, describe el itinerario hasta el acceso de trabajo y un punto firme de parada; adjunta el vídeo previo y la relación de ramales que deben seguir evacuando."
   }
 }
