@@ -438,5 +438,45 @@
   "/servicios/rehabilitacion-bajantes-sin-obras/orozko/": {
     "date": "2026-11-25",
     "visitTip": "Si la bajante queda alejada de la entrada de la parcela, describe el itinerario hasta el acceso de trabajo y un punto firme de parada; adjunta el vídeo previo y la relación de ramales que deben seguir evacuando."
+  },
+  "/servicios/desatascos-urgentes/balmaseda/": {
+    "date": "2026-11-26",
+    "visitTip": "Si la entrada de la finca limita el paso, describe dónde puede detenerse el vehículo y el recorrido desde allí al registro; indica el primer punto del rebose y si otras viviendas siguen aportando agua."
+  },
+  "/servicios/rehabilitacion-bajantes-sin-obras/sondika/": {
+    "date": "2026-11-26",
+    "visitTip": "Prepara un croquis de los accesos superior e inferior y de las derivaciones en uso; si se trata de un recinto compartido, identifica la actividad que debe mantenerse y quién coordina las descargas."
+  },
+  "/servicios/reparacion-bajantes/bakio/": {
+    "date": "2026-11-26",
+    "visitTip": "Adjunta fotos de la mancha y del tramo visible con la planta donde se tomaron; confirma quién abre las zonas comunes y si los síntomas coinciden con una descarga o con lluvia, sin provocar más pérdidas."
+  },
+  "/servicios/fosas-septicas-limpieza/ortuella/": {
+    "date": "2026-11-26",
+    "visitTip": "En una foto general del aparcamiento o vial, sitúa las tapas conocidas y el recorrido previsto de la manguera; aporta el último vaciado y señala qué paso compartido debe seguir disponible sin levantar las tapas."
+  },
+  "/servicios/prueba-estanqueidad-alcantarillado/barakaldo/": {
+    "date": "2026-11-26",
+    "visitTip": "Identifica el portal y los registros que delimitan el tramo del ensayo; reúne el plano y el criterio previsto en el proyecto, indicando qué líneas siguen en uso para valorar su aislamiento."
+  },
+  "/servicios/reparacion-bajantes-sin-obra/lezama/": {
+    "date": "2026-11-26",
+    "visitTip": "Si una reforma cambió el ramal, envía las fotos previas y un croquis que distinga conexión antigua, conexión actual y acceso disponible; añade el vídeo de la pérdida si existe para preparar la valoración interior."
+  },
+  "/servicios/arreglo-bajantes/urduliz/": {
+    "date": "2026-11-26",
+    "visitTip": "Reúne las fotos anteriores a las obras y señala qué acceso a la bajante sigue visible; anota dónde empezó la humedad y qué tramo se arregló antes para evitar confundir la mancha con el origen de la fuga."
+  },
+  "/servicios/fosas-septicas-limpieza/zamudio/": {
+    "date": "2026-11-26",
+    "visitTip": "Facilita la dirección y la entrada exacta de la finca o nave junto con un croquis hasta las tapas; añade distancia, desnivel y último parte de vaciado para preparar la llegada de la cuba."
+  },
+  "/servicios/rehabilitacion-tuberias-manga/laukiz/": {
+    "date": "2026-11-26",
+    "visitTip": "Si faltan planos, sitúa las tapas visibles y las derivaciones conocidas sobre un croquis; acompáñalo del vídeo previo y de los usos que deben detenerse para estudiar la preparación y el curado de la manga."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/laukiz/": {
+    "date": "2026-11-26",
+    "visitTip": "Ordena los daños del vídeo por distancia desde el registro de partida y marca los accesos aún disponibles tras las obras; indica qué conexiones deben seguir evacuando para planificar la renovación por tramos."
   }
 }
