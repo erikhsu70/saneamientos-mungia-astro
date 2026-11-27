@@ -478,5 +478,45 @@
   "/servicios/rehabilitacion-tuberias-sin-zanja/laukiz/": {
     "date": "2026-11-26",
     "visitTip": "Ordena los daños del vídeo por distancia desde el registro de partida y marca los accesos aún disponibles tras las obras; indica qué conexiones deben seguir evacuando para planificar la renovación por tramos."
+  },
+  "/servicios/reparacion-bajantes/lezama/": {
+    "date": "2026-11-27",
+    "visitTip": "Si una reforma cambió la conexión del baño, reúne fotos anteriores y actuales del tramo visible; indica la planta de la mancha y qué uso de agua la precedió para preparar la revisión de la junta y del ramal."
+  },
+  "/servicios/desatranco-tuberias/lezama/": {
+    "date": "2026-11-27",
+    "visitTip": "Prepara una secuencia de los aparatos que fallaron y un croquis con el desagüe cambiado en la reforma; añade qué registro sigue accesible y el material retirado en el último desatranco, si se conoce."
+  },
+  "/servicios/fosas-septicas-limpieza/portugalete/": {
+    "date": "2026-11-27",
+    "visitTip": "Distingue en un croquis la posición de la fosa, el registro común y el punto donde aparece el retorno; confirma quién abre cada zona y aporta el último parte de vaciado sin levantar tapas para inspeccionar."
+  },
+  "/servicios/fosas-septicas-limpieza/zierbena/": {
+    "date": "2026-11-27",
+    "visitTip": "Si el depósito está en un recinto restringido, facilita el contacto que autoriza la entrada y el recorrido desde el estacionamiento a las tapas; indica qué circulación debe mantenerse y la fecha del último vaciado."
+  },
+  "/servicios/rehabilitacion-tuberias-manga/leioa/": {
+    "date": "2026-11-27",
+    "visitTip": "Reúne el vídeo previo y una relación de las entradas laterales que deben conservarse; facilita altura de paso y llaves del garaje para valorar el acceso del equipo y organizar la interrupción de uso durante el curado."
+  },
+  "/servicios/rehabilitacion-tuberias-sin-zanja/gorliz/": {
+    "date": "2026-11-27",
+    "visitTip": "Anota cuándo se reanudó el uso de la vivienda y el primer fallo observado; acompaña el vídeo con su registro de partida y confirma quién permite acceder a ambos extremos aunque la casa vuelva a quedar cerrada."
+  },
+  "/servicios/rehabilitacion-tuberias/urduna-orduna/": {
+    "date": "2026-11-27",
+    "visitTip": "Señala en el plano los cambios conocidos de material y los ramales que deben seguir funcionando; describe el camino desde la entrada de la parcela hasta cada registro para comparar las alternativas sobre el mismo tramo."
+  },
+  "/servicios/red-saneamiento-separativa/bilbao/": {
+    "date": "2026-11-27",
+    "visitTip": "Identifica por separado las bajantes de cubierta y las de baños o cocinas en el croquis disponible; aporta las pruebas anteriores y quién abre las arquetas para preparar la comprobación de cada salida."
+  },
+  "/servicios/rehabilitacion-bajantes-sin-obras/urduliz/": {
+    "date": "2026-11-27",
+    "visitTip": "Adjunta las fotos anteriores a las obras y sitúa los accesos que siguen disponibles al inicio y pie de la vertical; añade las derivaciones activas para valorar el recorrido del equipo antes de plantear un revestimiento."
+  },
+  "/servicios/rehabilitacion-bajantes/bermeo/": {
+    "date": "2026-11-27",
+    "visitTip": "Si los accesos están a diferentes niveles, indica cuál permite llegar al pie de la columna y dónde se manifiesta la pérdida; reúne los avisos por planta y las reparaciones anteriores para delimitar la actuación."
   }
 }
